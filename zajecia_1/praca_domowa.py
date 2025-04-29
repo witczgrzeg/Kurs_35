@@ -1,5 +1,4 @@
 """
-
 Program do generowania życzeń urodzinowych
 Arrow down
 Stwórz program, który generuje spersonalizowaną kartkę urodzinową. Program będzie prosił użytkownika o konkretne informacje, a następnie generował kartkę urodzinową na podstawie jego odpowiedzi. Wiek osoby powinien być obliczany na podstawie roku urodzenia podanego przez użytkownika.
@@ -28,3 +27,9 @@ Wskazówki:
 - Możesz zodyfikować szablon według własnego uznania. Upewnij się, że wyświetlasz wszystkie niezbędne zmienne.
 """
 
+imie= input("Podaj imię odbiorcy: \n")
+data_urodzenia= (int(input("Pdodaj datę urodzenia: \n")))
+wiadomosc= input("Podaj spersonalizowaną wiadomość: \n")
+imie2= input("Podaj swoje imię: \n")
+urodziny= str(int(2025 - data_urodzenia))
+print(imie+(" wszystkiego najpelszego z okazji "+(urodziny)+" urodzin!\n"+"\n"+wiadomosc+"\n"+"\n"+"Z poważaniem,\n"+imie2))
