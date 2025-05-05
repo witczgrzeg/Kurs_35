@@ -2,9 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0_Kurs_35_repo_prowadzacego/kurs_35" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Podsawy Git" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Podsawy Git/praca domowa 1" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/admin_folder/kurs_35" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/zajecia_2/kurs_35" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Podsawy Git/Zajecia_0" vcs="Git" />
   </component>
 </project>
