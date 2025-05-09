@@ -51,11 +51,6 @@ Najwięcej pustych kilogramów ma paczka 13
 
 """
 
+print("Witam w naszym systemie paczek!")
 
-ilosc_towarow= input("Podaj ilość towarów do wysłania: \n")
-#waga_towaru = 20
-waga_towaru = int(input("Podaj wagę towaru: \n"))
-
-while waga_towaru >= 1 :
-    input("Podaj wagę następnego towaru: \n")
-
+paczki = []
