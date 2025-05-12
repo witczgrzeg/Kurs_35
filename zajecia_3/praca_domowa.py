@@ -51,6 +51,42 @@ Najwięcej pustych kilogramów ma paczka 13
 
 """
 
+
+
+
 print("Witam w naszym systemie paczek!")
 
+liczba_produktow = int(input("Podaj liczba produktów: \n")) #wpisuje liczbę paczek
+
+# paczka = []
+# paczki = []
+# waga_produktu = 0 #waga jednej paczki
+# liczba_paczek_wyslanych = [] # suma paczek podanych
+# liczba_kg_wyslanych = 0 # suma wagi paczek5
+# suma_pustych_kg = 0 # suma ile kg pozostało do 20kg w jednej paczce + suma wszystkich paczek
+#
+# for ilosc in range(liczba_produktow):
+#     waga_produktu = int(input(f"Podaj wagę produktu {ilosc +1}: \n")) #podaje wagę do każdej paczki wpisanej w paczka
+#
+#     if waga_produktu  <1 or waga_produktu >10:
+#         print("Nie poprawna waga produktu! Waga produktu nie może przekraczać 10 GK") #informuje że produkt jezt za ciężki
+#         if paczka:
+#             ilosc.append(paczki)
+#         break
+#     if waga_produktu + liczba_kg_wyslanych > 20:
+#         paczka.append(paczki)
+#     else:
+#             liczba_kg_wyslanych += waga_produktu
+# print (f"{liczba_kg_wyslanych},{paczka}")
+
 paczki = []
+paczka = []
+waga_paczki = 0
+waga_całkowita = 0
+
+for p in range(liczba_produktow):
+    waga_prod = int(input(f"Podaj wagę produktu {p+1}: \n"))
+
+if liczba_produktow:
+    waga_prod.append(waga_paczki)
+print()
