@@ -1,50 +1,50 @@
-print("Paczkomat 3000 – program do ładowania paczek")
+print("Witam w naszym systemie paczek!")
 
-num_elements = int(input("Podaj liczbę elementów: "))
+liczba_produktow = int(input("Podaj liczbę produktów: \n"))
 
-packages = []
-current_package = []
-current_weight = 0
-total_weight = 0
+pelna_paczka = []
+suma_paczek = []
+waga_paczki = 0
 
-for i in range(num_elements):
-    weight = int(input(f"Podaj wagę elementu {i+1}: "))
+for p in range(liczba_produktow):
+    waga_prod = int(input(f"Podaj wagę produktu {p + 1}: \n"))
 
-    if weight < 1 or weight > 10:
-        print("Nieprawidłowa waga. Kończę ładowanie paczek.")
-        if current_package:
-            packages.append(current_package)
+    if waga_prod < 1 or waga_prod > 10:
+        print("Produkt przekracza limit wagowy (1–10 kg). Przerywam dodawanie paczek.")
         break
 
-    if current_weight + weight > 20:
-        packages.append(current_package)
-        current_package = [weight]
-        current_weight = weight
+    if waga_paczki + waga_prod > 20:
+        suma_paczek.append(pelna_paczka)
+        pelna_paczka = [waga_prod]
+        waga_paczki = waga_prod
     else:
-        current_package.append(weight)
-        current_weight += weight
+        pelna_paczka.append(waga_prod)
+        waga_paczki += waga_prod
 
-    total_weight += weight
-
-# Dodaj ostatnią paczkę, jeśli nie została jeszcze dodana
-if current_package:
-    packages.append(current_package)
+# dodanie ostatniej paczki, jeśli coś zawiera
+if pelna_paczka:
+    suma_paczek.append(pelna_paczka)
 
 # Podsumowanie
-print("\n--- Podsumowanie ---")
-print(f"Wysłano {len(packages)} paczek.")
-print(f"Wysłano {total_weight} kg.")
+print("\n=== PODSUMOWANIE ===")
+print(f"Wysłano {len(suma_paczek)} paczek")
 
-empty_kgs = len(packages) * 20 - total_weight
-print(f"Suma pustych kilogramów: {empty_kgs} kg")
+# Suma wysłanych kg
+suma_kg = sum(sum(paczka) for paczka in suma_paczek)
+print(f"Wysłano {suma_kg} kg")
 
-max_empty = 0
-max_empty_index = 0
+# Suma pustych kg
+puste_kg = len(suma_paczek) * 20 - suma_kg
+print(f"Suma pustych kilogramów: {puste_kg} kg")
 
-for i, package in enumerate(packages):
-    empty = 20 - sum(package)
-    if empty > max_empty:
-        max_empty = empty
-        max_empty_index = i + 1
+# Paczka z największą liczbą pustych kg
+najwiecej_pustych = 0
+nr_paczki = 0
 
-print(f"Najwięcej pustych kilogramów ma paczka {max_empty_index} ({max_empty}kg)")
+for i, paczka in enumerate(suma_paczek, start=1):
+    puste = 20 - sum(paczka)
+    if puste > najwiecej_pustych:
+        najwiecej_pustych = puste
+        nr_paczki = i
+
+print(f"Najwięcej pustych kilogramów ma paczka {nr_paczki} ({najwiecej_pustych} kg)")

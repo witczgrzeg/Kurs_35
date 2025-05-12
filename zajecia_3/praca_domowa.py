@@ -51,42 +51,82 @@ Najwięcej pustych kilogramów ma paczka 13
 
 """
 
-
+# print("Witam w naszym systemie paczek!")
+#
+# liczba_produktow = int(input("Podaj liczba produktów: \n")) #wpisuje liczbę paczek
+#
+# pelna_paczka = []
+# suma_paczek = []
+# waga_paczki = 0
+#
+# for p in range(liczba_produktow):
+#     waga_prod= int(input(f"Podaj wagę paczki {p + 1} \n"))
+#
+#     if waga_prod < 1 or waga_prod > 10:
+#         print("Produkt przekracza limit wagowy (1–10 kg). Przerywam dodawanie paczek.")
+#         break
+#     if waga_paczki + waga_prod > 20:
+#         suma_paczek.append(pelna_paczka)
+#         pelna_paczka = [waga_prod]
+#         waga_paczki=waga_prod
+#     else:
+#         pelna_paczka.append(waga_prod)
+#         waga_paczki += waga_prod
+#
+# if pelna_paczka:
+#     suma_paczek.append(pelna_paczka)
+#
+# print(suma_paczek)
+# print(pelna_paczka)
 
 
 print("Witam w naszym systemie paczek!")
 
-liczba_produktow = int(input("Podaj liczba produktów: \n")) #wpisuje liczbę paczek
+liczba_produktow = int(input("Podaj liczbę produktów: \n"))
 
-# paczka = []
-# paczki = []
-# waga_produktu = 0 #waga jednej paczki
-# liczba_paczek_wyslanych = [] # suma paczek podanych
-# liczba_kg_wyslanych = 0 # suma wagi paczek5
-# suma_pustych_kg = 0 # suma ile kg pozostało do 20kg w jednej paczce + suma wszystkich paczek
-#
-# for ilosc in range(liczba_produktow):
-#     waga_produktu = int(input(f"Podaj wagę produktu {ilosc +1}: \n")) #podaje wagę do każdej paczki wpisanej w paczka
-#
-#     if waga_produktu  <1 or waga_produktu >10:
-#         print("Nie poprawna waga produktu! Waga produktu nie może przekraczać 10 GK") #informuje że produkt jezt za ciężki
-#         if paczka:
-#             ilosc.append(paczki)
-#         break
-#     if waga_produktu + liczba_kg_wyslanych > 20:
-#         paczka.append(paczki)
-#     else:
-#             liczba_kg_wyslanych += waga_produktu
-# print (f"{liczba_kg_wyslanych},{paczka}")
-
-paczki = []
-paczka = []
+pelna_paczka = []
+suma_paczek = []
 waga_paczki = 0
-waga_całkowita = 0
 
 for p in range(liczba_produktow):
-    waga_prod = int(input(f"Podaj wagę produktu {p+1}: \n"))
+    waga_prod = int(input(f"Podaj wagę produktu {p + 1}: \n"))
 
-if liczba_produktow:
-    waga_prod.append(waga_paczki)
-print()
+    if waga_prod < 1 or waga_prod > 10:
+        print("Produkt przekracza limit wagowy (1–10 kg). Przerywam dodawanie do paczki.")
+
+
+    if waga_paczki + waga_prod > 20:
+        suma_paczek.append(pelna_paczka)
+        pelna_paczka = [waga_prod]
+        waga_paczki = waga_prod
+    else:
+        pelna_paczka.append(waga_prod)
+        waga_paczki += waga_prod
+
+# dodanie ostatniej paczki, jeśli coś zawiera
+if pelna_paczka:
+    suma_paczek.append(pelna_paczka)
+
+# Podsumowanie
+print("\n=== PODSUMOWANIE ===")
+print(f"Wysłano {len(suma_paczek)} paczek")
+
+# Suma wysłanych kg
+suma_kg = sum(sum(paczka) for paczka in suma_paczek)
+print(f"Wysłano {suma_kg} kg")
+
+# Suma pustych kg
+puste_kg = len(suma_paczek) * 20 - suma_kg
+print(f"Suma pustych kilogramów: {puste_kg} kg")
+
+# Paczka z największą liczbą pustych kg
+najwiecej_pustych = 0
+nr_paczki = 0
+
+for i, paczka in enumerate(suma_paczek, start=1):
+    puste = 20 - sum(paczka)
+    if puste > najwiecej_pustych:
+        najwiecej_pustych = puste
+        nr_paczki = i
+
+print(f"Najwięcej pustych kilogramów ma paczka {nr_paczki} ({najwiecej_pustych} kg)")
