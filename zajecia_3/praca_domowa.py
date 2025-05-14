@@ -115,6 +115,10 @@ Najwięcej pustych kilogramów ma paczka 13
 
 print("Witam w naszym systemie paczek!")
 
+liczba_paczek_razem = 0
+waga_calkowita = 0
+suma_pustych_KG = 0
+najlzejsza_paczka = 0
 while True:
     liczba_produktow = int(input("Podaj liczbę produktów: \n"))
     suma_wag = 0
@@ -129,7 +133,7 @@ while True:
 
         if suma_wag + waga_paczki >=20:
             waga_paczki = suma_wag
-            liczba_paczek +=
+            # liczba_paczek +=
 
         else:
             suma_wag += waga_paczki
@@ -138,3 +142,13 @@ while True:
 
 print("Suma wag paczek wynosi:", suma_wag)
 print("liczba paczek wynosi:", liczba_paczek)
+
+print("Podsumowanie:")
+#ilość wysłanych paczek
+print(f"Wysłano {liczba_paczek_razem} paczek.")
+#łączna waga wszystkich paczek
+print(f"Wysłano {waga_calkowita} KG.")
+#suma pozostałych KG w paczce, żeby nie przekraczać 20KG
+print(f"Suma pustych kilogramów: {suma_pustych_KG}")
+#trzeba podać która paczka waży najmniej
+print(f"Najwięcej pustych kilogramów ma paczka: {najlzejsza_paczka}")
