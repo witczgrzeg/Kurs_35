@@ -36,5 +36,4 @@ Dodatkowe wymagania:
 dostepne_komendy = ["saldo","sprzedaż", "zakup", "konto", "lista", "magazyn", "przeglad", "koniec"]
 
 wybor_uzytkownika= input(f"Proszę wyrabać jedną z dostępnych operacji {dostepne_komendy}: \n")
-
-print(f"wybrano: {wybor_uzytkownika.lower()} \n")
+dostepne_komendy.append(wybor_uzytkownika)
