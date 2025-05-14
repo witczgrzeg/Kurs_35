@@ -1,11 +1,30 @@
-print("sklep zabka")
-print("witaj")
+# print("sklep zabka")
+# print("witaj")
+#
+# nazwa_produktu = input("podaj nazwe produktu: ")
+# cena_produktu = float(input("podaj cena produktu: "))
+# age_klienta = int(input("podaj wiek klienta: "))
+#
+# print(f"kupiles {nazwa_produktu} o cenie: {cena_produktu} zł")
+#
+# if age_klienta >= 18:
+#     print("warunek wieku został spełniony")
 
-nazwa_produktu = input("podaj nazwe produktu: ")
-cena_produktu = float(input("podaj cena produktu: "))
-age_klienta = int(input("podaj wiek klienta: "))
 
-print(f"kupiles {nazwa_produktu} o cenie: {cena_produktu} zł")
+"""
+na koniec:
 
-if age_klienta >= 18:
-    print("warunek wieku został spełniony")
+liczba paczek wysłamnych
+liczba kg wysłanych
+suma "pustych kg - liczba paczek *20 -liczba kg
+która paczka miała najwięcej pustych kg ??? - nie wiem jak
+
+#######################################
+
+
+"""
+
+
+
+
+

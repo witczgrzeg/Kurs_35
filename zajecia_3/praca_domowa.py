@@ -66,20 +66,26 @@ Najwięcej pustych kilogramów ma paczka 13
 #         print("Produkt przekracza limit wagowy (1–10 kg). Przerywam dodawanie paczek.")
 #         break
 #     if waga_paczki + waga_prod > 20:
-#         suma_paczek.append(pelna_paczka)
-#         pelna_paczka = [waga_prod]
-#         waga_paczki=waga_prod
-#     else:
-#         pelna_paczka.append(waga_prod)
-#         waga_paczki += waga_prod
 #
 # if pelna_paczka:
-#     suma_paczek.append(pelna_paczka)
+#
 #
 # print(suma_paczek)
 # print(pelna_paczka)
 
 
-print("Witam w naszym systemie paczek!")
+print("Witamy w naszym systemie paczek!")
 
-liczba_produktow = int(input("Podaj liczbę produktów: \n"))
+ilosc_elementow = int(input("Podaj ilość paczek: \n"))
+
+suma_paczek = 0
+
+for paczka in range(ilosc_elementow):
+    waga_paczki= int(input(f"Podaj wagę paczki {paczka+1}: \n"))
+
+    if waga_paczki <1 or waga_paczki >10: # Waga elementów musi być z przedziału od 1 do 10 kg.
+        print("Końćzę dodawanie paczki. Paczka wysłana.") # W przypadku, jeżeli dodawany element przekroczy wagę towaru,
+                                                       # ma zostać dodany do nowej paczki, a obecna wysłana.
+
+    # if waga_paczki >20:
+    #     print
