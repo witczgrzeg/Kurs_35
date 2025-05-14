@@ -119,29 +119,25 @@ liczba_paczek_razem = 0
 waga_calkowita = 0
 suma_pustych_KG = 0
 najlzejsza_paczka = 0
+
 while True:
     liczba_produktow = int(input("Podaj liczbę produktów: \n"))
-    suma_wag = 0
+
     liczba_paczek = 0
 
-    for paczka in range(liczba_produktow):
-        waga_paczki = int(input(f"Podaj wagę paczki #{paczka+1}: \n"))
+    for produkt in range(liczba_produktow):
+        waga_paczki = int(input(f"Podaj wagę paczki #{produkt + 1}: \n"))
 
         if waga_paczki <1 or waga_paczki >10:
             print("Koniec dodawania paczek.")
-        suma_wag += waga_paczki
-
-        if suma_wag + waga_paczki >=20:
-            waga_paczki = suma_wag
-            # liczba_paczek +=
-
+            waga_calkowita += waga_paczki
+            waga_paczki += waga_calkowita
+        if waga_calkowita + waga_paczki >=20:
+            liczba_paczek_razem += 1
         else:
-            suma_wag += waga_paczki
+            liczba_paczek_razem = liczba_paczek + 1
     else:
         break
-
-print("Suma wag paczek wynosi:", suma_wag)
-print("liczba paczek wynosi:", liczba_paczek)
 
 print("Podsumowanie:")
 #ilość wysłanych paczek
