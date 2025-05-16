@@ -1,4 +1,3 @@
-
 """
 Pętle i argumenty w konsoli
 
