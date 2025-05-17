@@ -35,10 +35,8 @@ Dodatkowe wymagania:
 
 dostepne_komendy = ["saldo","sprzedaż", "zakup", "konto", "lista", "magazyn", "przeglad", "koniec"]
 
-
+print(f"Witamy w naszym systemie księgowo-magazynowym. \n Oto dostępne opcje: {dostepne_komendy}")
 
 
 wybor_uzytkownika= input(f"Proszę wyrabać jedną z dostępnych operacji {dostepne_komendy}: \n")
-dostepne_komendy.append(wybor_uzytkownika)
-
-print(type(wybor_uzytkownika))
+print(wybor_uzytkownika)
