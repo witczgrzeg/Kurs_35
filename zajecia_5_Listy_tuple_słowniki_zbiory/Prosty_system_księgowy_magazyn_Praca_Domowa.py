@@ -35,5 +35,14 @@ Dodatkowe wymagania:
 
 dostepne_komendy = ["saldo","sprzedaż", "zakup", "konto", "lista", "magazyn", "przeglad", "koniec"]
 
+saldo = 0
+sprzedaz = []
+zakup = 0
+konto = 0
+lista = []
+magazyn = []
+przeglad = []
+koneniec = 0
+
 wybor_uzytkownika= input(f"Proszę wyrabać jedną z dostępnych operacji {dostepne_komendy}: \n")
 dostepne_komendy.append(wybor_uzytkownika)
