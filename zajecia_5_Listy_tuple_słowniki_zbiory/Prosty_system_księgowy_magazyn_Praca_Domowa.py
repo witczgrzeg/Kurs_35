@@ -192,3 +192,38 @@ while True:
         case "8":
             print("Zakończono działanie programu.")
             break
+
+"""
+    1. Salod
+    2. Sprzedaż
+    3. Zakup
+    4. Konto
+    5. Lista
+    6. Magazyn
+    7. Przegląd
+    8. Koniec
+    5
+Całkowity stan magazynu: [{'nazwa': 'mleko', 'cena': 5, 'ilosc': 20}, {'nazwa': 'jajka', 'cena': 10, 'ilosc': 30}, {'nazwa': 'chleb', 'cena': 4, 'ilosc': 15}, {'nazwa': 'masło', 'cena': 8, 'ilosc': 10}, {'nazwa': 'ser żółty', 'cena': 12, 'ilosc': 12}, {'nazwa': 'woda mineralna', 'cena': 3, 'ilosc': 25}, {'nazwa': 'cola', 'cena': 6, 'ilosc': 18}, {'nazwa': 'sok pomarańczowy', 'cena': 7, 'ilosc': 20}, {'nazwa': 'ryż', 'cena': 9, 'ilosc': 16}, {'nazwa': 'makaron', 'cena': 6, 'ilosc': 22}, {'nazwa': 'kawa', 'cena': 20, 'ilosc': 14}, {'nazwa': 'herbata', 'cena': 15, 'ilosc': 17}, {'nazwa': 'cukier', 'cena': 5, 'ilosc': 25}, {'nazwa': 'mąka', 'cena': 4, 'ilosc': 19}, {'nazwa': 'olej', 'cena': 10, 'ilosc': 13}, {'nazwa': 'ketchup', 'cena': 7, 'ilosc': 11}, {'nazwa': 'musztarda', 'cena': 6, 'ilosc': 10}, {'nazwa': 'majonez', 'cena': 9, 'ilosc': 8}, {'nazwa': 'płatki śniadaniowe', 'cena': 11, 'ilosc': 12}, {'nazwa': 'czekolada', 'cena': 5, 'ilosc': 30}, {'nazwa': 'baton', 'cena': 3, 'ilosc': 35}, {'nazwa': 'piwo', 'cena': 6, 'ilosc': 20}, {'nazwa': 'wino', 'cena': 25, 'ilosc': 8}, {'nazwa': 'szynka', 'cena': 18, 'ilosc': 10}, {'nazwa': 'parówki', 'cena': 10, 'ilosc': 14}, {'nazwa': 'jabłka', 'cena': 4, 'ilosc': 40}, {'nazwa': 'banany', 'cena': 5, 'ilosc': 30}, {'nazwa': 'pomarańcze', 'cena': 6, 'ilosc': 22}, {'nazwa': 'cytryny', 'cena': 5, 'ilosc': 18}, {'nazwa': 'ziemniaki', 'cena': 3, 'ilosc': 50}, {'nazwa': 'marchew', 'cena': 3, 'ilosc': 40}, {'nazwa': 'cebula', 'cena': 2, 'ilosc': 35}, {'nazwa': 'czosnek', 'cena': 1, 'ilosc': 15}, {'nazwa': 'ogórki', 'cena': 5, 'ilosc': 25}, {'nazwa': 'pomidory', 'cena': 6, 'ilosc': 28}, {'nazwa': 'lodówka', 'cena': 1500, 'ilosc': 2}, {'nazwa': 'telewizor', 'cena': 2000, 'ilosc': 1}, {'nazwa': 'smartfon', 'cena': 1800, 'ilosc': 3}, {'nazwa': 'laptop', 'cena': 3500, 'ilosc': 1}, {'nazwa': 'klawiatura', 'cena': 150, 'ilosc': 5}, {'nazwa': 'myszka', 'cena': 80, 'ilosc': 6}, {'nazwa': 'drukarka', 'cena': 400, 'ilosc': 2}, {'nazwa': 'tusz do drukarki', 'cena': 100, 'ilosc': 8}, {'nazwa': 'zeszyt', 'cena': 6, 'ilosc': 20}, {'nazwa': 'długopis', 'cena': 2, 'ilosc': 40}, {'nazwa': 'ołówek', 'cena': 1, 'ilosc': 35}, {'nazwa': 'linijka', 'cena': 3, 'ilosc': 15}, {'nazwa': 'plecak', 'cena': 120, 'ilosc': 4}, {'nazwa': 'rower', 'cena': 1000, 'ilosc': 2}]
+Wybierz jedną z poniższych opjci podając numer 1-8:
+
+    1. Salod
+    2. Sprzedaż
+    3. Zakup
+    4. Konto
+    5. Lista
+    6. Magazyn
+    7. Przegląd
+    8. Koniec
+    3
+Podaj nazwę produktu: 
+mleko
+Podaj cenę produktu: 
+4,59
+Traceback (most recent call last):
+  File "C:\Users\sarab\Desktop\Python\Kurs_35\Kurs_35\zajecia_5_Listy_tuple_słowniki_zbiory\Prosty_system_księgowy_magazyn_Praca_Domowa.py", line 132, in <module>
+    cena = float(input("Podaj cenę produktu: \n"))
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '4,59'
+
+Process finished with exit code 1
+"""
