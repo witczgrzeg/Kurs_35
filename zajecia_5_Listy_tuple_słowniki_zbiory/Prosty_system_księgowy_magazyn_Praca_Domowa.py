@@ -113,9 +113,7 @@ while True:
                 print(saldo)
 
         case "2":
-
-
-
+            print("pisać dakej tutaj z filmiku 1:01:07") # tutaj skonczylem ogladac filmik
         case "8":
             print("Zakończono działanie programu.")
             break
