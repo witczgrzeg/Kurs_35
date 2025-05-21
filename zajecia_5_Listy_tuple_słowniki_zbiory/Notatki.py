@@ -1,8 +1,9 @@
-from operator import index
+plec_input = input("Podaj płeć: ").lower()
 
-wartosc= 1
+if plec_input == "mezczyzna" or plec_input == "kobieta":
+    uzytkownik = {"plec": plec_input}
+    print("Zapisano płeć:", uzytkownik["plec"])
+else:
+    print("Niepoprawna wartość!")
 
-print(id(wartosc))
-
-wartosc = "1"
-print(id(wartosc))
+print(plec_input)
