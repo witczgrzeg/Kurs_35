@@ -26,6 +26,8 @@ Polecenie "wychowawca" - Należy pobrać imię i nazwisko nauczyciela, a program
 Polecenie "koniec" - Wraca do pierwszego menu.
 
 """
+
+
 użytkownicy = [
     {}
 ]
@@ -36,8 +38,31 @@ print("Witaj w systemie bazy szkolnej")
 while True:
 
     print("Wybierz jedną z poniższych opcji (wybierając 1-3)")
-    input("""
+    komenda = input("""
     1. Utwórz
     2. Zarządzaj
     3. Koniec
     \n""")
+    komenda = komenda.lower()
+
+    match komenda:
+        case "1":
+            print("Wybierz jedną z poniższych opcji (wybierając 1-4)")
+            utworz = input("""
+            1. Uczeń
+            2. Nauczyciel
+            3. Wychowawca
+            4. Koniec 
+            """)
+        case "2":
+            print("Wybierz jedną z poniższych opcji (wybierając 1-5)")
+            zarzadzaj = input("""
+                       1. Klasa
+                       2. Uczeń
+                       3. Nauczyciel
+                       4. Wyhowawca
+                       5. Koniec 
+                       """)
+        case "3":
+            print("Zakończono działanie programu.")
+            break
