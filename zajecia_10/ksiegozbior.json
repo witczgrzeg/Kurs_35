@@ -1,0 +1,42 @@
+[
+    {
+        "tytul": "Harry Potter i Kamie\u0144 Filozoficzny",
+        "autor": "J.K. Rowling",
+        "rok_wydania": 1997,
+        "cena": 39.99,
+        "ilosc_na_stanie": 5,
+        "kategoria": "fantasy",
+        "ilosc": 5,
+        "ISBN": "978-3-16-148410-0"
+    },
+    {
+        "tytul": "W\u0142adca Pier\u015bcieni: Dru\u017cyna Pier\u015bcienia",
+        "autor": "J.R.R. Tolkien",
+        "rok_wydania": 1954,
+        "cena": 49.99,
+        "ilosc_na_stanie": 3,
+        "kategoria": "fantasy",
+        "ilosc": 3,
+        "ISBN": "978-0-261-10221-7"
+    },
+    {
+        "tytul": "Zbrodnia i kara",
+        "autor": "Fiodor Dostojewski",
+        "rok_wydania": 1866,
+        "cena": 29.99,
+        "ilosc_na_stanie": 0,
+        "kategoria": "klasyka",
+        "ilosc": 2,
+        "ISBN": "978-0-14-044913-6"
+    },
+    {
+        "tytul": "Ania w Krainie OZ",
+        "autor": "Waldemar Kasta",
+        "cena": 15.0,
+        "ilosc_na_stanie": 10,
+        "ilosc": 10,
+        "kategoria": "Fantasy",
+        "ISBN": "12312312",
+        "rok_wydania": 1999
+    }
+]
