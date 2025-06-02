@@ -29,7 +29,7 @@ Polecenie "koniec" - Wraca do pierwszego menu.
 
 
 użytkownicy = [
-    {}
+    {}gi
 ]
 
 
