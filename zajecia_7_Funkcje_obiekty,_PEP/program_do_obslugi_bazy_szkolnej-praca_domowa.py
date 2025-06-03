@@ -30,6 +30,13 @@ Polecenie "koniec" - Wraca do pierwszego menu.
 
 lista_uzytkownikow = [
     {
+        "stanowisko": "Dyrektor",
+        "imie": "Alicja",
+        "nazwisko": "Kaczmarek",
+        "Klasa": "brak",
+        "numer": "0"
+    },
+    {
         "stanowisko": "Uczen",
         "imie": "Jan",
         "nazwisko": "Kowalski",
@@ -41,70 +48,35 @@ lista_uzytkownikow = [
         "imie": "Anna",
         "nazwisko": "Nowak",
         "klasa": "Pierwsza",
-        "numer": "1B"
+        "numer": "1A"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Tomasz",
         "nazwisko": "Wiśniewski",
-        "klasa": "Druga",
-        "numer": "2A"
-    },
-    {
-        "stanowisko": "Nauczyciel",
-        "imie": "Ewa",
-        "nazwisko": "Mazur",
-        "przedmiot": "Matematyka"
-    },
-    {
-        "stanowisko": "Nauczyciel",
-        "imie": "Marek",
-        "nazwisko": "Zieliński",
-        "przedmiot": "Język polski"
-    },
-    {
-        "stanowisko": "Dyrektor",
-        "imie": "Alicja",
-        "nazwisko": "Kaczmarek"
+        "klasa": "Pierwsza",
+        "numer": "1A"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Kacper",
         "nazwisko": "Wójcik",
-        "klasa": "Druga",
-        "numer": "2B"
+        "klasa": "Pierwsza",
+        "numer": "1A"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Zofia",
         "nazwisko": "Kamińska",
-        "klasa": "Trzecia",
-        "numer": "3A"
+        "klasa": "Pierwsza",
+        "numer": "1A"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Mikołaj",
         "nazwisko": "Dąbrowski",
-        "klasa": "Trzecia",
-        "numer": "3B"
-    },
-    {
-        "stanowisko": "Nauczyciel",
-        "imie": "Karolina",
-        "nazwisko": "Sikora",
-        "przedmiot": "Fizyka"
-    },
-    {
-        "stanowisko": "Nauczyciel",
-        "imie": "Paweł",
-        "nazwisko": "Górski",
-        "przedmiot": "Chemia"
-    },
-    {
-        "stanowisko": "Nauczyciel",
-        "imie": "Magdalena",
-        "nazwisko": "Kubiak",
-        "przedmiot": "Historia"
+        "klasa": "Pierwsza",
+        "numer": "1A"
     },
     {
         "stanowisko": "Uczen",
@@ -131,51 +103,128 @@ lista_uzytkownikow = [
         "stanowisko": "Uczen",
         "imie": "Wiktor",
         "nazwisko": "Grabowski",
-        "klasa": "Druga",
-        "numer": "2A"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Julia",
         "nazwisko": "Pawlak",
-        "klasa": "Druga",
-        "numer": "2B"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Mateusz",
         "nazwisko": "Michalak",
-        "klasa": "Druga",
-        "numer": "2B"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Emilia",
         "nazwisko": "Baran",
-        "klasa": "Trzecia",
-        "numer": "3A"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Antoni",
         "nazwisko": "Witkowski",
-        "klasa": "Trzecia",
-        "numer": "3B"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Aleksandra",
         "nazwisko": "Kaczmarek",
-        "klasa": "Trzecia",
-        "numer": "3A"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
     {
         "stanowisko": "Uczen",
         "imie": "Bartłomiej",
         "nazwisko": "Czarnecki",
-        "klasa": "Trzecia",
-        "numer": "3B"
+        "klasa": "Pierwsza",
+        "numer": "1B"
     },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Filip",
+        "nazwisko": "Kowalczyk",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Lena",
+        "nazwisko": "Zawadzka",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Michał",
+        "nazwisko": "Nowicki",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Martyna",
+        "nazwisko": "Szymańska",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Jakub",
+        "nazwisko": "Woźniak",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Zuzanna",
+        "nazwisko": "Adamska",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Szymon",
+        "nazwisko": "Rutkowski",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Julia",
+        "nazwisko": "Krawczyk",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Agnieszka",
+        "nazwisko": "Piotrowska",
+        "klasa": "Pierwsza",
+        "numer": "1A"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Rafał",
+        "nazwisko": "Sadowski",
+        "klasa": "Pierwsza",
+        "numer": "1B"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Beata",
+        "nazwisko": "Jankowska",
+        "klasa": "Pierwsza",
+        "numer": "1C"
+    }
 ]
 
 def dodaj_uzytkownika(stanowisko, imie, nazwisko, klasa, numer):
