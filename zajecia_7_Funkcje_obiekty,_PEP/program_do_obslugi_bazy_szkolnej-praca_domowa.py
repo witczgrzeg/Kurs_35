@@ -205,21 +205,21 @@ lista_uzytkownikow = [
         "numer": "1C"
     },
     {
-        "stanowisko": "Nauczyciel",
+        "stanowisko": "Wychowarca",
         "imie": "Agnieszka",
         "nazwisko": "Piotrowska",
         "klasa": "Pierwsza",
         "numer": "1A"
     },
     {
-        "stanowisko": "Nauczyciel",
+        "stanowisko": "Wychowarca",
         "imie": "Rafał",
         "nazwisko": "Sadowski",
         "klasa": "Pierwsza",
         "numer": "1B"
     },
     {
-        "stanowisko": "Nauczyciel",
+        "stanowisko": "Wychowarca",
         "imie": "Beata",
         "nazwisko": "Jankowska",
         "klasa": "Pierwsza",
@@ -240,7 +240,9 @@ def dodaj_uzytkownika(stanowisko, imie, nazwisko, klasa, numer):
     print(f"dodano: stanowisko:{stanowisko}, imię {imie} {nazwisko}, do {klasa} {numer}")
 
 dodaj_uzytkownika("uczen", "XjanuszX", "XkowalX", "Trzecia", "3B")
-
+dodaj_uzytkownika("nauczyciel", "Jan", "Kowalski","Pierwsza", "1A")
+for uzytkownik in lista_uzytkownikow:
+    print(uzytkownik)
 
 print("Witaj w systemie bazy szkolnej")
 
@@ -276,9 +278,12 @@ while True:
                        4. Wyhowawca
                        5. Koniec 
                        """)
+            match zarzadzaj:
+                case "1":
+                    for klasa in lista_uzytkownikow:
+                        if klasa["klasa"] == uzytkownik:
+                            print(klasa)
+
         case "3":
             print("Zakończono działanie programu.")
             break
-
-dodaj_uzytkownika("nauczyciel", "Jan", "Kowalski","Pierwsza", "1A")
-print(lista_uzytkownikow)
