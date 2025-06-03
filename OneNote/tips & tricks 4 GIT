@@ -1,0 +1,6 @@
+1. Lokalny .gitignore, bez dodawania do głównego repo (zaawansowane)
+Możesz użyć lokalnego .git/info/exclude, który działa jak .gitignore, ale tylko na Twoim komputerze:
+
+Otwórz plik .git/info/exclude (jeśli nie istnieje, utwórz go).
+
+Dodaj tam rzeczy, które chcesz ignorować lokalnie.
