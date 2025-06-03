@@ -66,3 +66,4 @@ while True:
         case "3":
             print("Zakończono działanie programu.")
             break
+
