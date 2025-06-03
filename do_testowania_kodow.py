@@ -7,3 +7,5 @@ tekst = "Python"
 
 for litera in tekst:
     print(litera)
+
+print("test")
