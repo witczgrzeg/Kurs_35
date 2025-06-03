@@ -67,3 +67,4 @@ while True:
             print("Zakończono działanie programu.")
             break
 
+# to tylko test !
