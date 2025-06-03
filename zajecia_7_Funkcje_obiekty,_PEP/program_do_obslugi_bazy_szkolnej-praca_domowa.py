@@ -28,9 +28,169 @@ Polecenie "koniec" - Wraca do pierwszego menu.
 """
 
 
-uzytkownicy = [
-    {}
+lista_uzytkownikow = [
+    {
+        "stanowisko": "Uczen",
+        "imie": "Jan",
+        "nazwisko": "Kowalski",
+        "klasa": "Pierwsza",
+        "numer": "1A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Anna",
+        "nazwisko": "Nowak",
+        "klasa": "Pierwsza",
+        "numer": "1B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Tomasz",
+        "nazwisko": "Wiśniewski",
+        "klasa": "Druga",
+        "numer": "2A"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Ewa",
+        "nazwisko": "Mazur",
+        "przedmiot": "Matematyka"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Marek",
+        "nazwisko": "Zieliński",
+        "przedmiot": "Język polski"
+    },
+    {
+        "stanowisko": "Dyrektor",
+        "imie": "Alicja",
+        "nazwisko": "Kaczmarek"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Kacper",
+        "nazwisko": "Wójcik",
+        "klasa": "Druga",
+        "numer": "2B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Zofia",
+        "nazwisko": "Kamińska",
+        "klasa": "Trzecia",
+        "numer": "3A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Mikołaj",
+        "nazwisko": "Dąbrowski",
+        "klasa": "Trzecia",
+        "numer": "3B"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Karolina",
+        "nazwisko": "Sikora",
+        "przedmiot": "Fizyka"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Paweł",
+        "nazwisko": "Górski",
+        "przedmiot": "Chemia"
+    },
+    {
+        "stanowisko": "Nauczyciel",
+        "imie": "Magdalena",
+        "nazwisko": "Kubiak",
+        "przedmiot": "Historia"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Oliwia",
+        "nazwisko": "Nowak",
+        "klasa": "Pierwsza",
+        "numer": "1A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Tomasz",
+        "nazwisko": "Lis",
+        "klasa": "Pierwsza",
+        "numer": "1A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Natalia",
+        "nazwisko": "Mazur",
+        "klasa": "Pierwsza",
+        "numer": "1B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Wiktor",
+        "nazwisko": "Grabowski",
+        "klasa": "Druga",
+        "numer": "2A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Julia",
+        "nazwisko": "Pawlak",
+        "klasa": "Druga",
+        "numer": "2B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Mateusz",
+        "nazwisko": "Michalak",
+        "klasa": "Druga",
+        "numer": "2B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Emilia",
+        "nazwisko": "Baran",
+        "klasa": "Trzecia",
+        "numer": "3A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Antoni",
+        "nazwisko": "Witkowski",
+        "klasa": "Trzecia",
+        "numer": "3B"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Aleksandra",
+        "nazwisko": "Kaczmarek",
+        "klasa": "Trzecia",
+        "numer": "3A"
+    },
+    {
+        "stanowisko": "Uczen",
+        "imie": "Bartłomiej",
+        "nazwisko": "Czarnecki",
+        "klasa": "Trzecia",
+        "numer": "3B"
+    },
 ]
+
+def dodaj_uzytkownika(stanowisko, imie, nazwisko, klasa, numer):
+    uzytkownik = {
+        "stanowisko": stanowisko,
+        "imie": imie,
+        "nazwisko": nazwisko,
+        "klasa": klasa,
+        "numer": numer
+    }
+    lista_uzytkownikow.append(uzytkownik)
+
+    print(f"dodano: stanowisko:{stanowisko}, imię {imie} {nazwisko}, do {klasa} {numer}")
+
+dodaj_uzytkownika("uczen", "XjanuszX", "XkowalX", "Trzecia", "3B")
 
 
 print("Witaj w systemie bazy szkolnej")
@@ -54,6 +214,10 @@ while True:
             3. Wychowawca
             4. Koniec 
             """)
+            match utworz:
+                case "1":
+                   print ("wpisz coś")
+
         case "2":
             print("Wybierz jedną z poniższych opcji (wybierając 1-5)")
             zarzadzaj = input("""
@@ -66,3 +230,6 @@ while True:
         case "3":
             print("Zakończono działanie programu.")
             break
+
+dodaj_uzytkownika("nauczyciel", "Jan", "Kowalski","Pierwsza", "1A")
+print(lista_uzytkownikow)
