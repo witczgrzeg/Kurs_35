@@ -28,8 +28,8 @@ Polecenie "koniec" - Wraca do pierwszego menu.
 """
 
 
-użytkownicy = [
-    {}gi
+uzytkownicy = [
+    {}
 ]
 
 
@@ -66,5 +66,3 @@ while True:
         case "3":
             print("Zakończono działanie programu.")
             break
-
-# to tylko test !
