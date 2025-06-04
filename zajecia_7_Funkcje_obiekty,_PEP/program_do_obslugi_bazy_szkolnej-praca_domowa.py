@@ -26,7 +26,7 @@ Polecenie "wychowawca" - Należy pobrać imię i nazwisko nauczyciela, a program
 Polecenie "koniec" - Wraca do pierwszego menu.
 
 """
-
+#class osoba/użytkownik lub coś innego na początek
 
 lista_uzytkownikow = [
     {
@@ -226,6 +226,17 @@ lista_uzytkownikow = [
         "numer": "1C"
     }
 ]
+
+class nauczyciel:
+    __init__ ()
+
+class uczeń:
+    __init__()
+
+class wychowawca:
+    __init__()
+
+
 
 def dodaj_uzytkownika(stanowisko, imie, nazwisko, klasa, numer):
     uzytkownik = {
