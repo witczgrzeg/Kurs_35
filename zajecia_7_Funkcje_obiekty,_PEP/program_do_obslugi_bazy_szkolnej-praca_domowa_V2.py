@@ -26,6 +26,9 @@ Polecenie "wychowawca" - Należy pobrać imię i nazwisko nauczyciela, a program
 Polecenie "koniec" - Wraca do pierwszego menu.
 
 """
+
+
+
 class pracownik_szkoly:
     def __init__(self, imie, nazwisko, klasa, przedmiot, stanowisko):
         self.imie = imie
@@ -46,17 +49,24 @@ class uczen_szkoly:
     def __repr__(self):
         return f"{self.imie} {self.nazwisko} ({self.klasa})"
 
-class klasy:
-    def __init__(self, klasa, przedmiot):
+class klasa:
+    def __init__(self, klasa):
         self.klasa = klasa
-        self.przedmiot = przedmiot
+
 
     def __repr__(self):
-        return f"{self.klasa}, {self.przedmiot}"
+        return f"{self.klasa}"
 
 lista = {
     "pracownik_szkoly": [
-        pracownik_szkoly("Alicja", "Kaczmarek", "0", "Historia", "Dyrektor")
+        pracownik_szkoly("Alicja", "Kaczmarek", "0", "Historia", "Dyrektor"),
+        pracownik_szkoly("Agnieszka", "Piotrowska", "1A", "Matematyka", "Wychowawca"),
+        pracownik_szkoly("Rafał", "Sadowski", "1B", "Polski", "Wychowawca"),
+        pracownik_szkoly("Beata", "Jankowska", "1C", "Biologia", "Wychowawca"),
+        pracownik_szkoly("Tomasz", "Wrona", "1A", "Fizyka", "Nauczyciel"),
+        pracownik_szkoly("Monika", "Zielińska", "1B", "Chemia", "Nauczyciel"),
+        pracownik_szkoly("Karolina", "Wiśniewska", "1C", "Język angielski", "Nauczyciel"),
+        pracownik_szkoly("Marek", "Nowicki", "1A", "Wychowanie fizyczne", "Nauczyciel")
     ],
     "uczen_szkoly": [
         uczen_szkoly("Jan", "Kowalski", "1A"),
@@ -69,10 +79,24 @@ lista = {
         uczen_szkoly("Tomasz", "Lis", "1A"),
         uczen_szkoly("Wiktor", "Grabowski", "1B"),
         uczen_szkoly("Julia", "Pawlak", "1B"),
-        uczen_szkoly("Mateusz", "Michalak", "1B")
+        uczen_szkoly("Mateusz", "Michalak", "1B"),
+        uczen_szkoly("Emilia", "Baran", "1B"),
+        uczen_szkoly("Antoni", "Witkowski", "1B"),
+        uczen_szkoly("Aleksandra", "Kaczmarek", "1B"),
+        uczen_szkoly("Bartłomiej", "Czarnecki","1B"),
+        uczen_szkoly("Filip","Kowalczyk","1B"),
+        uczen_szkoly("Lena","Zawadzka","1B"),
+        uczen_szkoly("Michał", "Nowicki", "1C"),
+        uczen_szkoly("Martyna", "Szymańska", "1C"),
+        uczen_szkoly("Jakub", "Woźniak", "1C"),
+        uczen_szkoly("Zuzanna", "Adamska", "1C"),
+        uczen_szkoly("Szymon", "Rutkowski", "1C"),
+        uczen_szkoly("Julia", "Krawczyk", "1C")
     ],
     "klasy": [
-        klasy("1A", "Historia")
+        klasa("1A"),
+        klasa("1B"),
+        klasa("1C")
     ]
 }
 
@@ -84,103 +108,7 @@ for kategoria, obiekty in lista.items():
 
 #
 #
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Mateusz",
-#         "nazwisko": "Michalak",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Emilia",
-#         "nazwisko": "Baran",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Antoni",
-#         "nazwisko": "Witkowski",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Aleksandra",
-#         "nazwisko": "Kaczmarek",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Bartłomiej",
-#         "nazwisko": "Czarnecki",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Filip",
-#         "nazwisko": "Kowalczyk",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Lena",
-#         "nazwisko": "Zawadzka",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Michał",
-#         "nazwisko": "Nowicki",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Martyna",
-#         "nazwisko": "Szymańska",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Jakub",
-#         "nazwisko": "Woźniak",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Zuzanna",
-#         "nazwisko": "Adamska",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Szymon",
-#         "nazwisko": "Rutkowski",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Uczen",
-#         "imie": "Julia",
-#         "nazwisko": "Krawczyk",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     },
-#     {
-#         "stanowisko": "Wychowarca",
-#         "imie": "Agnieszka",
-#         "nazwisko": "Piotrowska",
-#         "klasa": "Pierwsza",
-#         "numer": "1A"
+
 #     },
 #     {
 #         "stanowisko": "Wychowarca",
