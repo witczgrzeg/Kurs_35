@@ -26,9 +26,6 @@ Polecenie "wychowawca" - Należy pobrać imię i nazwisko nauczyciela, a program
 Polecenie "koniec" - Wraca do pierwszego menu.
 
 """
-
-
-
 class pracownik_szkoly:
     def __init__(self, imie, nazwisko, klasa, przedmiot, stanowisko):
         self.imie = imie
@@ -56,6 +53,19 @@ class klasa:
 
     def __repr__(self):
         return f"{self.klasa}"
+
+def dodaj_uzytkownika(imie, nazwisko, klasa, przedmiot, stanowisko):
+    uzytkownik = pracownik_szkoly(imie, nazwisko, klasa, przedmiot, stanowisko)
+    lista["pracownik_szkoly"].append(uzytkownik)
+    print(f"Dodano pracownika: {stanowisko}, imię {imie} {nazwisko}, do klasy {klasa}")
+
+def dodaj_ucznia(imie, nazwisko, klasa):
+    uczen = uczen_szkoly(imie, nazwisko, klasa)
+    lista["uczen_szkoly"].append(uczen)
+    print(f"Dodano : {imie} {nazwisko}, klasa {klasa}")
+
+
+
 
 lista = {
     "pracownik_szkoly": [
@@ -106,84 +116,50 @@ for kategoria, obiekty in lista.items():
     for obiekt in obiekty:
         print(f" - {obiekt}")
 
-#
-#
+dodaj_ucznia("uczen", "XjanuszX", "3B")
+dodaj_uzytkownika("Jan", "Kowalski", "1A","WOS", "Nauczyciel")
 
-#     },
-#     {
-#         "stanowisko": "Wychowarca",
-#         "imie": "Rafał",
-#         "nazwisko": "Sadowski",
-#         "klasa": "Pierwsza",
-#         "numer": "1B"
-#     },
-#     {
-#         "stanowisko": "Wychowarca",
-#         "imie": "Beata",
-#         "nazwisko": "Jankowska",
-#         "klasa": "Pierwsza",
-#         "numer": "1C"
-#     }
-# ]
-#
-# #
-# # def dodaj_uzytkownika(stanowisko, imie, nazwisko, klasa, numer):
-# #     uzytkownik = {
-# #         "stanowisko": stanowisko,
-# #         "imie": imie,
-# #         "nazwisko": nazwisko,
-# #         "klasa": klasa,
-# #         "numer": numer
-# #     }
-# #     lista_uzytkownikow.append(uzytkownik)
-# #
-# #     print(f"dodano: stanowisko:{stanowisko}, imię {imie} {nazwisko}, do {klasa} {numer}")
-# #
-# # dodaj_uzytkownika("uczen", "XjanuszX", "XkowalX", "Trzecia", "3B")
-# # dodaj_uzytkownika("nauczyciel", "Jan", "Kowalski","Pierwsza", "1A")
-# # for uzytkownik in lista_uzytkownikow:
-# #     print(uzytkownik)
-# #
-# # print("Witaj w systemie bazy szkolnej")
-# #
-# # while True:
-# #
-# #     print("Wybierz jedną z poniższych opcji (wybierając 1-3)")
-# #     komenda = input("""
-# #     1. Utwórz
-# #     2. Zarządzaj
-# #     3. Koniec
-# #     \n""")
-# #     komenda = komenda.lower()
-# #
-# #     match komenda:
-# #         case "1":
-# #             print("Wybierz jedną z poniższych opcji (wybierając 1-4)")
-# #             utworz = input("""
-# #             1. Uczeń
-# #             2. Nauczyciel
-# #             3. Wychowawca
-# #             4. Koniec
-# #             """)
-# #             match utworz:
-# #                 case "1":
-# #                    print ("wpisz coś")
-# #
-# #         case "2":
-# #             print("Wybierz jedną z poniższych opcji (wybierając 1-5)")
-# #             zarzadzaj = input("""
-# #                        1. Klasa
-# #                        2. Uczeń
-# #                        3. Nauczyciel
-# #                        4. Wyhowawca
-# #                        5. Koniec
-# #                        """)
-# #             match zarzadzaj:
-# #                 case "1":
-# #                     for klasa in lista_uzytkownikow:
-# #                         if klasa["klasa"] == uzytkownik:
-# #                             print(klasa)
-# #
-# #         case "3":
-# #             print("Zakończono działanie programu.")
-# #             break
+
+
+
+print("Witaj w systemie bazy szkolnej")
+
+while True:
+
+    print("Wybierz jedną z poniższych opcji (wybierając 1-3)")
+    komenda = input("""
+    1. Utwórz
+    2. Zarządzaj
+    3. Koniec
+    \n""")
+    komenda = komenda.lower()
+
+    match komenda:
+        case "1":
+            print("Wybierz jedną z poniższych opcji (wybierając 1-4)")
+            utworz = input("""
+            1. Uczeń
+            2. Nauczyciel
+            3. Wychowawca
+            4. Koniec
+            """)
+            match utworz:
+                case "1":
+                   print ("wpisz coś")
+
+        case "2":
+            print("Wybierz jedną z poniższych opcji (wybierając 1-5)")
+            zarzadzaj = input("""
+                       1. Klasa
+                       2. Uczeń
+                       3. Nauczyciel
+                       4. Wyhowawca
+                       5. Koniec
+                       """)
+            match zarzadzaj:
+                case "1":
+                    print("trzeba dopisać !")
+
+        case "3":
+            print("Zakończono działanie programu.")
+            break
