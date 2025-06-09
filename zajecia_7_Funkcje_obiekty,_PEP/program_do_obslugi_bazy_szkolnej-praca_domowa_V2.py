@@ -25,6 +25,15 @@ class Wychowawca:
         klasy_str = ", ".join(self.klasy)
         return f"{self.imie} {self.nazwisko}, {klasy_str}, {self.przedmiot}, {self.stanowisko}"
 
+class Uczen:
+    def __init__(self, imie, nazwisko, klasa):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.klasa = klasa
+
+    def __repr__(self):
+        return f"{self.imie} {self.nazwisko}, klasa {self.klasa}"
+
 def dodaj_nauczyciela(imie, nazwisko, klasy, przedmiot):
     nowy_nauczyciel = Nauczyciel(imie, nazwisko, klasy, przedmiot)
     lista["nauczyciele"].append(nowy_nauczyciel)
@@ -39,17 +48,17 @@ def dodaj_ucznia(imie, nazwisko, klasa):
 
 lista = {
     "nauczyciele": [
-        Nauczyciel("Tomasz", "Wrona", ["1A"], "Fizyka", "Nauczyciel"),
-        Nauczyciel("Monika", "Zielińska", ["1B"], "Chemia", "Nauczyciel"),
-        Nauczyciel("Karolina", "Wiśniewska", ["1C"], "Język angielski", "Nauczyciel"),
-        Nauczyciel("Marek", "Nowicki", ["1A"], "Wychowanie fizyczne", "Nauczyciel")
+        Nauczyciel("Tomasz", "Wrona", ["1A"], "Fizyka"),
+        Nauczyciel("Monika", "Zielińska", ["1B"], "Chemia"),
+        Nauczyciel("Karolina", "Wiśniewska", ["1C"], "Język angielski"),
+        Nauczyciel("Marek", "Nowicki", ["1A"], "Wychowanie fizyczne")
     ],
-    "wychowawcy":[
-        Wychowawca("Alicja", "Kaczmarek", ["0"], "Historia", "Dyrektor"),
-        Wychowawca("Agnieszka", "Piotrowska", ["1A"], "Matematyka", "Wychowawca"),
-        Wychowawca("Rafał", "Sadowski", ["1B"], "Polski", "Wychowawca"),
-        Wychowawca("Beata", "Jankowska", ["1C"], "Biologia", "Wychowawca"),
-                  ],
+    "wychowawcy": [
+        Wychowawca("Alicja", "Kaczmarek", ["0"], "Historia", "Dyrektor"),  # Dyrektor = wyjątek
+        Wychowawca("Agnieszka", "Piotrowska", ["1A"], "Matematyka"),
+        Wychowawca("Rafał", "Sadowski", ["1B"], "Polski"),
+        Wychowawca("Beata", "Jankowska", ["1C"], "Biologia"),
+    ],
     "uczniowie": [
         Uczen("Jan", "Kowalski", "1A"),
         Uczen("Anna", "Nowak", "1A"),
@@ -120,7 +129,7 @@ while True:
                 przedmiot = input("Czego uczy (np. matematyka, biologia):\n")
                 stanowisko = "Nauczyciel"
                 nowy_nauczyciel = Nauczyciel(imie, nazwisko, klasy, przedmiot, stanowisko)
-                lista["Nauczyciele"].append(nowy_nauczyciel)
+                lista["nauczyciele"].append(nowy_nauczyciel)
 
             elif utworz.strip().lower() in ("3", "Wychowawca"):
                 imie = input("Podaj imię:\n")
