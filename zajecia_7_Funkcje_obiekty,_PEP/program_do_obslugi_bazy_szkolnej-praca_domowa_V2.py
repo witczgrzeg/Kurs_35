@@ -1,117 +1,79 @@
-"""
-
-Utwórz program do zarządzania bazą szkolną. Istnieje możliwość tworzenia trzech typów użytkowników (uczeń, nauczyciel, wychowawca) a także zarządzania nimi.
-
-Po uruchomieniu programu można wpisać jedną z następujących komend: utwórz, zarządzaj, koniec.
-
-Polecenie "utwórz" - Przechodzi do procesu tworzenia użytkowników.
-Polecenie "zarządzaj" - Przechodzi do procesu zarządzania użytkownikami.
-Polecenie "koniec" - Kończy działanie aplikacji.
-
-Proces tworzenia użytkowników:
-
-Należy wpisać opcję, którą chcemy wybrać: uczeń, nauczyciel, wychowawca, koniec. Po wykonaniu każdej z opcji (oprócz "koniec") wyświetla to menu ponownie.
-Polecenie "uczeń" - Należy pobrać imię i nazwisko ucznia (jako jedna zmienna, można pobrać je jako dwie zmienne, jeżeli zostanie to poprawnie obsłużone) oraz nazwę klasy (np. "3C")
-Polecenie "nauczyciel" - Należy pobrać imię i nazwisko nauczyciela (jako jedna zmienna, labo dwie, jeżeli zostanie to poprawnie obsłużone), nazwę przedmiotu prowadzonego, a następnie w nowych liniach nazwy klas, które prowadzi nauczyciel, aż do otrzymania pustej linii.
-Polecenie "wychowawca" - Należy pobrać imię i nazwisko wychowawcy (jako jedna zmienna, albo dwie, jeżeli zostanie to poprawnie obsłużone), a także nazwę prowadzonej klasy.
-Polecenie "koniec" - Wraca do pierwszego menu.
-
-Proces zarządzania użytkownikami:
-
-Należy wpisać opcję, którą chcemy wybrać: klasa, uczen, nauczyciel, wychowawca, koniec. Po wykonaniu każdej z opcji (oprócz "koniec") wyświetla to menu ponownie.
-Polecenie "klasa" - Należy pobrać klasę, którą chcemy wyświetlić (np. "3C") program ma wypisać wszystkich uczniów, którzy należą do tej klasy, a także wychowawcę tejże klasy.
-Polecenie "uczeń" - Należy pobrać imię i nazwisko uczenia, program ma wypisać wszystkie lekcje, które ma uczeń a także nauczycieli, którzy je prowadzą.
-Polecenie "nauczyciel" - Należy pobrać imię i nazwisko nauczyciela, program ma wypisać wszystkie klasy, które prowadzi nauczyciel.
-Polecenie "wychowawca" - Należy pobrać imię i nazwisko nauczyciela, a program ma wypisać wszystkich uczniów, których prowadzi wychowawca.
-Polecenie "koniec" - Wraca do pierwszego menu.
-
-"""
-
-class nauczyciel:
-    def __init__(self, imie, nazwisko, klasa, przedmiot, stanowisko):
+class Nauczyciel:
+    def __init__(self, imie, nazwisko, klasy, przedmiot):
         self.imie = imie
         self.nazwisko = nazwisko
-        self.klasa = klasa
+        self.klasy = klasy
         self.przedmiot = przedmiot
         self.stanowisko = "Nauczyciel"
 
     def __repr__(self):
-        return f"{self.imie} {self.nazwisko}, {self.klasa}, {self.przedmiot}, {self.stanowisko}"
-class wychowawca:
-    def __init__(self, imie, nazwisko, klasa, przedmiot, stanowisko):
+        klasy_str = ", ".join(self.klasy)
+        return f"{self.imie} {self.nazwisko}, {klasy_str}, {self.przedmiot}, {self.stanowisko}"
+
+class Wychowawca:
+    def __init__(self, imie, nazwisko, klasy, przedmiot, stanowisko=None):
         self.imie = imie
         self.nazwisko = nazwisko
-        self.klasa = klasa
+        self.klasy = klasy
         self.przedmiot = przedmiot
-        self.stanowisko = "Wychowawca"
+        if stanowisko == "Dyrektor":
+            self.stanowisko = stanowisko
+        else:
+            self.stanowisko = "Wychowawca"
 
     def __repr__(self):
-        return f"{self.imie} {self.nazwisko}, {self.klasa}, {self.przedmiot}, {self.stanowisko}"
+        klasy_str = ", ".join(self.klasy)
+        return f"{self.imie} {self.nazwisko}, {klasy_str}, {self.przedmiot}, {self.stanowisko}"
 
-class uczen:
-    def __init__(self, imie, nazwisko, klasa):
-        self.imie = imie
-        self.nazwisko = nazwisko
-        self.klasa = klasa
+def dodaj_nauczyciela(imie, nazwisko, klasy, przedmiot):
+    nowy_nauczyciel = Nauczyciel(imie, nazwisko, klasy, przedmiot)
+    lista["nauczyciele"].append(nowy_nauczyciel)
 
-    def __repr__(self):
-        return f"{self.imie} {self.nazwisko} ({self.klasa})"
-
-def dodaj_nauczyciela_lub_wychowawcę(imie, nazwisko, klasa, przedmiot, stanowisko):
-    nauczyciel = "nauczyciel"(imie, nazwisko, klasa, przedmiot, stanowisko)
-    lista["pracownik_szkoly"].append(nauczyciel)
-    print(f"Dodano pracownika: {stanowisko}, imię {imie} {nazwisko}, do klasy {klasa}")
+def dodaj_wychowawce(imie, nazwisko, klasy, przedmiot, stanowisko=None):
+    nowy_wychowawca = Wychowawca(imie, nazwisko, klasy, przedmiot, stanowisko)
+    lista["wychowawcy"].append(nowy_wychowawca)
 
 def dodaj_ucznia(imie, nazwisko, klasa):
-    uczen = uczen_szkoly(imie, nazwisko, klasa)
-    lista["uczen_szkoly"].append(uczen)
-    print(f"Dodano : {imie} {nazwisko}, klasa {klasa}")
-def klasy
-
-
+    nowy_uczen = Uczen(imie, nazwisko, klasa)
+    lista["uczniowie"].append(nowy_uczen)
 
 lista = {
-    "nauczyciel": [
-        nauczyciel("Tomasz", "Wrona", "1A", "Fizyka", "Nauczyciel"),
-        nauczyciel("Monika", "Zielińska", "1B", "Chemia", "Nauczyciel"),
-        nauczyciel("Karolina", "Wiśniewska", "1C", "Język angielski", "Nauczyciel"),
-        nauczyciel("Marek", "Nowicki", "1A", "Wychowanie fizyczne", "Nauczyciel")
+    "nauczyciele": [
+        Nauczyciel("Tomasz", "Wrona", ["1A"], "Fizyka", "Nauczyciel"),
+        Nauczyciel("Monika", "Zielińska", ["1B"], "Chemia", "Nauczyciel"),
+        Nauczyciel("Karolina", "Wiśniewska", ["1C"], "Język angielski", "Nauczyciel"),
+        Nauczyciel("Marek", "Nowicki", ["1A"], "Wychowanie fizyczne", "Nauczyciel")
     ],
-    "wychowawca":[
-        wychowawca("Alicja", "Kaczmarek", "0", "Historia", "Dyrektor"),
-        wychowawca("Agnieszka", "Piotrowska", "1A", "Matematyka", "Wychowawca"),
-        wychowawca("Rafał", "Sadowski", "1B", "Polski", "Wychowawca"),
-        wychowawca("Beata", "Jankowska", "1C", "Biologia", "Wychowawca"),
+    "wychowawcy":[
+        Wychowawca("Alicja", "Kaczmarek", ["0"], "Historia", "Dyrektor"),
+        Wychowawca("Agnieszka", "Piotrowska", ["1A"], "Matematyka", "Wychowawca"),
+        Wychowawca("Rafał", "Sadowski", ["1B"], "Polski", "Wychowawca"),
+        Wychowawca("Beata", "Jankowska", ["1C"], "Biologia", "Wychowawca"),
                   ],
-    "uczen_szkoly": [
-        uczen_szkoly("Jan", "Kowalski", "1A"),
-        uczen_szkoly("Anna", "Nowak", "1A"),
-        uczen_szkoly("Tomasz", "Wiśniewski", "1A"),
-        uczen_szkoly("Kacper", "Wójcik", "1A"),
-        uczen_szkoly("Zofia", "Kamińska", "1A"),
-        uczen_szkoly("Mikołaj", "Dąbrowski", "1A"),
-        uczen_szkoly("Oliwia", "Nowak", "1A"),
-        uczen_szkoly("Tomasz", "Lis", "1A"),
-        uczen_szkoly("Wiktor", "Grabowski", "1B"),
-        uczen_szkoly("Julia", "Pawlak", "1B"),
-        uczen_szkoly("Mateusz", "Michalak", "1B"),
-        uczen_szkoly("Emilia", "Baran", "1B"),
-        uczen_szkoly("Antoni", "Witkowski", "1B"),
-        uczen_szkoly("Aleksandra", "Kaczmarek", "1B"),
-        uczen_szkoly("Bartłomiej", "Czarnecki","1B"),
-        uczen_szkoly("Filip","Kowalczyk","1B"),
-        uczen_szkoly("Lena","Zawadzka","1B"),
-        uczen_szkoly("Michał", "Nowicki", "1C"),
-        uczen_szkoly("Martyna", "Szymańska", "1C"),
-        uczen_szkoly("Jakub", "Woźniak", "1C"),
-        uczen_szkoly("Zuzanna", "Adamska", "1C"),
-        uczen_szkoly("Szymon", "Rutkowski", "1C"),
-        uczen_szkoly("Julia", "Krawczyk", "1C")
-    ],
-    "klasy": [
-        klasa("1A"),
-        klasa("1B"),
-        klasa("1C")
+    "uczniowie": [
+        Uczen("Jan", "Kowalski", "1A"),
+        Uczen("Anna", "Nowak", "1A"),
+        Uczen("Tomasz", "Wiśniewski", "1A"),
+        Uczen("Kacper", "Wójcik", "1A"),
+        Uczen("Zofia", "Kamińska", "1A"),
+        Uczen("Mikołaj", "Dąbrowski", "1A"),
+        Uczen("Oliwia", "Nowak", "1A"),
+        Uczen("Tomasz", "Lis", "1A"),
+        Uczen("Wiktor", "Grabowski", "1B"),
+        Uczen("Julia", "Pawlak", "1B"),
+        Uczen("Mateusz", "Michalak", "1B"),
+        Uczen("Emilia", "Baran", "1B"),
+        Uczen("Antoni", "Witkowski", "1B"),
+        Uczen("Aleksandra", "Kaczmarek", "1B"),
+        Uczen("Bartłomiej", "Czarnecki", "1B"),
+        Uczen("Filip", "Kowalczyk", "1B"),
+        Uczen("Lena", "Zawadzka", "1B"),
+        Uczen("Michał", "Nowicki", "1C"),
+        Uczen("Martyna", "Szymańska", "1C"),
+        Uczen("Jakub", "Woźniak", "1C"),
+        Uczen("Zuzanna", "Adamska", "1C"),
+        Uczen("Szymon", "Rutkowski", "1C"),
+        Uczen("Julia", "Krawczyk", "1C")
     ]
 }
 
@@ -120,12 +82,6 @@ lista = {
 #     print(f"\n{kategoria.upper()}:")
 #     for obiekt in obiekty:
 #         print(f" - {obiekt}")
-#
-# dodaj_ucznia("uczen", "XjanuszX", "3B")
-# dodaj_uzytkownika("Jan", "Kowalski", "1A","WOS", "Nauczyciel")
-
-
-
 
 print("Witaj w systemie bazy szkolnej")
 
@@ -136,9 +92,7 @@ while True:
     1. Utwórz
     2. Zarządzaj
     3. Koniec
-    \n""")
-    if komenda.strip().lower() in ("1", "Utwórz", "Utworz"):
-        pass
+    \n""").strip().casefold()
 
     match komenda:
         case "1":
@@ -148,44 +102,53 @@ while True:
             2. Nauczyciel
             3. Wychowawca
             4. Koniec
-            \n""")
+            \n""").strip().casefold()
 
-            if utworz.strip().lower() in ("1", "Uczeń", "Uczen"):
+            if utworz in ("1", "Uczeń", "Uczen"):
                 imie = input("Podaj imię ucznia:\n")
                 nazwisko = input("Podaj nazwisko ucznia:\n")
                 klasa = input("Do której klasy należy:\n")
-                nowy_uczen = uczen_szkoly(imie, nazwisko, klasa)
-                lista["uczen_szkoly"].append(nowy_uczen)
+                nowy_uczen = Uczen(imie, nazwisko, klasa)
+                lista["uczniowie"].append(nowy_uczen)
 
-            elif utworz.strip().lower() in ("2", "Nauczyciel",):
+
+            elif utworz.strip().lower() in ("2", "Nauczyciel"):
                 imie = input("Podaj imię:\n")
-                nazwisko = input("Podaj Nazwisko:\n")
-                klasa = input ("Podaj klasę w której uczy:\n")
-                przedmiot = input("Czego uczy (matematyka, biologia:\n")
+                nazwisko = input("Podaj nazwisko:\n")
+                klasy_input = input("Podaj klasy, w których uczy (oddziel przecinkami):\n")
+                klasy = [k.strip() for k in klasy_input.split(",") if k.strip()]  # lista klas, usunięcie pustych
+                przedmiot = input("Czego uczy (np. matematyka, biologia):\n")
                 stanowisko = "Nauczyciel"
-                nowy_nauczyciel = pracownik_szkoly(imie, nazwisko, klasa, przedmiot, stanowisko)
-                lista["pracownik_szkoly"].append(nowy_nauczyciel)
-            elif utworz.strip().lower() in ("3", "wychowawca"):
-                imie = input("Podaj imię:\n")
-                nazwisko = input("Podaj Nazwisko:\n")
-                klasa = input("Podaj klasę w której jest wychowawcą:\n")
-                przedmiot = input("Czego uczy (matematyka, biologia:\n")
-                stanowisko = "Wychowawca"
-                nowy_nauczyciel = pracownik_szkoly(imie, nazwisko, klasa, przedmiot, stanowisko)
-                lista["pracownik_szkoly"].append(nowy_nauczyciel)
+                nowy_nauczyciel = Nauczyciel(imie, nazwisko, klasy, przedmiot, stanowisko)
+                lista["Nauczyciele"].append(nowy_nauczyciel)
 
+            elif utworz.strip().lower() in ("3", "Wychowawca"):
+                imie = input("Podaj imię:\n")
+                nazwisko = input("Podaj nazwisko:\n")
+                klasy_input = input("Podaj klasy, w których jest wychowawcą (oddziel przecinkami):\n")
+                klasy = [k.strip() for k in klasy_input.split(",")]  # tworzymy listę klas
+                przedmiot = input("Czego uczy (matematyka, biologia):\n")
+                stanowisko = "Wychowawca"
+                nowy_wychowawca = Wychowawca(imie, nazwisko, klasy, przedmiot, stanowisko)
+                lista["wychowawcy"].append(nowy_wychowawca)
+
+            elif utworz in ("4", "koniec"):
+                break
 
         case "2":
             print("Wybierz jedną z poniższych opcji (wybierając 1-5)")
             zarzadzaj = input("""
-                       1. Klasa
-                       2. Uczeń
-                       3. Nauczyciel
-                       4. Wyhowawca
-                       5. Koniec
-                       \n""")
-            if zarzadzaj.strip().lower() in ("1", "Klasa", "klasa"):
+                   1. Klasa
+                   2. Uczeń
+                   3. Nauczyciel
+                   4. Wychowawca
+                   5. Koniec
+                   \n""").strip().casefold()
+
+            if zarzadzaj in ("1", "klasa"):
                 pass
+            elif zarzadzaj.strip().lower() in ("5", "koniec"):
+                break
             match zarzadzaj:
                 case "1":
                     pass
@@ -198,6 +161,9 @@ while True:
                 case "5":
                     pass
         case "3":
-            print(lista)
+            for kategoria, obiekty in lista.items():
+                print(f"\n{kategoria.upper()}:")
+                for obiekt in obiekty:
+                    print(f" - {obiekt}")
             print("Zakończono działanie programu.")
             break
