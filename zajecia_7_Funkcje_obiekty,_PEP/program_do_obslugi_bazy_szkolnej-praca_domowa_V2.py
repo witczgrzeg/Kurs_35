@@ -34,7 +34,6 @@ class nauczyciel:
         self.klasa = klasa
         self.przedmiot = przedmiot
         self.stanowisko = "Nauczyciel"
-
     def __repr__(self):
         return f"{self.imie} {self.nazwisko}, {self.klasa}, {self.przedmiot}, {self.stanowisko}"
 class wychowawca:
@@ -44,74 +43,66 @@ class wychowawca:
         self.klasa = klasa
         self.przedmiot = przedmiot
         self.stanowisko = "Wychowawca"
-
     def __repr__(self):
         return f"{self.imie} {self.nazwisko}, {self.klasa}, {self.przedmiot}, {self.stanowisko}"
-
 class uczen:
     def __init__(self, imie, nazwisko, klasa):
         self.imie = imie
         self.nazwisko = nazwisko
         self.klasa = klasa
-
     def __repr__(self):
         return f"{self.imie} {self.nazwisko} ({self.klasa})"
 
-def dodaj_nauczyciela_lub_wychowawcę(imie, nazwisko, klasa, przedmiot, stanowisko):
-    nauczyciel = "nauczyciel"(imie, nazwisko, klasa, przedmiot, stanowisko)
-    lista["pracownik_szkoly"].append(nauczyciel)
-    print(f"Dodano pracownika: {stanowisko}, imię {imie} {nazwisko}, do klasy {klasa}")
-
+def dodaj_nauczyciela(imie, nazwisko, klasa, przedmiot):
+    nowy_nauczyciel = nauczyciel (imie, nazwisko, klasa, przedmiot)
+    lista["nauczyciele"].append(nowy_nauczyciel)
+def dodaj_wychowawce(imie, nazwisko, klasa, przedmiot):
+    nowy_wychowawca = wychowawca (imie, nazwisko, klasa, przedmiot)
+    lista["wychowawcy"].append(nowy_wychowawca)
 def dodaj_ucznia(imie, nazwisko, klasa):
-    uczen = uczen_szkoly(imie, nazwisko, klasa)
-    lista["uczen_szkoly"].append(uczen)
-    print(f"Dodano : {imie} {nazwisko}, klasa {klasa}")
-def klasy
+    nowy_uczen = uczen(imie, nazwisko, klasa)
+    lista["uczniowie"].append(nowy_uczen)
+
 
 
 
 lista = {
-    "nauczyciel": [
+    "nauczyciele": [
         nauczyciel("Tomasz", "Wrona", "1A", "Fizyka", "Nauczyciel"),
         nauczyciel("Monika", "Zielińska", "1B", "Chemia", "Nauczyciel"),
         nauczyciel("Karolina", "Wiśniewska", "1C", "Język angielski", "Nauczyciel"),
         nauczyciel("Marek", "Nowicki", "1A", "Wychowanie fizyczne", "Nauczyciel")
     ],
-    "wychowawca":[
+    "wychowawcy":[
         wychowawca("Alicja", "Kaczmarek", "0", "Historia", "Dyrektor"),
         wychowawca("Agnieszka", "Piotrowska", "1A", "Matematyka", "Wychowawca"),
         wychowawca("Rafał", "Sadowski", "1B", "Polski", "Wychowawca"),
         wychowawca("Beata", "Jankowska", "1C", "Biologia", "Wychowawca"),
                   ],
-    "uczen_szkoly": [
-        uczen_szkoly("Jan", "Kowalski", "1A"),
-        uczen_szkoly("Anna", "Nowak", "1A"),
-        uczen_szkoly("Tomasz", "Wiśniewski", "1A"),
-        uczen_szkoly("Kacper", "Wójcik", "1A"),
-        uczen_szkoly("Zofia", "Kamińska", "1A"),
-        uczen_szkoly("Mikołaj", "Dąbrowski", "1A"),
-        uczen_szkoly("Oliwia", "Nowak", "1A"),
-        uczen_szkoly("Tomasz", "Lis", "1A"),
-        uczen_szkoly("Wiktor", "Grabowski", "1B"),
-        uczen_szkoly("Julia", "Pawlak", "1B"),
-        uczen_szkoly("Mateusz", "Michalak", "1B"),
-        uczen_szkoly("Emilia", "Baran", "1B"),
-        uczen_szkoly("Antoni", "Witkowski", "1B"),
-        uczen_szkoly("Aleksandra", "Kaczmarek", "1B"),
-        uczen_szkoly("Bartłomiej", "Czarnecki","1B"),
-        uczen_szkoly("Filip","Kowalczyk","1B"),
-        uczen_szkoly("Lena","Zawadzka","1B"),
-        uczen_szkoly("Michał", "Nowicki", "1C"),
-        uczen_szkoly("Martyna", "Szymańska", "1C"),
-        uczen_szkoly("Jakub", "Woźniak", "1C"),
-        uczen_szkoly("Zuzanna", "Adamska", "1C"),
-        uczen_szkoly("Szymon", "Rutkowski", "1C"),
-        uczen_szkoly("Julia", "Krawczyk", "1C")
-    ],
-    "klasy": [
-        klasa("1A"),
-        klasa("1B"),
-        klasa("1C")
+    "uczniowie": [
+        uczen("Jan", "Kowalski", "1A"),
+        uczen("Anna", "Nowak", "1A"),
+        uczen("Tomasz", "Wiśniewski", "1A"),
+        uczen("Kacper", "Wójcik", "1A"),
+        uczen("Zofia", "Kamińska", "1A"),
+        uczen("Mikołaj", "Dąbrowski", "1A"),
+        uczen("Oliwia", "Nowak", "1A"),
+        uczen("Tomasz", "Lis", "1A"),
+        uczen("Wiktor", "Grabowski", "1B"),
+        uczen("Julia", "Pawlak", "1B"),
+        uczen("Mateusz", "Michalak", "1B"),
+        uczen("Emilia", "Baran", "1B"),
+        uczen("Antoni", "Witkowski", "1B"),
+        uczen("Aleksandra", "Kaczmarek", "1B"),
+        uczen("Bartłomiej", "Czarnecki", "1B"),
+        uczen("Filip", "Kowalczyk", "1B"),
+        uczen("Lena", "Zawadzka", "1B"),
+        uczen("Michał", "Nowicki", "1C"),
+        uczen("Martyna", "Szymańska", "1C"),
+        uczen("Jakub", "Woźniak", "1C"),
+        uczen("Zuzanna", "Adamska", "1C"),
+        uczen("Szymon", "Rutkowski", "1C"),
+        uczen("Julia", "Krawczyk", "1C")
     ]
 }
 
@@ -136,9 +127,7 @@ while True:
     1. Utwórz
     2. Zarządzaj
     3. Koniec
-    \n""")
-    if komenda.strip().lower() in ("1", "Utwórz", "Utworz"):
-        pass
+    \n""").strip().lower()
 
     match komenda:
         case "1":
@@ -148,31 +137,35 @@ while True:
             2. Nauczyciel
             3. Wychowawca
             4. Koniec
-            \n""")
+            \n""").strip().lower()
 
-            if utworz.strip().lower() in ("1", "Uczeń", "Uczen"):
+            if utworz.strip().lower() in ("1", "Uczeń", "Uczen", "uczen", "uczeń"):
                 imie = input("Podaj imię ucznia:\n")
                 nazwisko = input("Podaj nazwisko ucznia:\n")
                 klasa = input("Do której klasy należy:\n")
-                nowy_uczen = uczen_szkoly(imie, nazwisko, klasa)
-                lista["uczen_szkoly"].append(nowy_uczen)
+                add_uczen = uczen(imie, nazwisko, klasa)
+                lista["uczniowie"].append(add_uczen)
 
-            elif utworz.strip().lower() in ("2", "Nauczyciel",):
+            elif utworz.strip().lower() in ("2", "Nauczyciel", "nauczyciel",):
                 imie = input("Podaj imię:\n")
                 nazwisko = input("Podaj Nazwisko:\n")
                 klasa = input ("Podaj klasę w której uczy:\n")
                 przedmiot = input("Czego uczy (matematyka, biologia:\n")
                 stanowisko = "Nauczyciel"
-                nowy_nauczyciel = pracownik_szkoly(imie, nazwisko, klasa, przedmiot, stanowisko)
-                lista["pracownik_szkoly"].append(nowy_nauczyciel)
-            elif utworz.strip().lower() in ("3", "wychowawca"):
+                add_nauczyciel = nauczyciel(imie, nazwisko, klasa, przedmiot, stanowisko)
+                lista["nauczyciele"].append(add_nauczyciel)
+
+            elif utworz.strip().lower() in ("3", "wychowawca", "Wychowawca"):
                 imie = input("Podaj imię:\n")
                 nazwisko = input("Podaj Nazwisko:\n")
                 klasa = input("Podaj klasę w której jest wychowawcą:\n")
                 przedmiot = input("Czego uczy (matematyka, biologia:\n")
                 stanowisko = "Wychowawca"
-                nowy_nauczyciel = pracownik_szkoly(imie, nazwisko, klasa, przedmiot, stanowisko)
-                lista["pracownik_szkoly"].append(nowy_nauczyciel)
+                add_wychowawca = wychowawca(imie, nazwisko, klasa, przedmiot, stanowisko)
+                lista["wychowawcy"].append(add_wychowawca)
+
+            else:
+                print("Nie wybrano poprawnej opcji. Spróbuj jeszcze raz.")
 
 
         case "2":
@@ -184,8 +177,6 @@ while True:
                        4. Wyhowawca
                        5. Koniec
                        \n""")
-            if zarzadzaj.strip().lower() in ("1", "Klasa", "klasa"):
-                pass
             match zarzadzaj:
                 case "1":
                     pass
@@ -198,6 +189,11 @@ while True:
                 case "5":
                     pass
         case "3":
-            print(lista)
+            # Jeśli chcesz ładnie wydrukować:
+            for kategoria, obiekty in lista.items():
+                print(f"\n{kategoria.upper()}:")
+                for obiekt in obiekty:
+                    print(f" - {obiekt}")
+
             print("Zakończono działanie programu.")
             break
