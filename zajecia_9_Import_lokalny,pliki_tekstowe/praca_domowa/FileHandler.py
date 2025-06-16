@@ -28,11 +28,11 @@ class FileHandler:
                 return 0.0
 
     def save_produkty_file(self):
-        with open(self.produkty_file.file, "w") as file:
+        with open(self.produkty_file, "w") as file:
             file.write(json.dumps(self.produkty, indent=4))
 
     def save_historia_file(self):
-        with open(self.historia_file.file, "w") as file:
+        with open(self.historia_file, "w") as file:
             file.write(json.dumps(self.historia, indent=4))
 
     def save_saldo_file(self):
