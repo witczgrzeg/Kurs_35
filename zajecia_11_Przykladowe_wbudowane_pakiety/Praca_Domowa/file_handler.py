@@ -5,6 +5,7 @@ class FileHandler:
         self.input_file = input_file_path
         self.output_file = output_file_path
         self.data = self.load_data()
+
     def load_data(self):
         with open(self.input_file) as file:
             reader = csv.reader(file)
@@ -13,5 +14,5 @@ class FileHandler:
                 temp_row = []
                 for value in row:
                     temp_row.append(value)
-            temp_matrix.append(temp_row)
+                temp_matrix.append(temp_row)
         return temp_matrix
