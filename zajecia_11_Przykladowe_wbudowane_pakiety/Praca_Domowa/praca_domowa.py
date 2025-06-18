@@ -24,3 +24,11 @@ pedzel,17,34,5
 plakat,czerwony,8,0
 
 """
+
+import sys
+from file_handler import FileHandler
+
+argumenty = sys.argv[1:]
+
+file_handler = FileHandler(input_file_path= argumenty[0],output_file_path= argumenty[1])
+print(file_handler.data)
