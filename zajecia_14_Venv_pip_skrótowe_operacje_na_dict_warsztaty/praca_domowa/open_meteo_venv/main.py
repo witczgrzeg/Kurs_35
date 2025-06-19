@@ -23,6 +23,6 @@ W URL należy uzupełnić parametry: latitude, longitude oraz searched_date
 
 import requests
 
-def get_weather_for_country(latitude, longitude, searched_date):
-    url = (f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=rain&daily=rain_sum&timezone=Europe%2FLondon&start_date={searched_date}&end_date={searched_date}")
 
+def get_weather_for_country(self, latitude, longitude, searched_date):
+    url = (f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=rain&daily=rain_sum&timezone=Europe%2FLondon&start_date={searched_date}&end_date={searched_date}")
