@@ -16,4 +16,4 @@ pies.szczekaj()
 def ciekawostka():
     print("Ciekawostka: Pies to najlepszy przyjaciel człowieka!")
 
-ciekawostka()
+ciekawostka()git status
