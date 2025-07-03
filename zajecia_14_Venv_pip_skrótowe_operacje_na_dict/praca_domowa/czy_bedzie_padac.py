@@ -21,4 +21,20 @@ Komentarze:
 Brak komentarzy
 
 """
+import openmeteo_requests
+
+import pandas as pd
+import requests_cache
+from retry_requests import retry
+
+
+latitude = 53.3498  # Example latitude for Dublin
+longitude = -6.2603 # Example longitude for Dublin
+city = get_city_from_coordinates(latitude, longitude)
+
+if city:
+    print(f"The city for coordinates ({latitude}, {longitude}) is: {city}")
+else:
+    print(f"Could not find city for coordinates ({latitude}, {longitude})")
+
 
