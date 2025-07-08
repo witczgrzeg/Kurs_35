@@ -8,5 +8,10 @@
         "latitude": 51.774162,
         "longitude": 19.491898,
         "rain_sum": 61.5
+    },
+    "2025-07-09": {
+        "latitude": 51.928772,
+        "longitude": 19.344269,
+        "rain_sum": 58.9
     }
 }
