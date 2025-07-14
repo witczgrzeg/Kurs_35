@@ -1,17 +1,14 @@
 {
-    "2025-07-07": {
-        "latitude": 51.774162,
-            "longitude": 19.491898,
-        "rain_sum": 12.9
+    "Łódź": {
+        "2025-07-15": "Będzie padać",
+        "2025-07-16": "Będzie padać"
     },
-    "2025-07-08": {
-        "latitude": 51.774162,
-        "longitude": 19.491898,
-        "rain_sum": 61.5
+    "Warszawa": {
+        "2025-07-15": "Nie będzie padać",
+        "2025-07-16": "Będzie padać"
     },
-    "2025-07-09": {
-        "latitude": 51.928772,
-        "longitude": 19.344269,
-        "rain_sum": 58.9
+    "Berlin": {
+        "2025-07-15": "Będzie padać",
+        "2025-07-16": "Będzie padać"
     }
 }
