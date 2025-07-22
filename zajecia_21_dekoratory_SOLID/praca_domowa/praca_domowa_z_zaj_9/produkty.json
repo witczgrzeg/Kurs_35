@@ -2,7 +2,7 @@
     {
         "nazwa": "mleko",
         "cena": 5,
-        "ilosc": 20
+        "ilosc": 17
     },
     {
         "nazwa": "jajka",
@@ -243,5 +243,25 @@
         "nazwa": "rower",
         "cena": 1000,
         "ilosc": 2
+    },
+    {
+        "nazwa": "Kimchi",
+        "cena": 10.0,
+        "ilosc": 4
+    },
+    {
+        "nazwa": "muchy",
+        "cena": 20.0,
+        "ilosc": 15
+    },
+    {
+        "nazwa": "Korzuch",
+        "cena": 1000.0,
+        "ilosc": 1
+    },
+    {
+        "nazwa": "klocuszki",
+        "cena": 10.0,
+        "ilosc": 5
     }
 ]

@@ -1,0 +1,10 @@
+2025-07-22 13:59:06,340 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,340 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,341 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-07-22 13:59:15,332 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'dwa'
+2025-07-22 13:59:34,812 - WARNING - Nieznany produkt przy sprzeda\u017cy: klocki duplo
+2025-07-22 14:00:16,644 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'eqweqweq'
+2025-07-22 14:00:20,236 - WARNING - B\u0142\u0105d konwersji do int: invalid literal for int() with base 10: 'eqeqweq'
+2025-07-22 14:00:45,735 - INFO - Function 'save_produkty_file' executed successfully in 0.0020 seconds.
+2025-07-22 14:00:45,736 - INFO - Function 'save_historia_file' executed successfully in 0.0012 seconds.
+2025-07-22 14:00:45,737 - INFO - Function 'save_saldo_file' executed successfully in 0.0010 seconds.

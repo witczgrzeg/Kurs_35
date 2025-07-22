@@ -1,27 +1,16 @@
-"""
-
-Rozbuduj program do zarządzania firmą. Wszystkie funkcjonalności (komendy, zapisywanie i czytanie przy użyciu pliku itp.) pozostają bez zmian.
-
-Stwórz clasę Manager, która będzie implementowała dwie kluczowe metody - execute i assign. Przy ich użyciu wywołuj poszczególne fragmenty aplikacji. Metody execute i assign powinny zostać zaimplementowane zgodnie z przykładami z materiałów do zajęć.
-
-Niedozwolone są żadne zmienne globalne, wszystkie dane powinny być przechowywane wewnątrz obiektu Manager.
-
-
-"""
-
 from FileHandler import file_handler
+import logging
 
-
-produkty_startowe = file_handler.produkty
-historia= file_handler.historia
+produkty = file_handler.produkty
+historia = file_handler.historia
 saldo = file_handler.saldo
 
 print("Witaj w systemie księgowo-magazynowym!")
 
 while True:
-    print("Wybierz jedną z poniższych opjci podając numer 1-8:")
+    print("Wybierz jedną z poniższych opcji podając numer 1-8:")
     komenda = input("""
-    1. Salod
+    1. Saldo
     2. Sprzedaż
     3. Zakup
     4. Konto
@@ -29,98 +18,97 @@ while True:
     6. Magazyn
     7. Przegląd
     8. Koniec
-    """)
-    komenda = komenda.lower()
+    """).strip().lower()
 
     match komenda:
         case "1":
-            kwota = float(input("Pdaj kwotę o jaką chcesz zmienić saldo: \n"))
+            kwota = file_handler.get_float_input("Podaj kwotę o jaką chcesz zmienić saldo: \n")
+            if kwota is None:
+                continue
             if saldo + kwota < 0:
-                print ("Saldo nie może być ujemne!")
+                print(" Saldo nie może być ujemne!")
             else:
-                saldo +=kwota
+                saldo += kwota
+                print(f" Saldo zostało zmienione. Nowe saldo: {saldo}")
 
         case "2":
-            nazwa = input(f"Podaj produkt który chcesz zamówić: \n")
+            nazwa = input("Podaj nazwę produktu do sprzedaży: \n")
             produkt_znaleziony = False
-            for produkt in produkty_startowe:
+            for produkt in produkty:
                 if produkt.get("nazwa") == nazwa:
+                    if produkt["ilosc"] <= 0:
+                        print(" Produkt jest niedostępny.")
+                        logging.warning(f"Brak produktu przy sprzedaży: {nazwa}")
+                        produkt_znaleziony = True
+                        break
                     produkt["ilosc"] -= 1
-                    cena = produkt["cena"]
-                    saldo += cena
-                    historia.append(f"Zakup: {produkt['nazwa']}, {produkt['cena']}, 1 sztuka")
-                produkt_znaleziony = True
-                break
-            if not produkt_znaleziony:
-                print("Tego produktu nie ma w asortymencie.")
-
-        case "3":
-            nazwa = input("Podaj nazwę produktu: \n")
-            cena = float(input("Podaj cenę produktu: \n"))
-            ilosc = int(input("Podaj ilość: \n"))
-            koszt = cena * ilosc
-
-            if saldo - koszt < 0:
-                print("Nie możesz sprzedać produktu ponieważ saldo będzie ujemne.")
-                historia.append(f"Próba zakupu: {nazwa}, {cena}, {ilosc} sztuk - nieudana.")
-                continue
-            else:
-                saldo -= koszt
-
-            produkt_znaleziony = False
-            for produkt in produkty_startowe:
-                if produkt["nazwa"] == nazwa:
-                    produkt["ilosc"] += ilosc
+                    saldo += produkt["cena"]
+                    historia.append(f"Sprzedaż: {produkt['nazwa']}, {produkt['cena']}, 1 szt.")
+                    print(f" Sprzedano 1 szt. {nazwa}")
                     produkt_znaleziony = True
                     break
-
             if not produkt_znaleziony:
-                produkty_startowe.append({
-                    "nazwa": nazwa,
-                    "cena": cena,
-                    "ilosc": ilosc
-                })
+                print(" Nie znaleziono produktu.")
+                logging.warning(f"Nieznany produkt przy sprzedaży: {nazwa}")
 
-            historia.append(f"Zakup: {nazwa}, {cena}, {ilosc} sztuk.")
-            print(f"Zakupiono {ilosc} szt. produktu {nazwa} za {koszt} zł.")
+        case "3":
+            nazwa = input("Podaj nazwę produktu do zakupu: \n")
+            cena = file_handler.get_float_input("Podaj cenę produktu: \n")
+            ilosc = file_handler.get_int_input("Podaj ilość: \n")
+            if cena is None or ilosc is None:
+                continue
+            koszt = cena * ilosc
+            if saldo - koszt < 0:
+                print(" Saldo niewystarczające.")
+                historia.append(f"Próba zakupu: {nazwa}, {cena}, {ilosc} szt. - nieudana.")
+                logging.warning(f"Próba zakupu ponad saldo: {nazwa}, {koszt}")
+                continue
+            saldo -= koszt
+            for produkt in produkty:
+                if produkt["nazwa"] == nazwa:
+                    produkt["ilosc"] += ilosc
+                    break
+            else:
+                produkty.append({"nazwa": nazwa, "cena": cena, "ilosc": ilosc})
+            historia.append(f"Zakup: {nazwa}, {cena}, {ilosc} szt.")
+            print(f" Zakupiono {ilosc} szt. {nazwa} za {koszt} zł")
 
         case "4":
-            print(f"Bierzące środki na koncie: {saldo}")
+            print(f" Bieżące saldo: {saldo}")
 
         case "5":
-            print(f"Całkowity stan magazynu: {produkty_startowe}")
+            print(" Zawartość magazynu:")
+            for produkt in produkty:
+                print(f"- {produkt['nazwa']}: {produkt['ilosc']} szt., cena: {produkt['cena']} zł")
 
         case "6":
-            nazwa = input("Podaj nazwę produktu, aby sprawdzić jego stan w magazynie: \n")
-            znaleziony = False
-
-            for produkt in produkty_startowe:
+            nazwa = input("Podaj nazwę produktu do sprawdzenia: \n")
+            for produkt in produkty:
                 if produkt["nazwa"] == nazwa:
-                    print(f"Produkt: {produkt['nazwa']}, Ilość: {produkt['ilosc']}, Cena: {produkt['cena']} zł")
-                    znaleziony = True
+                    print(f" Produkt: {produkt['nazwa']}, Ilość: {produkt['ilosc']}, Cena: {produkt['cena']} zł")
                     break
-
-            if not znaleziony:
-                print(f"Produkt o nazwie '{nazwa}' nie znajduje się w magazynie.")
+            else:
+                print(" Nie znaleziono produktu.")
+                logging.warning(f"Sprawdzenie nieistniejącego produktu: {nazwa}")
 
         case "7":
-            od = input("Podaj waartość od (numer transakcji): ")
-            do = input("Podaj wartość do (numer transakcji): ")
-            if od:
-                od=int(od)
-            else:
-                od = 0
-            if do:
-                do=int(do)
-            else:
-                do = len(historia)
-            print(historia[od:do])
+            od = file_handler.get_int_input("Podaj numer transakcji OD: ")
+            do = file_handler.get_int_input("Podaj numer transakcji DO: ")
+            if od is None or do is None:
+                continue
+            print(" Historia transakcji:")
+            for wpis in historia[od:do]:
+                print("-", wpis)
 
         case "8":
-            print("Zakończono działanie programu.")
+            print(" Zamykanie programu.")
             break
 
-file_handler.produkty = produkty_startowe
+        case _:
+            print(" Nieprawidłowa opcja.")
+            logging.info(f"Nieznana komenda: {komenda}")
+
+file_handler.produkty = produkty
 file_handler.historia = historia
 file_handler.saldo = saldo
 
