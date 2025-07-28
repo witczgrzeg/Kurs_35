@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Wyniki</title>
+</head>
+<body>
+    <h1>Jakość powietrza w {{ city }}</h1>
+    <table border="1">
+        <tr>
+            <th>Parametr</th>
+            <th>Wartość</th>
+            <th>Jednostka</th>
+            <th>Data</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r.parameter }}</td>
+            <td>{{ r.value }}</td>
+            <td>{{ r.unit }}</td>
+            <td>{{ r.date_utc }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -20,6 +20,5 @@ from openaq import OpenAQ
 # client = OpenAQ(api_key="YOUR-OPENAQ-API-KEY")
 # client.locations.list(coordinates=[136.90610, 35.14942], radius=12000, limit=1000)
 # client.close()
-#
 # """
 client = OpenAQ(api_key= "9842cf2ba34018b9ff7e2f1593819e26e814a4f71f0001e65bf688f92e25c865")
