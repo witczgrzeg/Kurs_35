@@ -10,7 +10,7 @@ def create_app():
 
     db.init_app(app)
 
-    from .routes import main
+    from .routes import main  # Twój blueprint z widokami
     app.register_blueprint(main)
 
     return app

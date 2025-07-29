@@ -2,8 +2,10 @@ import asyncio
 from datetime import datetime
 from geopy.geocoders import Nominatim
 from openaq import AsyncOpenAQ
+from file_handler import FileHandler
 
 API_KEY = "9842cf2ba34018b9ff7e2f1593819e26e814a4f71f0001e65bf688f92e25c865"
+DATA_FILE = "data.json"
 
 def get_coordinates(city_name):
     geolocator = Nominatim(user_agent="moja_aplikacja")
@@ -21,15 +23,35 @@ async def fetch_locations(client, lat, lon, radius=10000, limit=10):
     )
     return response.results
 
-async def fetch_measurements_for_sensor(client, sensor_id, limit=5):
+async def fetch_measurements_for_sensor(client, sensor_id, limit=100):
     response = await client.measurements.list(
         sensors_id=sensor_id,
         limit=limit
     )
     return response.results
 
+def parse_measurement_date(m):
+    try:
+        return datetime.fromisoformat(m.period.datetime_from.local)
+    except Exception:
+        return None
+
+async def fetch_days_for_sensor(client, sensor_id, limit=30):
+    # Korzystamy z metody client.get() do wywołania endpointu 'sensors/{sensor_id}/days'
+    endpoint = f"sensors/{sensor_id}/days"
+    params = {
+        "limit": limit,
+        "order_by": "datetime",
+        "sort": "desc"
+    }
+    response = await client.get(endpoint, params=params)
+    # Zwracamy listę wyników
+    return response.get("results", [])
+
 async def main():
+    handler = FileHandler(DATA_FILE)
     city = input("Podaj nazwę miasta: ").strip()
+
     try:
         lat, lon = get_coordinates(city)
         print(f"Współrzędne {city}: {lat}, {lon}")
@@ -64,25 +86,37 @@ async def main():
                 print("Brak pomiarów dla tego sensora.")
                 return
 
-            # Pobieramy tylko najnowszy pomiar
-            latest = measurements[0]
+            # Sparsuj daty pomiarów i wybierz najnowszy
+            measurements_with_dates = [(m, parse_measurement_date(m)) for m in measurements]
+            measurements_with_dates = [md for md in measurements_with_dates if md[1] is not None]
 
-            # Debug info – zostaw sobie na czas testów
-            # print(vars(latest))
+            if not measurements_with_dates:
+                print("Brak poprawnych dat pomiarów.")
+                return
+
+            latest, latest_date = sorted(measurements_with_dates, key=lambda x: x[1])[-1]
+            date_str = latest_date.strftime("%d.%m.%Y %H:%M")
 
             parameter = latest.parameter.name if hasattr(latest.parameter, "name") else str(latest.parameter)
             units = latest.parameter.units if hasattr(latest.parameter, "units") else ""
 
-            # Próba pobrania lokalnej daty i jej sformatowania
-            try:
-                raw_date = latest.period.datetime_from.local
-                date_obj = datetime.fromisoformat(raw_date)
-                date_str = date_obj.strftime("%d.%m.%Y %H:%M")
-            except Exception:
-                date_str = "brak daty"
-
             print(f"\nNajnowszy pomiar dla {city}:")
             print(f"{parameter.upper()}: {latest.value} {units} (data: {date_str})")
+
+            # zapis do pliku przez FileHandler
+            handler[city, date_str] = f"{parameter.upper()}: {latest.value} {units}"
+
+            # --- Pobranie danych dziennych (days) i zapis ---
+            days_data = await fetch_days_for_sensor(client, first_sensor_id)
+            if days_data:
+                handler[f"sensor_{first_sensor_id}"] = days_data
+
+            handler.write_data_to_file()
+
+            # wyświetlenie dotychczasowych danych
+            print(f"\nZapisane dane w {DATA_FILE}:")
+            for c, d, val in handler.items():
+                print(f"{c} | {d} | {val}")
 
     except Exception as e:
         print("Błąd:", e)
