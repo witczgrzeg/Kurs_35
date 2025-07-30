@@ -1,0 +1,15 @@
+.div-container{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.box{
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+

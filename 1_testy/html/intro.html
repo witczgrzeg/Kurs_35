@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pierwsz wpis - tytuł</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h1 id="title_h1" class="title">Witamy na stronie</h1>
+        <h2 id="title_h2" class="title">Tutaj sprawdzisz jakość powietrza w swojej okolicy</h2>
+    </div>
+    <div>
+        <h3> Tutaj pewnie będzie jakieś zdjęcie</h3>
+        <img src="https://vipschool.in/wp-content/uploads/2024/03/Air-Quality-Index.jpg">
+        <!-- a href to link w tekscie-->
+        <a href="https://github.com/michalzietkowski/kurs_35/">Link do repozytorium prowadzącego Kurs_35</a>
+    </div>
+    <div>
+        <!--ul to nie posortowana lista - wypunklowana-->
+        <ul>
+            <li>tutaj będzie lista - pierwszy element</li>
+            <li>tutaj będzie lista - drugi element</li>
+            <li>tutaj będzie lista - trzeci element</li>
+            <li>tutaj będzie lista - czwarty element</li>
+        </ul>
+    </div>
+    <div>
+        <!--ol to posortowana lista - czyli ponumerowana -->
+        <ol>
+            <li>tutaj będzie lista - pierwszy element</li>
+            <li>tutaj będzie lista - drugi element</li>
+            <li>tutaj będzie lista - trzeci element</li>
+            <li>tutaj będzie lista - czwarty element</li>
+        </ol>
+    </div>
+<div>
+    <h3>tutaj pewnie wkleje wartość z openAQ gdzie będą podane wartości dla poszczególnych czujników w okolicy</h3>
+    <table>
+        <tr>
+            <th>Nagłowek 1</th>
+            <th>Nagłowek 2</th>
+            <th>Nagłowek 3</th>
+        </tr>
+        <tr>
+            <td>Wiersz 1, komórka 1</td>
+            <td>Wiersz 1, komórka 2</td>
+            <td>Wiersz 1, komórka 3</td>
+        </tr>
+         <tr>
+            <td>Wiersz 2, komórka 1</td>
+            <td>Wiersz 2, komórka 2</td>
+            <td>Wiersz 2, komórka 3</td>
+        </tr>
+         <tr>
+            <td>Wiersz 3, komórka 1</td>
+            <td>Wiersz 3, komórka 2</td>
+            <td>Wiersz 3, komórka 3</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h3>Jak tworzyć formularze które będą kierowały zapytania do użytkownika - tak jak w python input</h3>
+    <form>
+        <h1>Formularz przykładowy - dodania użytkownika</h1>
+        <div>
+            <label>Name:</label>
+            <input type="text" name="imie" placeholder="Wpisz swoje imię" required>
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="haslo" placeholder="Wpisz swoje hasło" required>
+        </div>
+        <div>
+            <label>E-Mail:</label>
+            <input type="email" name="email" placeholder="Podaj swój adres E-Mail" required>
+        </div>
+        <div>
+            <label>Płeć:</label>
+            <select name="plec">
+                <option value="Mężczyzna">Mężczyzna</option>
+                <option value="Kobieta">Kobieta</option>
+                <option value="Inne">Inne</option>
+            </select>
+            <input type="radio" value="Mężczyzna" name="plec">
+            <label>Mężczyzna</label>
+            <input type="radio" value="Kobieta" name="plec">
+            <label>Kobieta</label>
+            <input type="radio" value="Inne" name="plec">
+            <label>Inne</label>
+                <h4>Jak się doda plec1, plec2 plec 3 to można wybrać więcej niż 1</h4>
+            <input type="radio" value="Mężczyzna" name="plec1">
+            <label>Mężczyzna</label>
+            <input type="radio" value="Kobieta" name="plec2">
+            <label>Kobieta</label>
+            <input type="radio" value="Inne" name="plec3">
+            <label>Inne</label>
+        </div>
+        <div>
+            <button type="submit">Wyślij formularz</button>
+
+        </div>
+    </form>
+
+   <div>
+       <h4> tabelka importowana z https://getbootstrap.com/docs/5.3/content/tables/#overview </h4>
+       <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+   </div>
+</div>
+</body>
+</html>

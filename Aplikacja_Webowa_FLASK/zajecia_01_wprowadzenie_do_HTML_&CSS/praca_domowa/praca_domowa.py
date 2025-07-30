@@ -1,14 +1,3 @@
-"""
-
-Rozbuduj program do zarządzania firmą. Wszystkie funkcjonalności (komendy, zapisywanie i czytanie przy użyciu pliku itp.) pozostają bez zmian.
-
-Stwórz clasę Manager, która będzie implementowała dwie kluczowe metody - execute i assign. Przy ich użyciu wywołuj poszczególne fragmenty aplikacji. Metody execute i assign powinny zostać zaimplementowane zgodnie z przykładami z materiałów do zajęć.
-
-Niedozwolone są żadne zmienne globalne, wszystkie dane powinny być przechowywane wewnątrz obiektu Manager.
-
-
-"""
-
 from FileHandler import file_handler
 
 produkty_startowe = file_handler.produkty

@@ -1,0 +1,140 @@
+{
+    "Berlin": {
+        "locations": {
+            "2993": {
+                "name": "Berlin Neukölln",
+                "distance": 3217.09,
+                "measurements": {
+                    "sensor_11839788": {
+                        "date": "03.01.2025 02:00",
+                        "value": "CO: 220.0 µg/m³"
+                    }
+                }
+            },
+            "3017": {
+                "name": "Berlin Karlshorst",
+                "distance": 9312.71,
+                "measurements": {
+                    "sensor_4275225": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 0.38 µg/m³"
+                    }
+                }
+            },
+            "3019": {
+                "name": "Berlin Mitte",
+                "distance": 1388.83,
+                "measurements": {
+                    "sensor_4275126": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 2.33 µg/m³"
+                    }
+                }
+            },
+            "3021": {
+                "name": "DEBE064",
+                "distance": 4018.86,
+                "measurements": {
+                    "sensor_1300117": {
+                        "date": "12.06.2021 01:00",
+                        "value": "PM25: 15.63 µg/m³"
+                    }
+                }
+            },
+            "3025": {
+                "name": "DEBE063",
+                "distance": 5622.58,
+                "measurements": {
+                    "sensor_4274508": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 15.77 µg/m³"
+                    }
+                }
+            },
+            "3026": {
+                "name": "Berlin Schöneberg",
+                "distance": 4395.28,
+                "measurements": {
+                    "sensor_4274466": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 0.08 µg/m³"
+                    }
+                }
+            },
+            "4761": {
+                "name": "Berlin Wedding",
+                "distance": 4918.49,
+                "measurements": {
+                    "sensor_4275114": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 0.22 µg/m³"
+                    }
+                }
+            },
+            "4762": {
+                "name": "Berlin Schildhornstraße",
+                "distance": 7588.66,
+                "measurements": {
+                    "sensor_4275011": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 2.11 µg/m³"
+                    }
+                }
+            },
+            "4764": {
+                "name": "Berlin Mariendorfer Damm",
+                "distance": 8123.72,
+                "measurements": {
+                    "sensor_4274699": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 8.18 µg/m³"
+                    }
+                }
+            },
+            "4765": {
+                "name": "Berlin Hardenbergplatz",
+                "distance": 4500.63,
+                "measurements": {
+                    "sensor_4274675": {
+                        "date": "03.04.2023 17:00",
+                        "value": "NO: 6.66 µg/m³"
+                    }
+                }
+            }
+        }
+    },
+    "Łódź": {
+        "locations": {
+            "7207": {
+                "name": "Łódź, ul. Gdańska",
+                "distance": 1913.41,
+                "measurements": {
+                    "sensor_35248": {
+                        "date": "25.11.2018 21:00",
+                        "value": "BC: 8.84 µg/m³"
+                    }
+                }
+            },
+            "7252": {
+                "name": "Łódź, ul. Czernika",
+                "distance": 3908.72,
+                "measurements": {
+                    "sensor_20943": {
+                        "date": "25.11.2018 21:00",
+                        "value": "CO: 1082.0 µg/m³"
+                    }
+                }
+            },
+            "10622": {
+                "name": "Łódź, al. Jana Pawła II",
+                "distance": 3619.88,
+                "measurements": {
+                    "sensor_35296": {
+                        "date": "25.11.2018 21:00",
+                        "value": "BC: 5.45 µg/m³"
+                    }
+                }
+            }
+        }
+    }
+}
