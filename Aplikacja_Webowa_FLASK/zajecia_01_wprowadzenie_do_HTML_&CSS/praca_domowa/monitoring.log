@@ -8,3 +8,6 @@
 2025-07-22 14:00:45,735 - INFO - Function 'save_produkty_file' executed successfully in 0.0020 seconds.
 2025-07-22 14:00:45,736 - INFO - Function 'save_historia_file' executed successfully in 0.0012 seconds.
 2025-07-22 14:00:45,737 - INFO - Function 'save_saldo_file' executed successfully in 0.0010 seconds.
+2025-07-30 23:56:16,810 - INFO - Function 'load_produkty_file' executed successfully in 0.0005 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_historia_file' executed successfully in 0.0004 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_saldo_file' executed successfully in 0.0004 seconds.
