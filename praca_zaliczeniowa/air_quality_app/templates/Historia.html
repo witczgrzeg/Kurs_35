@@ -9,13 +9,20 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">AirQ Main</a>
+    <a class="navbar-brand" href="{{ url_for('main_page') }}">AirQ Main</a>
     <div id="navbarSupportedContent">
       <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Strona główna</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ url_for('main_page') }}">Strona główna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('historia') }}">Historia</a>
+        </li>
       </ul>
     </div>
+  </div>
+</nav>
+
   </div>
 </nav>
 <div class="d-flex flex-column align-items-center">

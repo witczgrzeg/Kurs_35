@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello User</title>
+</head>
+<body>
+  {% if user_name %}
+  <h1>Hello, {{ user_name }} !</h1>
+  <p>Welcome to our website.</p>
+  {% else %}
+  <h1>Hello, Guest!</h1>
+  <p>Please login</p>
+  {% endif %}
+
+</body>
+</html>
