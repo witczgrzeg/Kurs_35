@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 users = [
     {
@@ -48,8 +48,17 @@ def hello():
 def hello_user(name=None):
     return render_template("hello_user.html", user_name=name)
 
-@app.route("/userrs")
+@app.route("/users", methods=["GET","POST"])
 def show_users():
+    if request.method == "POST":
+        new_user = {
+        "name": request.form.get("name"),
+        "age": request.form.get("age"),
+        "email": request.form.get("email"),
+        "city": request.form.get("city_name")
+        }
+        users.append(new_user)
+        return redirect("/")
     return render_template("users.html", users=users)
 
 if __name__ == "__main__":

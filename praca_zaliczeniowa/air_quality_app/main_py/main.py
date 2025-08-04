@@ -1,3 +1,15 @@
+"""
+
+**Aplikacja śledząca jakość powietrza dla danej lokalizacji:**
+   Wykorzystując API openAQ (https://openaq.org/), aplikacja prezentuje użytkownikowi dane o stężeniu zanieczyszczeń w wybranej lokalizacji.
+   Użytkownik wprowadza nazwę miasta lub regionu, a aplikacja wyświetla tabelę z bieżącymi danymi o jakości powietrza
+   oraz historyczny wykres zmian stężenia poszczególnych zanieczyszczeń.
+
+   W wersji rozszerzonej aplikacja oferuje system powiadomień o przekroczeniach norm
+   oraz możliwość porównywania danych pomiędzy różnymi miejscowościami.
+
+"""
+
 import asyncio
 from datetime import datetime
 from geopy.geocoders import Nominatim
