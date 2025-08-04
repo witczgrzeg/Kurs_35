@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8" />
     <title>System sprawdzania jakości powietrza OpenAQ</title>
@@ -13,10 +13,10 @@
     <div id="navbarSupportedContent">
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="{{ url_for('main_page.index') }}">Strona główna</a>
+          <a class="nav-link {% if request.endpoint == 'main_page.index' %}active{% endif %}" href="{{ url_for('main_page.index') }}">Strona główna</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('main_page.historia') }}">Historia</a>
+          <a class="nav-link {% if request.endpoint == 'main_page.historia' %}active{% endif %}" href="{{ url_for('main_page.historia') }}">Historia</a>
         </li>
       </ul>
     </div>
@@ -29,11 +29,12 @@
 
 <div class="mt-5 d-flex justify-content-around flex-end container">
   <div>
-      <form>
+      <form method="get">
         <h1>Podaj nazwę miasta</h1>
         <div>
-          <label>Miasto:</label>
-          <input type="text" name="imie" placeholder="Wpisz nazwę miasta" required>
+          <label for="imie">Miasto:</label>
+          <input type="text" id="imie" name="imie" placeholder="Wpisz nazwę miasta" required
+                 value="{{ city if city }}">
         </div>
         <div>
             <button type="submit">Wyślij formularz</button>
@@ -42,65 +43,48 @@
   </div>
 </div>
 
-<div class="d-flex flex-column align-items-center">
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Wynik wyszukiwania</h2>
+<div class="container mt-5">
+  {% if error %}
+    <div class="alert alert-danger" role="alert">
+      {{ error }}
+    </div>
+  {% endif %}
+
+  {% if data %}
+    <h2 class="text-center mb-4">Wynik wyszukiwania dla miasta: {{ data.city }}</h2>
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Miasto</th>
-          <th scope="col">ID Lokalizacji</th>
-          <th scope="col">Nazwa Lokalizacji</th>
-          <th scope="col">Odległość [m]</th>
-          <th scope="col">Sensor ID</th>
-          <th scope="col">Data pomiaru</th>
-          <th scope="col">Wartość pomiaru</th>
+          <th>Miasto</th>
+          <th>ID Lokalizacji</th>
+          <th>Nazwa Lokalizacji</th>
+          <th>Odległość [m]</th>
+          <th>Sensor ID</th>
+          <th>Data pomiaru</th>
+          <th>Parametr</th>
+          <th>Wartość</th>
+          <th>Jednostka</th>
+          <th>Ocena jakości</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">nazwa miasta 1</th>
-          <td>id</td>
-          <td>nazwa lokacji</td>
-          <td>odległość</td>
-          <td>sensor id</td>
-          <td>data</td>
-          <td>wartość</td>
-        </tr>
-        <tr>
-          <th scope="row">nazwa miasta 2</th>
-          <td>id</td>
-          <td>nazwa lokacji</td>
-          <td>odległość</td>
-          <td>sensor id</td>
-          <td>data</td>
-          <td>wartość</td>
-        </tr>
-        <tr>
-          <th scope="row">nazwa miasta 3</th>
-          <td>id</td>
-          <td>nazwa lokacji</td>
-          <td>odległość</td>
-          <td>sensor id</td>
-          <td>data</td>
-          <td>wartość</td>
-        </tr>
-        <tr>
-          <th scope="row">nazwa miasta 4</th>
-          <td>id</td>
-          <td>nazwa lokacji</td>
-          <td>odległość</td>
-          <td>sensor id</td>
-          <td>data</td>
-          <td>wartość</td>
+          <td>{{ data.city }}</td>
+          <td>{{ data.location_id }}</td>
+          <td>{{ data.location_name }}</td>
+          <td>{{ data.location_distance }}</td>
+          <td>{{ data.sensor_id }}</td>
+          <td>{{ data.date }}</td>
+          <td>{{ data.parameter }}</td>
+          <td>{{ data.value }}</td>
+          <td>{{ data.units }}</td>
+          <td>{{ data.rating if data.rating else "-" }}</td>
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
-
-<div>
-  <h1 class="mt-5 d-flex justify-content-around">Tutaj będzie informacja o jakości powietrza po wyszukaniu</h1>
+  {% elif city %}
+    <p class="text-center">Brak danych do wyświetlenia.</p>
+  {% endif %}
 </div>
 
 </body>

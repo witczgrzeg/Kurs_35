@@ -1,10 +1,226 @@
 {
     "Warszawa": {
         "03.02.2016 08:00": {
+            "city": "Warszawa",
+            "location_id": 2531,
+            "location_name": "Komunikacyjna",
+            "location_distance": 4724.25,
+            "sensor_id": 5028,
             "parameter": "CO",
             "value": 762.0,
             "units": "µg/m³",
+            "date": "03.02.2016 08:00",
             "rating": "GOOD ✅"
+        }
+    },
+    "Łódź": {
+        "25.11.2018 21:00": {
+            "city": "Łódź",
+            "location_id": 7207,
+            "location_name": "Łódź, ul. Gdańska",
+            "location_distance": 847.57,
+            "sensor_id": 35248,
+            "parameter": "BC",
+            "value": 8.84,
+            "units": "µg/m³",
+            "date": "25.11.2018 21:00",
+            "rating": null
+        }
+    },
+    "Berlin": {
+        "03.04.2023 17:00": {
+            "city": "Berlin",
+            "location_id": 3019,
+            "location_name": "Berlin Mitte",
+            "location_distance": 1388.83,
+            "sensor_id": 4275126,
+            "parameter": "NO",
+            "value": 2.33,
+            "units": "µg/m³",
+            "date": "03.04.2023 17:00",
+            "rating": null
+        }
+    },
+    "Szczecin": {
+        "25.11.2018 21:00": {
+            "city": "Szczecin",
+            "location_id": 10508,
+            "location_name": "Szczecin, ul. Piłsudskiego",
+            "location_distance": 304.6,
+            "sensor_id": 35871,
+            "parameter": "BC",
+            "value": 2.91949,
+            "units": "µg/m³",
+            "date": "25.11.2018 21:00",
+            "rating": null
+        }
+    },
+    "Londyn": {
+        "04.02.2016 12:00": {
+            "city": "Londyn",
+            "location_id": 159,
+            "location_name": "London Westminster",
+            "location_distance": 1446.46,
+            "sensor_id": 258,
+            "parameter": "NO2",
+            "value": 79.0,
+            "units": "µg/m³",
+            "date": "04.02.2016 12:00",
+            "rating": null
+        }
+    },
+    "Praga": {
+        "18.04.2023 18:00": {
+            "city": "Praga",
+            "location_id": 4400,
+            "location_name": "Praha 2-Riegrovy sady",
+            "location_distance": 1673.11,
+            "sensor_id": 4272908,
+            "parameter": "NO",
+            "value": 2.0,
+            "units": "µg/m³",
+            "date": "18.04.2023 18:00",
+            "rating": null
+        }
+    },
+    "Waszyngton": {
+        "01.05.2016 22:00": {
+            "city": "Waszyngton",
+            "location_id": 1554,
+            "location_name": "VERIZON",
+            "location_distance": 1287.26,
+            "sensor_id": 2737,
+            "parameter": "CO",
+            "value": 0.73,
+            "units": "ppm",
+            "date": "01.05.2016 22:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Kolonia": {
+        "03.02.2024 02:00": {
+            "city": "Kolonia",
+            "location_id": 2162203,
+            "location_name": "Köln Turiner Straße",
+            "location_distance": 1010.13,
+            "sensor_id": 7775352,
+            "parameter": "NO",
+            "value": 4.732,
+            "units": "µg/m³",
+            "date": "03.02.2024 02:00",
+            "rating": null
+        }
+    },
+    "Wiedeń": {
+        "27.11.2016 06:00": {
+            "city": "Wiedeń",
+            "location_id": 2753,
+            "location_name": "Wien Stephansplatz",
+            "location_distance": 121.62,
+            "sensor_id": 5742,
+            "parameter": "NO2",
+            "value": 17.0,
+            "units": "µg/m³",
+            "date": "27.11.2016 06:00",
+            "rating": null
+        }
+    },
+    "Bruksela": {
+        "23.11.2016 14:00": {
+            "city": "Bruksela",
+            "location_id": 4866,
+            "location_name": "BETB004",
+            "location_distance": 524.36,
+            "sensor_id": 12381,
+            "parameter": "CO",
+            "value": 30.0,
+            "units": "µg/m³",
+            "date": "23.11.2016 14:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Sarajewo": {
+        "10.05.2023 05:00": {
+            "city": "Sarajewo",
+            "location_id": 9598,
+            "location_name": "Sarajevo",
+            "location_distance": 1157.94,
+            "sensor_id": 5077681,
+            "parameter": "PM25",
+            "value": 14.0,
+            "units": "µg/m³",
+            "date": "10.05.2023 05:00",
+            "rating": "MEDIUM ⚠️"
+        }
+    },
+    "Sofia": {
+        "27.04.2020 19:00": {
+            "city": "Sofia",
+            "location_id": 8856,
+            "location_name": "AMS Hipodruma-Sofia",
+            "location_distance": 2791.92,
+            "sensor_id": 25834,
+            "parameter": "CO",
+            "value": 290.0,
+            "units": "µg/m³",
+            "date": "27.04.2020 19:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Podgorica": {
+        "05.04.2022 13:00": {
+            "city": "Podgorica",
+            "location_id": 302033,
+            "location_name": "Podgorica 2 (UB)",
+            "location_distance": 1885.0,
+            "sensor_id": 1732778,
+            "parameter": "PM10",
+            "value": 11.9,
+            "units": "µg/m³",
+            "date": "05.04.2022 13:00",
+            "rating": null
+        }
+    },
+    "Kopenhaga": {
+        "27.11.2016 04:00": {
+            "city": "Kopenhaga",
+            "location_id": 5170,
+            "location_name": "\"Copenhagen/1259\"",
+            "location_distance": 1605.67,
+            "sensor_id": 13356,
+            "parameter": "CO",
+            "value": 150.0,
+            "units": "µg/m³",
+            "date": "27.11.2016 04:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Tallin": {
+        "27.04.2020 02:00": {
+            "city": "Tallin",
+            "location_id": 8056,
+            "location_name": "\"Liivalaia\"",
+            "location_distance": 1100.04,
+            "sensor_id": 23364,
+            "parameter": "CO",
+            "value": 167.653,
+            "units": "µg/m³",
+            "date": "27.04.2020 02:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Helsinki": {
+        "15.12.2016 15:00": {
+            "city": "Helsinki",
+            "location_id": 4588,
+            "location_name": "Mannerheimintie",
+            "location_distance": 314.93,
+            "sensor_id": 11386,
+            "parameter": "NO2",
+            "value": 33.68372,
+            "units": "µg/m³",
+            "date": "15.12.2016 15:00",
+            "rating": null
         }
     }
 }

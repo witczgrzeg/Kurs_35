@@ -1,13 +1,3 @@
-"""
-Aplikacja śledząca jakość powietrza dla danej lokalizacji:
-   Wykorzystując API openAQ (https://openaq.org/), aplikacja prezentuje użytkownikowi dane o stężeniu zanieczyszczeń w wybranej lokalizacji.
-   Użytkownik wprowadza nazwę miasta lub regionu, a aplikacja wyświetla tabelę z bieżącymi danymi o jakości powietrza
-   oraz historyczny wykres zmian stężenia poszczególnych zanieczyszczeń.
-
-   W wersji rozszerzonej aplikacja oferuje system powiadomień o przekroczeniach norm
-   oraz możliwość porównywania danych pomiędzy różnymi miejscowościami.
-"""
-
 import asyncio
 from datetime import datetime
 from geopy.geocoders import Nominatim
@@ -17,6 +7,9 @@ import aiohttp
 
 API_KEY = "9842cf2ba34018b9ff7e2f1593819e26e814a4f71f0001e65bf688f92e25c865"
 DATA_FILE = "data.json"
+
+# Globalny klient
+client: AsyncOpenAQ = None
 
 def get_coordinates(city_name):
     geolocator = Nominatim(user_agent="moja_aplikacja")
@@ -65,112 +58,89 @@ async def fetch_days_for_sensor(sensor_id, limit=30):
                 print(f"Błąd przy pobieraniu danych dniowych: HTTP {resp.status}")
                 return []
 
-async def main():
+async def get_air_quality_for_city(city):
+    global client
+    if client is None:
+        client = AsyncOpenAQ(api_key=API_KEY)
+        await client.__aenter__()  # ręczne otwarcie klienta, jak context manager
+
     handler = FileHandler(DATA_FILE)
-    city = input("Podaj nazwę miasta: ").strip()
+    lat, lon = get_coordinates(city)
 
-    try:
-        lat, lon = get_coordinates(city)
-        print(f"Współrzędne {city}: {lat}, {lon}")
+    locations = await fetch_locations(client, lat, lon)
+    if not locations:
+        return {"error": "Brak lokalizacji w pobliżu."}
 
-        async with AsyncOpenAQ(api_key=API_KEY) as client:
-            locations = await fetch_locations(client, lat, lon)
-            if not locations:
-                print("Brak lokalizacji w pobliżu.")
-                return
+    locations_sorted = sorted(locations, key=lambda x: x.distance or float('inf'))
+    first_location = locations_sorted[0]
+    sensors = first_location.sensors
+    if not sensors:
+        return {"error": "Brak sensorów dla tej lokalizacji."}
 
-            locations_sorted = sorted(locations, key=lambda x: x.distance or float('inf'))
+    first_sensor = sensors[0]
+    first_sensor_id = first_sensor.id
+    parameter_name = getattr(first_sensor.parameter, 'name', str(first_sensor.parameter))
+    parameter_units = getattr(first_sensor.parameter, 'units', "")
 
-            print(f"Lokalizacje najbliżej {city}:")
-            for loc in locations_sorted:
-                print(f"ID: {loc.id}, Nazwa: {loc.name}, Odległość: {round(loc.distance, 2)} m")
+    measurements = await fetch_measurements_for_sensor(client, first_sensor_id)
+    if not measurements:
+        return {"error": "Brak pomiarów dla tego sensora."}
 
-            first_location = locations_sorted[0]
-            sensors = first_location.sensors
-            if not sensors:
-                print("Brak sensorów dla tej lokalizacji.")
-                return
+    measurements_with_dates = [(m, parse_measurement_date(m)) for m in measurements]
+    measurements_with_dates = [md for md in measurements_with_dates if md[1] is not None]
 
-            first_sensor = sensors[0]
-            first_sensor_id = first_sensor.id
-            parameter_name = getattr(first_sensor.parameter, 'name', str(first_sensor.parameter))
-            parameter_units = getattr(first_sensor.parameter, 'units', "")
+    if not measurements_with_dates:
+        return {"error": "Brak poprawnych dat pomiarów."}
 
-            print(f"\nPobieram pomiary dla sensora ID: {first_sensor_id} (parametr: {parameter_name})")
+    latest, latest_date = sorted(measurements_with_dates, key=lambda x: x[1])[-1]
+    date_str = latest_date.strftime("%d.%m.%Y %H:%M")
 
-            measurements = await fetch_measurements_for_sensor(client, first_sensor_id)
-            if not measurements:
-                print("Brak pomiarów dla tego sensora.")
-                return
+    parameter = getattr(latest.parameter, "name", str(latest.parameter))
+    units = getattr(latest.parameter, "units", "")
 
-            measurements_with_dates = [(m, parse_measurement_date(m)) for m in measurements]
-            measurements_with_dates = [md for md in measurements_with_dates if md[1] is not None]
-
-            if not measurements_with_dates:
-                print("Brak poprawnych dat pomiarów.")
-                return
-
-            latest, latest_date = sorted(measurements_with_dates, key=lambda x: x[1])[-1]
-            date_str = latest_date.strftime("%d.%m.%Y %H:%M")
-
-            parameter = getattr(latest.parameter, "name", str(latest.parameter))
-            units = getattr(latest.parameter, "units", "")
-
-            print(f"\nNajnowszy pomiar dla {city}:")
-            print(f"{parameter.upper()}: {latest.value} {units} (data: {date_str})")
-
+    rating = None
+    if latest.value is None:
+        rating = "Brak danych"
+    else:
+        if parameter.lower() == "pm25":
+            if latest.value <= 12:
+                rating = "GOOD ✅"
+            elif latest.value <= 35.4:
+                rating = "MEDIUM ⚠️"
+            else:
+                rating = "BAD ❌"
+        elif parameter.lower() == "co":
+            co_mg_m3 = latest.value / 1000
+            if co_mg_m3 <= 10:
+                rating = "GOOD ✅"
+            elif co_mg_m3 <= 30:
+                rating = "MEDIUM ⚠️"
+            else:
+                rating = "BAD ❌"
+        else:
             rating = None
 
-            if latest.value is None:
-                rating = "Brak danych"
-                print("Brak danych pomiarowych")
-            else:
-                if parameter.lower() == "pm25":
-                    if latest.value <= 12:
-                        rating = "GOOD ✅"
-                    elif latest.value <= 35.4:
-                        rating = "MEDIUM ⚠️"
-                    else:
-                        rating = "BAD ❌"
-                    print(f"Ocena jakości powietrza: {rating}")
-                elif parameter.lower() == "co":
-                    # Normy WHO dla CO w mg/m3 -> zamieniamy µg/m3 na mg/m3 dzieląc przez 1000
-                    co_mg_m3 = latest.value / 1000
-                    if co_mg_m3 <= 10:
-                        rating = "GOOD ✅"
-                    elif co_mg_m3 <= 30:
-                        rating = "MEDIUM ⚠️"
-                    else:
-                        rating = "BAD ❌"
-                    print(f"Ocena jakości powietrza: {rating}")
-                else:
-                    print("Brak oceny – parametr to nie PM2.5 ani CO")
+    entry = {
+        "city": city,
+        "location_id": first_location.id,
+        "location_name": first_location.name,
+        "location_distance": round(first_location.distance or 0, 2),
+        "sensor_id": first_sensor_id,
+        "parameter": parameter.upper(),
+        "value": latest.value,
+        "units": units,
+        "date": date_str,
+        "rating": rating
+    }
 
-            # Przygotowanie struktury do zapisu JSON
-            entry = {
-                "parameter": parameter.upper(),
-                "value": latest.value,
-                "units": units,
-                "rating": rating
-            }
+    handler[city, date_str] = entry
+    handler.write_data_to_file()
 
-            handler[city, date_str] = entry
+    return entry
 
-            handler[city, date_str] = entry
-
-            # Pobranie danych dziennych i zapis
-            days_data = await fetch_days_for_sensor(first_sensor_id)
-            if days_data:
-                handler[f"sensor_{first_sensor_id}"] = days_data
-
-            handler.write_data_to_file()
-
-            print(f"\nZapisane dane w {DATA_FILE}:")
-            for c, d, val in handler.items():
-                print(f"{c} | {d} | {val}")
-
-    except Exception as e:
-        print("Błąd:", e)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+# Funkcja do zamykania klienta przy zamykaniu aplikacji
+async def close_client():
+    global client
+    if client:
+        await client.__aexit__(None, None, None)
+        client = None

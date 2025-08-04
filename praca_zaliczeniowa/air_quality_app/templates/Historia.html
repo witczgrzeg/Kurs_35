@@ -1,177 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8" />
-    <title>System sprawdzania jakości powietrza OpenAQ</title>
+    <title>Historia wyszukiwań jakości powietrza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+          crossorigin="anonymous" />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-<a class="navbar-brand" href="{{ url_for('main_page.index') }}">AirQ Main</a>
-    <div id="navbarSupportedContent">
-      <ul class="nav justify-content-end">
+    <a class="navbar-brand" href="{{ url_for('main_page.index') }}">AirQ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="{{ url_for('main_page') }}">Strona główna</a>
+          <a class="nav-link {% if request.endpoint == 'main_page.index' %}active{% endif %}" href="{{ url_for('main_page.index') }}">Strona główna</a>
         </li>
         <li class="nav-item">
-<a class="nav-link" href="{{ url_for('main_page.historia') }}">Historia</a>
+          <a class="nav-link {% if request.endpoint == 'main_page.historia' %}active{% endif %}" href="{{ url_for('main_page.historia') }}">Historia</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-  </div>
-</nav>
-<div class="d-flex flex-column align-items-center">
 <div class="container mt-5">
-  <h2 class="text-center mb-4">Ostatnio wyszukiwane dane</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">Miasto</th>
-        <th scope="col">ID Lokalizacji</th>
-        <th scope="col">Nazwa Lokalizacji</th>
-        <th scope="col">Odległość [m]</th>
-        <th scope="col">Sensor ID</th>
-        <th scope="col">Data pomiaru</th>
-        <th scope="col">Wartość pomiaru</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Berlin -->
-      <tr>
-        <td>Berlin</td>
-        <td>2993</td>
-        <td>Berlin Neukölln</td>
-        <td>3217.09</td>
-        <td>sensor_11839788</td>
-        <td>03.01.2025 02:00</td>
-        <td>CO: 220.0 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>3017</td>
-        <td>Berlin Karlshorst</td>
-        <td>9312.71</td>
-        <td>sensor_4275225</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 0.38 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>3019</td>
-        <td>Berlin Mitte</td>
-        <td>1388.83</td>
-        <td>sensor_4275126</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 2.33 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>3021</td>
-        <td>DEBE064</td>
-        <td>4018.86</td>
-        <td>sensor_1300117</td>
-        <td>12.06.2021 01:00</td>
-        <td>PM25: 15.63 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>3025</td>
-        <td>DEBE063</td>
-        <td>5622.58</td>
-        <td>sensor_4274508</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 15.77 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>3026</td>
-        <td>Berlin Schöneberg</td>
-        <td>4395.28</td>
-        <td>sensor_4274466</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 0.08 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>4761</td>
-        <td>Berlin Wedding</td>
-        <td>4918.49</td>
-        <td>sensor_4275114</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 0.22 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>4762</td>
-        <td>Berlin Schildhornstraße</td>
-        <td>7588.66</td>
-        <td>sensor_4275011</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 2.11 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>4764</td>
-        <td>Berlin Mariendorfer Damm</td>
-        <td>8123.72</td>
-        <td>sensor_4274699</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 8.18 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Berlin</td>
-        <td>4765</td>
-        <td>Berlin Hardenbergplatz</td>
-        <td>4500.63</td>
-        <td>sensor_4274675</td>
-        <td>03.04.2023 17:00</td>
-        <td>NO: 6.66 µg/m³</td>
-      </tr>
+  <h2 class="text-center mb-4">Ostatnio wyszukiwane dane jakości powietrza</h2>
 
-      <!-- Łódź -->
-      <tr>
-        <td>Łódź</td>
-        <td>7207</td>
-        <td>Łódź, ul. Gdańska</td>
-        <td>1913.41</td>
-        <td>sensor_35248</td>
-        <td>25.11.2018 21:00</td>
-        <td>BC: 8.84 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Łódź</td>
-        <td>7252</td>
-        <td>Łódź, ul. Czernika</td>
-        <td>3908.72</td>
-        <td>sensor_20943</td>
-        <td>25.11.2018 21:00</td>
-        <td>CO: 1082.0 µg/m³</td>
-      </tr>
-      <tr>
-        <td>Łódź</td>
-        <td>10622</td>
-        <td>Łódź, al. Jana Pawła II</td>
-        <td>3619.88</td>
-        <td>sensor_35296</td>
-        <td>25.11.2018 21:00</td>
-        <td>BC: 5.45 µg/m³</td>
-      </tr>
-    </tbody>
-  </table>
+  {% if entries %}
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle text-center">
+      <thead class="table-light">
+        <tr>
+          <th>Miasto</th>
+          <th>Data pomiaru</th>
+          <th>ID Lokalizacji</th>
+          <th>Nazwa Lokalizacji</th>
+          <th>Odległość [m]</th>
+          <th>Sensor ID</th>
+          <th>Parametr</th>
+          <th>Wartość</th>
+          <th>Jednostka</th>
+          <th>Ocena jakości</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for city, date, info in entries %}
+        <tr>
+          <td>{{ city }}</td>
+          <td>{{ date }}</td>
+          <td>{{ info.location_id }}</td>
+          <td>{{ info.location_name }}</td>
+          <td>{{ info.location_distance }}</td>
+          <td>{{ info.sensor_id }}</td>
+          <td>{{ info.parameter }}</td>
+          <td>{{ info.value }}</td>
+          <td>{{ info.units }}</td>
+          <td>{{ info.rating if info.rating else "-" }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+    <p class="text-center text-muted">Brak zapisanych danych do wyświetlenia.</p>
+  {% endif %}
 </div>
-    <div class="mt-5 d-flex justify-content-around flex-end container">
-        <div>
-            <h2>PLACE HOLDER 1</h2>
-        </div>
-    <div>
-      <h2>PLACE HOLDER 2</h2>
-    </div>
-    </div>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-dRklv6mROgQPYZuZT7K2Ox4vB46P2nKttMkcXEr4gC7UOz77KoqZcICIQkiFZ0Zf"
+        crossorigin="anonymous"></script>
 </body>
 </html>

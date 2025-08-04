@@ -8,7 +8,6 @@ class FileHandler:
             with open(self.file, "w", encoding="utf-8") as file:
                 json.dump({}, file)
         self.data = self.read_data_from_file()
-        self.iterator = iter(self.data.items())
 
     def read_data_from_file(self):
         with open(self.file, encoding="utf-8") as file:
@@ -34,6 +33,7 @@ class FileHandler:
                 yield city, date_value, air_quality_info
 
     def __iter__(self):
+        self.iterator = iter(self.items())
         return self
 
     def __next__(self):
