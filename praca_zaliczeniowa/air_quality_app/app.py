@@ -1,30 +1,8 @@
-# from flask import Flask
-#
-# app= Flask(__name__)
-#
-# @app.route("/")
-#
-# def hello():
-#     return "Hello Worold"
-#
-# @app.route("/hello")
-# @app.route("/hello/<name>")
-# def hello_user(name=None):
-#     if name:
-#         return f"Hello, {name}!"
-#     else:
-#         return "Hello, User!"
-from flask import Flask, render_template
+from flask import Flask
+from routes import main_page
 
 app = Flask(__name__)
+app.register_blueprint(main_page)
 
-@app.route("/")
-def main_page():
-    return render_template("main_page.html")
-
-@app.route("/historia")
-def historia():
-    return render_template("historia.html")
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)

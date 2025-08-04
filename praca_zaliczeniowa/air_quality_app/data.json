@@ -1,0 +1,10 @@
+{
+    "Warszawa": {
+        "03.02.2016 08:00": {
+            "parameter": "CO",
+            "value": 762.0,
+            "units": "µg/m³",
+            "rating": "GOOD ✅"
+        }
+    }
+}

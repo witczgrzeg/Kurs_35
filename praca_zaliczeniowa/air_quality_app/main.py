@@ -1,13 +1,11 @@
 """
-
-**Aplikacja śledząca jakość powietrza dla danej lokalizacji:**
+Aplikacja śledząca jakość powietrza dla danej lokalizacji:
    Wykorzystując API openAQ (https://openaq.org/), aplikacja prezentuje użytkownikowi dane o stężeniu zanieczyszczeń w wybranej lokalizacji.
    Użytkownik wprowadza nazwę miasta lub regionu, a aplikacja wyświetla tabelę z bieżącymi danymi o jakości powietrza
    oraz historyczny wykres zmian stężenia poszczególnych zanieczyszczeń.
 
    W wersji rozszerzonej aplikacja oferuje system powiadomień o przekroczeniach norm
    oraz możliwość porównywania danych pomiędzy różnymi miejscowościami.
-
 """
 
 import asyncio
@@ -15,6 +13,7 @@ from datetime import datetime
 from geopy.geocoders import Nominatim
 from openaq import AsyncOpenAQ
 from file_handler import FileHandler
+import aiohttp
 
 API_KEY = "9842cf2ba34018b9ff7e2f1593819e26e814a4f71f0001e65bf688f92e25c865"
 DATA_FILE = "data.json"
@@ -48,17 +47,23 @@ def parse_measurement_date(m):
     except Exception:
         return None
 
-async def fetch_days_for_sensor(client, sensor_id, limit=30):
-    # Korzystamy z metody client.get() do wywołania endpointu 'sensors/{sensor_id}/days'
-    endpoint = f"sensors/{sensor_id}/days"
+async def fetch_days_for_sensor(sensor_id, limit=30):
+    url = f"https://api.openaq.org/v2/sensors/{sensor_id}/days"
     params = {
         "limit": limit,
         "order_by": "datetime",
-        "sort": "desc"
+        "sort": "desc",
+        "api_key": API_KEY
     }
-    response = await client.get(endpoint, params=params)
-    # Zwracamy listę wyników
-    return response.get("results", [])
+
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, params=params) as resp:
+            if resp.status == 200:
+                json_data = await resp.json()
+                return json_data.get("results", [])
+            else:
+                print(f"Błąd przy pobieraniu danych dniowych: HTTP {resp.status}")
+                return []
 
 async def main():
     handler = FileHandler(DATA_FILE)
@@ -88,8 +93,8 @@ async def main():
 
             first_sensor = sensors[0]
             first_sensor_id = first_sensor.id
-            parameter_name = first_sensor.parameter.name if hasattr(first_sensor.parameter, 'name') else str(first_sensor.parameter)
-            parameter_units = first_sensor.parameter.units if hasattr(first_sensor.parameter, 'units') else ""
+            parameter_name = getattr(first_sensor.parameter, 'name', str(first_sensor.parameter))
+            parameter_units = getattr(first_sensor.parameter, 'units', "")
 
             print(f"\nPobieram pomiary dla sensora ID: {first_sensor_id} (parametr: {parameter_name})")
 
@@ -98,7 +103,6 @@ async def main():
                 print("Brak pomiarów dla tego sensora.")
                 return
 
-            # Sparsuj daty pomiarów i wybierz najnowszy
             measurements_with_dates = [(m, parse_measurement_date(m)) for m in measurements]
             measurements_with_dates = [md for md in measurements_with_dates if md[1] is not None]
 
@@ -109,23 +113,58 @@ async def main():
             latest, latest_date = sorted(measurements_with_dates, key=lambda x: x[1])[-1]
             date_str = latest_date.strftime("%d.%m.%Y %H:%M")
 
-            parameter = latest.parameter.name if hasattr(latest.parameter, "name") else str(latest.parameter)
-            units = latest.parameter.units if hasattr(latest.parameter, "units") else ""
+            parameter = getattr(latest.parameter, "name", str(latest.parameter))
+            units = getattr(latest.parameter, "units", "")
 
             print(f"\nNajnowszy pomiar dla {city}:")
             print(f"{parameter.upper()}: {latest.value} {units} (data: {date_str})")
 
-            # zapis do pliku przez FileHandler
-            handler[city, date_str] = f"{parameter.upper()}: {latest.value} {units}"
+            rating = None
 
-            # --- Pobranie danych dziennych (days) i zapis ---
-            days_data = await fetch_days_for_sensor(client, first_sensor_id)
+            if latest.value is None:
+                rating = "Brak danych"
+                print("Brak danych pomiarowych")
+            else:
+                if parameter.lower() == "pm25":
+                    if latest.value <= 12:
+                        rating = "GOOD ✅"
+                    elif latest.value <= 35.4:
+                        rating = "MEDIUM ⚠️"
+                    else:
+                        rating = "BAD ❌"
+                    print(f"Ocena jakości powietrza: {rating}")
+                elif parameter.lower() == "co":
+                    # Normy WHO dla CO w mg/m3 -> zamieniamy µg/m3 na mg/m3 dzieląc przez 1000
+                    co_mg_m3 = latest.value / 1000
+                    if co_mg_m3 <= 10:
+                        rating = "GOOD ✅"
+                    elif co_mg_m3 <= 30:
+                        rating = "MEDIUM ⚠️"
+                    else:
+                        rating = "BAD ❌"
+                    print(f"Ocena jakości powietrza: {rating}")
+                else:
+                    print("Brak oceny – parametr to nie PM2.5 ani CO")
+
+            # Przygotowanie struktury do zapisu JSON
+            entry = {
+                "parameter": parameter.upper(),
+                "value": latest.value,
+                "units": units,
+                "rating": rating
+            }
+
+            handler[city, date_str] = entry
+
+            handler[city, date_str] = entry
+
+            # Pobranie danych dziennych i zapis
+            days_data = await fetch_days_for_sensor(first_sensor_id)
             if days_data:
                 handler[f"sensor_{first_sensor_id}"] = days_data
 
             handler.write_data_to_file()
 
-            # wyświetlenie dotychczasowych danych
             print(f"\nZapisane dane w {DATA_FILE}:")
             for c, d, val in handler.items():
                 print(f"{c} | {d} | {val}")

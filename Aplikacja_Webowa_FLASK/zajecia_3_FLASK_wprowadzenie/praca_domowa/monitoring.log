@@ -1,0 +1,43 @@
+2025-07-22 13:59:06,340 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,340 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,341 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-07-22 13:59:15,332 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'dwa'
+2025-07-22 13:59:34,812 - WARNING - Nieznany produkt przy sprzeda\u017cy: klocki duplo
+2025-07-22 14:00:16,644 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'eqweqweq'
+2025-07-22 14:00:20,236 - WARNING - B\u0142\u0105d konwersji do int: invalid literal for int() with base 10: 'eqeqweq'
+2025-07-22 14:00:45,735 - INFO - Function 'save_produkty_file' executed successfully in 0.0020 seconds.
+2025-07-22 14:00:45,736 - INFO - Function 'save_historia_file' executed successfully in 0.0012 seconds.
+2025-07-22 14:00:45,737 - INFO - Function 'save_saldo_file' executed successfully in 0.0010 seconds.
+2025-07-30 23:56:16,810 - INFO - Function 'load_produkty_file' executed successfully in 0.0005 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_historia_file' executed successfully in 0.0004 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_saldo_file' executed successfully in 0.0004 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:25,849 - WARNING -  * Debugger is active!
+2025-08-04 22:14:25,851 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:14:43,077 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-04 22:14:43,333 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:14:43,333 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:43,333 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:43,348 - WARNING -  * Debugger is active!
+2025-08-04 22:14:43,350 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:15:01,588 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-04 22:15:01,861 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:15:01,861 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:15:01,861 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:15:01,878 - WARNING -  * Debugger is active!
+2025-08-04 22:15:01,882 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:17:21,114 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:17:21,114 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,114 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,141 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 22:17:21,141 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 22:17:21,142 - INFO -  * Restarting with stat
+2025-08-04 22:17:21,363 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:17:21,363 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,363 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,378 - WARNING -  * Debugger is active!
+2025-08-04 22:17:21,380 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:17:38,978 - INFO - 127.0.0.1 - - [04/Aug/2025 22:17:38] "GET / HTTP/1.1" 200 -

@@ -11,7 +11,7 @@ class FileHandler:
         self.iterator = iter(self.data.items())
 
     def read_data_from_file(self):
-        with open(self.file, encoding="utf-8") as file:  # <-- tutaj dodaj encoding="utf-8"
+        with open(self.file, encoding="utf-8") as file:
             return json.load(file)
 
     def __getitem__(self, item):
