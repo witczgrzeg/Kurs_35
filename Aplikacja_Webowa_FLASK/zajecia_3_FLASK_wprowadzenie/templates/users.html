@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<body>
+<button>
+<a href="{{ url_for('randomowa_nazwa') }}">Home</a>
+</button>
+<h1>SALDO</h1>
+<button>
+    <h2> {{ saldo }}</h2>
+</button>
     <h1>Users List</h1>
     <table>
         <tr>
@@ -21,13 +27,26 @@
     </table>
     <form method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"required>
+        <input type="text" id="name" name="name" required>
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age"required>
+        <input type="number" id="age" name="age" required>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="city">City:</label>
-        <input type="text" id="city" name="city"required>
+        <input type="text" id="city" name="city" required>
+        <input type="hidden" name="form_type" value="add_user">
         <button type="submit">Add User</button>
+    </form>
+    <form method="post">
+        <label for="delete_name">Delete User by Name:</label>
+        <input type="text" id="delete_name" name="delete_name" required>
+        <input type="hidden" name="form_type" value="delete_user">
+        <button type="submit">Delete User</button>
+    </form>
+    <form method="post">
+        <label for="new_saldo_id">Zmien saldo</label>
+        <input type="number" id="new_Saldo_id" name="new_saldo" required>
+        <input type="hidden" name="form_type" value="change_price">
+        <button type="submit">Zmień</button>
     </form>
 {% endblock %}
