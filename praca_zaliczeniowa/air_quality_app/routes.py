@@ -10,7 +10,7 @@ main_page = Blueprint('main_page', __name__)
 # Utwórz globalną pętlę i klienta asynchronicznego
 event_loop = asyncio.get_event_loop()
 
-@main_page.route('/', methods=['GET'])
+@main_page.route('/', methods=['GET', 'POST'])
 def index():
     city = request.args.get('imie')
     data = None

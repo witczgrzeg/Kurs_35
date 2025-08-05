@@ -257,11 +257,16 @@
     {
         "nazwa": "Korzuch",
         "cena": 1000.0,
-        "ilosc": 1
+        "ilosc": 4
     },
     {
         "nazwa": "klocuszki",
         "cena": 10.0,
         "ilosc": 5
+    },
+    {
+        "nazwa": "mapa",
+        "cena": 10.0,
+        "ilosc": 0
     }
 ]
