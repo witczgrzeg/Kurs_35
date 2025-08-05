@@ -14,30 +14,25 @@ def create_new_product(product_form: dict):
     nazwa = product_form.get("nazwa")
     cena = float(product_form.get("cena"))
     ilosc = int(product_form.get("ilosc"))
-
     koszt = cena * ilosc
 
-    produkt = next((produkt for produkt in file_handler.produkty if produkt["nazwa"] == nazwa), None)
-    if produkt:
-        produkt["ilosc"] += ilosc
+    for produkt in file_handler.produkty:
+        if produkt["nazwa"] == nazwa:
+            produkt["ilosc"] += ilosc
+            break
     else:
-        file_handler.produkty.append({
-            "nazwa": nazwa,
-            "cena": cena,
-            "ilosc": ilosc,
-        })
+        file_handler.produkty.append({"nazwa": nazwa, "cena": cena, "ilosc": ilosc})
 
     file_handler.saldo -= koszt
     file_handler.historia.append(f"Sprzedaż: {nazwa}, cena: {cena}, ilość: {ilosc}, wpływ: {koszt} zł")
 
-    save_temporary_data(file_handler, file_handler.produkty, file_handler.saldo, file_handler.historia)
-
+    _save()
 
 def update_product(product_form: dict):
     nazwa = product_form.get("nazwa")
     ilosc = int(product_form.get("ilosc"))
 
-    produkt = next((produkt for produkt in file_handler.produkty if produkt["nazwa"] == nazwa), None)
+    produkt = next((p for p in file_handler.produkty if p["nazwa"] == nazwa), None)
     if not produkt:
         raise ValueError("Produkt nie istnieje w magazynie")
 
@@ -49,11 +44,16 @@ def update_product(product_form: dict):
     file_handler.saldo += koszt
     file_handler.historia.append(f"Zakup: {nazwa}, cena: {produkt['cena']}, ilość: {ilosc}, koszt: {koszt} zł")
 
-    save_temporary_data(file_handler, file_handler.produkty, file_handler.saldo, file_handler.historia)
-
+    _save()
 
 def change_saldo(amount: float):
     if file_handler.saldo + amount < 0:
         raise ValueError("Wartość nie może być ujemna")
     file_handler.saldo += amount
+    _save()
+
+def get_historia(start: int = None, koniec: int = None):
+    return file_handler.historia[start:koniec] if start is not None and koniec is not None else file_handler.historia
+
+def _save():
     save_temporary_data(file_handler, file_handler.produkty, file_handler.saldo, file_handler.historia)

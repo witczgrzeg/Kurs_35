@@ -572,3 +572,60 @@
 2025-08-05 02:45:24,191 - INFO - Function 'save_historia_file' executed successfully in 0.0007 seconds.
 2025-08-05 02:45:24,197 - INFO - 127.0.0.1 - - [05/Aug/2025 02:45:24] "POST / HTTP/1.1" 200 -
 2025-08-05 02:45:27,352 - INFO - 127.0.0.1 - - [05/Aug/2025 02:45:27] "GET /historia HTTP/1.1" 200 -
+2025-08-05 03:16:36,650 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:16:36,650 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:36,650 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:36,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 03:16:36,767 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 03:16:36,768 - INFO -  * Restarting with stat
+2025-08-05 03:16:37,001 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,001 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,001 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,018 - WARNING -  * Debugger is active!
+2025-08-05 03:16:37,020 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:16:48,530 - INFO - 127.0.0.1 - - [05/Aug/2025 03:16:48] "GET / HTTP/1.1" 200 -
+2025-08-05 03:16:52,576 - INFO - 127.0.0.1 - - [05/Aug/2025 03:16:52] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:17:03,023 - INFO - 127.0.0.1 - - [05/Aug/2025 03:17:03] "GET / HTTP/1.1" 200 -
+2025-08-05 03:19:36,483 - INFO - 127.0.0.1 - - [05/Aug/2025 03:19:36] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:09,526 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:24:09,573 - INFO -  * Restarting with stat
+2025-08-05 03:24:09,830 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:24:09,831 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:24:09,831 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:24:09,848 - WARNING -  * Debugger is active!
+2025-08-05 03:24:09,851 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:24:13,748 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:13] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:15,904 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:15] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:17,317 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:17] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:24:18,329 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:18] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:18,760 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:18] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:19,934 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:19] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:22,528 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:22] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:24,087 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:24] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:25,530 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:25] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:24:30,907 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:30] "GET / HTTP/1.1" 200 -
+2025-08-05 03:24:39,104 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:39] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:40,167 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:40] "GET / HTTP/1.1" 200 -
+2025-08-05 03:24:41,686 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:41] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:43,993 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:43] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:45,533 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:45] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:48,035 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:48] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:49,240 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:49] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:25:21,613 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:25:21,706 - INFO -  * Restarting with stat
+2025-08-05 03:25:22,003 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:25:22,003 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:25:22,003 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:22,023 - WARNING -  * Debugger is active!
+2025-08-05 03:25:22,025 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:25:36,206 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:25:36,261 - INFO -  * Restarting with stat
+2025-08-05 03:25:36,544 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,545 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,545 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,559 - WARNING -  * Debugger is active!
+2025-08-05 03:25:36,561 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:25:43,214 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:43] "GET / HTTP/1.1" 200 -
+2025-08-05 03:25:45,913 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:45] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:25:46,820 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:46] "GET / HTTP/1.1" 200 -
