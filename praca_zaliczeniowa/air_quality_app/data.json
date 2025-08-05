@@ -130,5 +130,17 @@
             "date": "12.06.2017 22:00",
             "rating": "GOOD ✅"
         }
+    },
+    "Budapeszt": {
+        "04.04.2023 02:00": {
+            "city": "Budapeszt",
+            "location_name": "Budapest Gergely utca",
+            "sensor_id": 4273183,
+            "parameter": "CO",
+            "value": 180.0,
+            "units": "µg/m³",
+            "date": "04.04.2023 02:00",
+            "rating": "GOOD ✅"
+        }
     }
 }
