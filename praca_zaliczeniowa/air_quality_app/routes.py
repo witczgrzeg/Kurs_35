@@ -3,26 +3,19 @@ import asyncio
 from main import get_air_quality_for_city
 from file_handler import FileHandler
 
-DATA_FILE = "data.json"
-
 main_page = Blueprint('main_page', __name__)
-
-# Utwórz globalną pętlę i klienta asynchronicznego
-event_loop = asyncio.get_event_loop()
+loop = asyncio.get_event_loop()
+DATA_FILE = "data.json"
 
 @main_page.route('/', methods=['GET', 'POST'])
 def index():
-    city = request.args.get('imie')
-    data = None
-    error = None
+    city = request.args.get("imie")
+    data = error = None
 
     if city:
         try:
-            # Uruchamiamy asynchroniczną funkcję w istniejącej pętli
-            data = event_loop.run_until_complete(get_air_quality_for_city(city))
-            if "error" in data:
-                error = data["error"]
-                data = None
+            data = loop.run_until_complete(get_air_quality_for_city(city))
+            error = data.pop("error", None)
         except Exception as e:
             error = str(e)
 
@@ -30,6 +23,5 @@ def index():
 
 @main_page.route('/historia')
 def historia():
-    handler = FileHandler(DATA_FILE)
-    entries = list(handler.items())
+    entries = list(FileHandler(DATA_FILE).items())
     return render_template("historia.html", entries=entries)
