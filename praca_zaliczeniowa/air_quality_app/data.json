@@ -106,5 +106,29 @@
             "date": "03.04.2023 17:00",
             "rating": "GOOD ✅"
         }
+    },
+    "madryt": {
+        "11.12.2016 10:00": {
+            "city": "madryt",
+            "location_name": "PLAZA DE ESPAÑA",
+            "sensor_id": 7498,
+            "parameter": "CO",
+            "value": 500.0,
+            "units": "µg/m³",
+            "date": "11.12.2016 10:00",
+            "rating": "GOOD ✅"
+        }
+    },
+    "Moskwa": {
+        "12.06.2017 22:00": {
+            "city": "Moskwa",
+            "location_name": "Пролетарский проспект",
+            "sensor_id": 13282,
+            "parameter": "CO",
+            "value": 590.0,
+            "units": "µg/m³",
+            "date": "12.06.2017 22:00",
+            "rating": "GOOD ✅"
+        }
     }
 }
