@@ -142,5 +142,17 @@
             "date": "04.04.2023 02:00",
             "rating": "GOOD ✅"
         }
+    },
+    "Monachium": {
+        "05.12.2016 15:00": {
+            "city": "Monachium",
+            "location_name": "München/Stachus",
+            "sensor_id": 7559,
+            "parameter": "CO",
+            "value": 600.0,
+            "units": "µg/m³",
+            "date": "05.12.2016 15:00",
+            "rating": "GOOD ✅"
+        }
     }
 }
