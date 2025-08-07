@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magazynowy system księgowy - Historia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body class="bg-light text-dark m-2 p-0">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('strona_glowna.index') }}">System KM</a>
+        <div id="navbarSupportedContent">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ url_for('strona_glowna.index') }}">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('strona_glowna.historia') }}">Historia</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center my-5">
+    <h1 class="display-6">Saldo:</h1>
+    <h2 class="display-4 text-success">{{ saldo }} PLN</h2>
+</div>
+
+<div class="container">
+    <h1>Historia transakcji:</h1>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Transakcja</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for wpis in historia %}
+            <tr>
+                <td>{{ wpis }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td>Brak historii transakcji.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div>
+    <nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    {% if has_prev %}
+    <li class="page-item">
+      <a class="page-link" href="{{ url_for('strona_glowna.historia', start=prev_start, koniec=prev_koniec) }}">Poprzednia</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <span class="page-link">Poprzednia</span>
+    </li>
+    {% endif %}
+
+    <li class="page-item disabled">
+      <span class="page-link">Wyświetlane wpisy: {{ start }} - {{ koniec }}</span>
+    </li>
+
+    {% if has_next %}
+    <li class="page-item">
+      <a class="page-link" href="{{ url_for('strona_glowna.historia', start=next_start, koniec=next_koniec) }}">Następna</a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <span class="page-link">Następna</span>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+
+</div>
+</body>
+</html>

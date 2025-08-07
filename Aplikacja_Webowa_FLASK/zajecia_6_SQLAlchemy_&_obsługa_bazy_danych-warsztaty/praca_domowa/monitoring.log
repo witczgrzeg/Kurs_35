@@ -1,0 +1,999 @@
+2025-07-22 13:59:06,340 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,340 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-07-22 13:59:06,341 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-07-22 13:59:15,332 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'dwa'
+2025-07-22 13:59:34,812 - WARNING - Nieznany produkt przy sprzeda\u017cy: klocki duplo
+2025-07-22 14:00:16,644 - WARNING - B\u0142\u0105d konwersji do float: could not convert string to float: 'eqweqweq'
+2025-07-22 14:00:20,236 - WARNING - B\u0142\u0105d konwersji do int: invalid literal for int() with base 10: 'eqeqweq'
+2025-07-22 14:00:45,735 - INFO - Function 'save_produkty_file' executed successfully in 0.0020 seconds.
+2025-07-22 14:00:45,736 - INFO - Function 'save_historia_file' executed successfully in 0.0012 seconds.
+2025-07-22 14:00:45,737 - INFO - Function 'save_saldo_file' executed successfully in 0.0010 seconds.
+2025-07-30 23:56:16,810 - INFO - Function 'load_produkty_file' executed successfully in 0.0005 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_historia_file' executed successfully in 0.0004 seconds.
+2025-07-30 23:56:16,811 - INFO - Function 'load_saldo_file' executed successfully in 0.0004 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:25,835 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:25,849 - WARNING -  * Debugger is active!
+2025-08-04 22:14:25,851 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:14:43,077 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-04 22:14:43,333 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:14:43,333 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:43,333 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:14:43,348 - WARNING -  * Debugger is active!
+2025-08-04 22:14:43,350 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:15:01,588 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-04 22:15:01,861 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:15:01,861 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:15:01,861 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:15:01,878 - WARNING -  * Debugger is active!
+2025-08-04 22:15:01,882 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:17:21,114 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:17:21,114 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,114 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,141 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 22:17:21,141 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 22:17:21,142 - INFO -  * Restarting with stat
+2025-08-04 22:17:21,363 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 22:17:21,363 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,363 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 22:17:21,378 - WARNING -  * Debugger is active!
+2025-08-04 22:17:21,380 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 22:17:38,978 - INFO - 127.0.0.1 - - [04/Aug/2025 22:17:38] "GET / HTTP/1.1" 200 -
+2025-08-04 23:45:14,787 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:45:14,787 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:14,788 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:14,813 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 23:45:14,813 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 23:45:14,814 - INFO -  * Restarting with stat
+2025-08-04 23:45:15,065 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:45:15,065 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:15,066 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:15,081 - WARNING -  * Debugger is active!
+2025-08-04 23:45:15,083 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 23:45:43,707 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:45:43,707 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:43,708 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:43,736 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 23:45:43,736 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 23:45:43,738 - INFO -  * Restarting with stat
+2025-08-04 23:45:43,964 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:45:43,965 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:43,965 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:45:43,979 - WARNING -  * Debugger is active!
+2025-08-04 23:45:43,981 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 23:45:58,010 - INFO - 127.0.0.1 - - [04/Aug/2025 23:45:58] "GET / HTTP/1.1" 200 -
+2025-08-04 23:46:45,481 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:46:45,481 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:46:45,481 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:46:45,505 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 23:46:45,505 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 23:46:45,506 - INFO -  * Restarting with stat
+2025-08-04 23:46:45,736 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:46:45,737 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:46:45,737 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:46:45,752 - WARNING -  * Debugger is active!
+2025-08-04 23:46:45,754 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 23:46:55,728 - INFO - 127.0.0.1 - - [04/Aug/2025 23:46:55] "GET / HTTP/1.1" 200 -
+2025-08-04 23:46:58,076 - INFO - 127.0.0.1 - - [04/Aug/2025 23:46:58] "[33mGET /historia.html HTTP/1.1[0m" 404 -
+2025-08-04 23:51:11,357 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:51:11,358 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:51:11,358 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-04 23:51:11,385 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-04 23:51:11,385 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-04 23:51:11,386 - INFO -  * Restarting with stat
+2025-08-04 23:51:11,621 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:51:11,621 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:51:11,622 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-04 23:51:11,639 - WARNING -  * Debugger is active!
+2025-08-04 23:51:11,641 - INFO -  * Debugger PIN: 431-185-460
+2025-08-04 23:58:34,695 - INFO - 127.0.0.1 - - [04/Aug/2025 23:58:34] "GET / HTTP/1.1" 200 -
+2025-08-04 23:58:53,563 - INFO - 127.0.0.1 - - [04/Aug/2025 23:58:53] "GET / HTTP/1.1" 200 -
+2025-08-05 00:01:15,125 - INFO - 127.0.0.1 - - [05/Aug/2025 00:01:15] "GET / HTTP/1.1" 200 -
+2025-08-05 00:05:02,330 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:05:02,443 - INFO -  * Restarting with stat
+2025-08-05 00:05:02,686 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:05:02,686 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:05:02,686 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:05:02,752 - WARNING -  * Debugger is active!
+2025-08-05 00:05:02,759 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:09:51,708 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:09:51,746 - INFO -  * Restarting with stat
+2025-08-05 00:09:52,177 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:09:52,177 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:09:52,178 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:09:52,193 - WARNING -  * Debugger is active!
+2025-08-05 00:09:52,195 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:14:06,816 - INFO - 127.0.0.1 - - [05/Aug/2025 00:14:06] "GET / HTTP/1.1" 200 -
+2025-08-05 00:17:23,360 - INFO - 127.0.0.1 - - [05/Aug/2025 00:17:23] "GET / HTTP/1.1" 200 -
+2025-08-05 00:18:07,065 - INFO - 127.0.0.1 - - [05/Aug/2025 00:18:07] "GET / HTTP/1.1" 200 -
+2025-08-05 00:18:48,433 - INFO - 127.0.0.1 - - [05/Aug/2025 00:18:48] "GET / HTTP/1.1" 200 -
+2025-08-05 00:22:56,169 - INFO - 127.0.0.1 - - [05/Aug/2025 00:22:56] "GET / HTTP/1.1" 200 -
+2025-08-05 00:25:43,958 - INFO - 127.0.0.1 - - [05/Aug/2025 00:25:43] "GET / HTTP/1.1" 200 -
+2025-08-05 00:27:03,624 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:27:03,678 - INFO -  * Restarting with stat
+2025-08-05 00:27:03,981 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-08-05 00:27:03,981 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-08-05 00:27:03,982 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:27:04,003 - WARNING -  * Debugger is active!
+2025-08-05 00:27:04,007 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:27:16,148 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:27:16,261 - INFO -  * Restarting with stat
+2025-08-05 00:27:50,114 - INFO -  * Restarting with stat
+2025-08-05 00:30:44,177 - INFO -  * Restarting with stat
+2025-08-05 00:30:44,440 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:30:44,440 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:30:44,440 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:30:44,454 - WARNING -  * Debugger is active!
+2025-08-05 00:30:44,456 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:35:48,272 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:35:48,357 - INFO -  * Restarting with stat
+2025-08-05 00:35:48,632 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:35:48,632 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:35:48,633 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:35:48,648 - WARNING -  * Debugger is active!
+2025-08-05 00:35:48,651 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:39:09,730 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:39:09,768 - INFO -  * Restarting with stat
+2025-08-05 00:39:10,010 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:39:10,011 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:39:10,011 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:39:10,028 - WARNING -  * Debugger is active!
+2025-08-05 00:39:10,030 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:45:22,622 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:45:22,656 - INFO -  * Restarting with stat
+2025-08-05 00:45:22,900 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:45:22,900 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:45:22,900 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:45:22,915 - WARNING -  * Debugger is active!
+2025-08-05 00:45:22,917 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:47:16,725 - INFO - 127.0.0.1 - - [05/Aug/2025 00:47:16] "GET / HTTP/1.1" 200 -
+2025-08-05 00:48:55,166 - INFO - 127.0.0.1 - - [05/Aug/2025 00:48:55] "GET / HTTP/1.1" 200 -
+2025-08-05 00:50:05,687 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 00:50:05,731 - INFO -  * Restarting with stat
+2025-08-05 00:50:06,088 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:50:06,089 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:50:06,089 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:50:06,105 - WARNING -  * Debugger is active!
+2025-08-05 00:50:06,107 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:56:51,648 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 00:56:51,827 - INFO -  * Restarting with stat
+2025-08-05 00:56:52,257 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:56:52,258 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:56:52,258 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:56:52,277 - WARNING -  * Debugger is active!
+2025-08-05 00:56:52,280 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:57:13,039 - INFO - Function 'save_produkty_file' executed successfully in 0.0038 seconds.
+2025-08-05 00:57:13,040 - INFO - Function 'save_saldo_file' executed successfully in 0.0007 seconds.
+2025-08-05 00:57:13,041 - INFO - Function 'save_historia_file' executed successfully in 0.0007 seconds.
+2025-08-05 00:57:13,045 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:13] "POST / HTTP/1.1" 200 -
+2025-08-05 00:57:23,947 - INFO - Function 'load_produkty_file' executed successfully in 0.0007 seconds.
+2025-08-05 00:57:23,948 - INFO - Function 'load_historia_file' executed successfully in 0.0006 seconds.
+2025-08-05 00:57:23,948 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-05 00:57:23,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 00:57:23,978 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 00:57:23,980 - INFO -  * Restarting with stat
+2025-08-05 00:57:24,221 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:57:24,221 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:57:24,221 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 00:57:24,235 - WARNING -  * Debugger is active!
+2025-08-05 00:57:24,237 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 00:57:28,804 - INFO - Function 'save_produkty_file' executed successfully in 0.0017 seconds.
+2025-08-05 00:57:28,805 - INFO - Function 'save_saldo_file' executed successfully in 0.0009 seconds.
+2025-08-05 00:57:28,806 - INFO - Function 'save_historia_file' executed successfully in 0.0006 seconds.
+2025-08-05 00:57:28,812 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:28] "POST / HTTP/1.1" 200 -
+2025-08-05 00:57:36,290 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:36] "GET / HTTP/1.1" 200 -
+2025-08-05 00:57:39,641 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:39] "GET / HTTP/1.1" 200 -
+2025-08-05 00:57:40,609 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:40] "GET / HTTP/1.1" 200 -
+2025-08-05 00:57:49,792 - INFO - Function 'save_produkty_file' executed successfully in 0.0014 seconds.
+2025-08-05 00:57:49,793 - INFO - Function 'save_saldo_file' executed successfully in 0.0004 seconds.
+2025-08-05 00:57:49,794 - INFO - Function 'save_historia_file' executed successfully in 0.0008 seconds.
+2025-08-05 00:57:49,795 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:49] "POST / HTTP/1.1" 200 -
+2025-08-05 00:57:55,786 - INFO - 127.0.0.1 - - [05/Aug/2025 00:57:55] "[33mGET /historia.html HTTP/1.1[0m" 404 -
+2025-08-05 01:02:14,249 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:02:14,292 - INFO -  * Restarting with stat
+2025-08-05 01:02:14,566 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:02:14,566 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:02:14,566 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:02:14,580 - WARNING -  * Debugger is active!
+2025-08-05 01:02:14,583 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:02:44,897 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:02:44,941 - INFO -  * Restarting with stat
+2025-08-05 01:02:45,196 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:02:45,196 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:02:45,196 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:02:45,212 - WARNING -  * Debugger is active!
+2025-08-05 01:02:45,214 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:03:15,535 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:03:15,668 - INFO -  * Restarting with stat
+2025-08-05 01:04:56,050 - INFO -  * Restarting with stat
+2025-08-05 01:04:56,302 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-08-05 01:04:56,303 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-08-05 01:04:56,303 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:04:56,321 - WARNING -  * Debugger is active!
+2025-08-05 01:04:56,323 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:07:39,896 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:07:39,975 - INFO -  * Restarting with stat
+2025-08-05 01:07:40,289 - INFO - Function 'load_produkty_file' executed successfully in 0.0018 seconds.
+2025-08-05 01:07:40,292 - INFO - Function 'load_historia_file' executed successfully in 0.0007 seconds.
+2025-08-05 01:07:40,293 - INFO - Function 'load_saldo_file' executed successfully in 0.0008 seconds.
+2025-08-05 01:07:40,354 - WARNING -  * Debugger is active!
+2025-08-05 01:07:40,358 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:07:57,635 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:07:57,670 - INFO -  * Restarting with stat
+2025-08-05 01:07:57,987 - INFO - Function 'load_produkty_file' executed successfully in 0.0008 seconds.
+2025-08-05 01:07:57,990 - INFO - Function 'load_historia_file' executed successfully in 0.0015 seconds.
+2025-08-05 01:07:57,991 - INFO - Function 'load_saldo_file' executed successfully in 0.0003 seconds.
+2025-08-05 01:07:58,010 - WARNING -  * Debugger is active!
+2025-08-05 01:07:58,012 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:09:07,660 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:09:07,821 - INFO -  * Restarting with stat
+2025-08-05 01:09:08,104 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:09:08,104 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:09:08,104 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:09:08,119 - WARNING -  * Debugger is active!
+2025-08-05 01:09:08,122 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:10:18,565 - INFO - Function 'save_produkty_file' executed successfully in 0.0015 seconds.
+2025-08-05 01:10:18,565 - INFO - Function 'save_saldo_file' executed successfully in 0.0006 seconds.
+2025-08-05 01:10:18,566 - INFO - Function 'save_historia_file' executed successfully in 0.0004 seconds.
+2025-08-05 01:10:18,569 - INFO - 127.0.0.1 - - [05/Aug/2025 01:10:18] "POST / HTTP/1.1" 200 -
+2025-08-05 01:11:13,389 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:11:13,424 - INFO -  * Restarting with stat
+2025-08-05 01:11:13,690 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:11:13,690 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:11:13,690 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:11:13,713 - WARNING -  * Debugger is active!
+2025-08-05 01:11:13,716 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:12:37,553 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:12:37,616 - INFO -  * Restarting with stat
+2025-08-05 01:13:17,398 - INFO -  * Restarting with stat
+2025-08-05 01:13:17,780 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:13:17,781 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:13:17,781 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:13:17,822 - WARNING -  * Debugger is active!
+2025-08-05 01:13:17,826 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:14:33,577 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:14:33,609 - INFO -  * Restarting with stat
+2025-08-05 01:14:33,846 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:14:33,846 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:33,846 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:33,861 - WARNING -  * Debugger is active!
+2025-08-05 01:14:33,864 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:14:43,644 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:14:43,644 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:43,644 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:43,678 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 01:14:43,678 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 01:14:43,679 - INFO -  * Restarting with stat
+2025-08-05 01:14:43,927 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:14:43,927 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:43,928 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:14:43,945 - WARNING -  * Debugger is active!
+2025-08-05 01:14:43,947 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:14:48,436 - INFO - Function 'save_produkty_file' executed successfully in 0.0009 seconds.
+2025-08-05 01:14:48,437 - INFO - Function 'save_saldo_file' executed successfully in 0.0006 seconds.
+2025-08-05 01:14:48,437 - INFO - Function 'save_historia_file' executed successfully in 0.0006 seconds.
+2025-08-05 01:14:48,441 - INFO - 127.0.0.1 - - [05/Aug/2025 01:14:48] "POST / HTTP/1.1" 200 -
+2025-08-05 01:14:51,192 - INFO - 127.0.0.1 - - [05/Aug/2025 01:14:51] "GET / HTTP/1.1" 200 -
+2025-08-05 01:15:10,870 - INFO - 127.0.0.1 - - [05/Aug/2025 01:15:10] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-08-05 01:15:10,941 - INFO - 127.0.0.1 - - [05/Aug/2025 01:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-05 01:15:10,941 - INFO - 127.0.0.1 - - [05/Aug/2025 01:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-05 01:15:10,969 - INFO - 127.0.0.1 - - [05/Aug/2025 01:15:10] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=JUoIQrSW28fFOjl1NT0b HTTP/1.1" 200 -
+2025-08-05 01:15:10,984 - INFO - 127.0.0.1 - - [05/Aug/2025 01:15:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-05 01:16:26,605 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:26] "POST / HTTP/1.1" 200 -
+2025-08-05 01:16:48,137 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:48] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-08-05 01:16:48,162 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:48] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-05 01:16:48,170 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:48] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-05 01:16:48,183 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=JUoIQrSW28fFOjl1NT0b HTTP/1.1[0m" 304 -
+2025-08-05 01:16:48,197 - INFO - 127.0.0.1 - - [05/Aug/2025 01:16:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-05 01:21:10,088 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:21:10,131 - INFO -  * Restarting with stat
+2025-08-05 01:21:10,424 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:21:10,425 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:21:10,425 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:21:10,446 - WARNING -  * Debugger is active!
+2025-08-05 01:21:10,448 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:21:29,705 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:21:29,764 - INFO -  * Restarting with stat
+2025-08-05 01:21:30,038 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:21:30,038 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:21:30,038 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:21:30,054 - WARNING -  * Debugger is active!
+2025-08-05 01:21:30,056 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:21:35,267 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:35] "POST / HTTP/1.1" 200 -
+2025-08-05 01:21:41,486 - INFO - Function 'save_produkty_file' executed successfully in 0.0031 seconds.
+2025-08-05 01:21:41,488 - INFO - Function 'save_saldo_file' executed successfully in 0.0016 seconds.
+2025-08-05 01:21:41,489 - INFO - Function 'save_historia_file' executed successfully in 0.0008 seconds.
+2025-08-05 01:21:41,506 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:41] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-08-05 01:21:41,601 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:41] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-05 01:21:41,602 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:41] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-05 01:21:41,617 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:41] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=RtPDb2mVgS8d7MRbql6b HTTP/1.1" 200 -
+2025-08-05 01:21:41,632 - INFO - 127.0.0.1 - - [05/Aug/2025 01:21:41] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-05 01:22:57,924 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:22:57,959 - INFO -  * Restarting with stat
+2025-08-05 01:22:58,197 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:22:58,197 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:22:58,197 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:22:58,211 - WARNING -  * Debugger is active!
+2025-08-05 01:22:58,214 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:23:50,755 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:23:50,799 - INFO -  * Restarting with stat
+2025-08-05 01:23:51,047 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:23:51,047 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:23:51,048 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:23:51,069 - WARNING -  * Debugger is active!
+2025-08-05 01:23:51,073 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:25:21,295 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:25:21,341 - INFO -  * Restarting with stat
+2025-08-05 01:25:21,617 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:25:21,617 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:25:21,617 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:25:21,634 - WARNING -  * Debugger is active!
+2025-08-05 01:25:21,636 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:25:33,751 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:25:33,809 - INFO -  * Restarting with stat
+2025-08-05 01:25:34,111 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:25:34,111 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:25:34,111 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:25:34,127 - WARNING -  * Debugger is active!
+2025-08-05 01:25:34,130 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:25:36,197 - INFO - Function 'save_produkty_file' executed successfully in 0.0014 seconds.
+2025-08-05 01:25:36,197 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 01:25:36,198 - INFO - Function 'save_historia_file' executed successfully in 0.0005 seconds.
+2025-08-05 01:25:36,203 - INFO - 127.0.0.1 - - [05/Aug/2025 01:25:36] "POST / HTTP/1.1" 200 -
+2025-08-05 01:25:44,869 - INFO - Function 'save_produkty_file' executed successfully in 0.0022 seconds.
+2025-08-05 01:25:44,870 - INFO - Function 'save_saldo_file' executed successfully in 0.0006 seconds.
+2025-08-05 01:25:44,871 - INFO - Function 'save_historia_file' executed successfully in 0.0004 seconds.
+2025-08-05 01:25:44,871 - INFO - 127.0.0.1 - - [05/Aug/2025 01:25:44] "POST / HTTP/1.1" 200 -
+2025-08-05 01:28:02,731 - ERROR - Function 'load_produkty_file' failed after 0.0002 seconds. Error: Expecting ',' delimiter: line 266 column 6 (char 4469)
+2025-08-05 01:28:11,019 - ERROR - Function 'load_produkty_file' failed after 0.0002 seconds. Error: Expecting ',' delimiter: line 266 column 6 (char 4469)
+2025-08-05 01:28:19,589 - ERROR - Function 'load_produkty_file' failed after 0.0002 seconds. Error: Expecting ',' delimiter: line 266 column 6 (char 4469)
+2025-08-05 01:29:01,307 - ERROR - Function 'load_produkty_file' failed after 0.0002 seconds. Error: Expecting ',' delimiter: line 266 column 6 (char 4469)
+2025-08-05 01:29:53,960 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:29:53,960 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:29:53,961 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:29:53,989 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 01:29:53,989 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 01:29:53,990 - INFO -  * Restarting with stat
+2025-08-05 01:29:54,227 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:29:54,227 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:29:54,227 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:29:54,243 - WARNING -  * Debugger is active!
+2025-08-05 01:29:54,246 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:32:24,264 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:32:24,265 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:32:24,265 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:32:24,292 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 01:32:24,292 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 01:32:24,293 - INFO -  * Restarting with stat
+2025-08-05 01:32:24,516 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:32:24,516 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:32:24,517 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:32:24,533 - WARNING -  * Debugger is active!
+2025-08-05 01:32:24,535 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:35:52,541 - INFO - Function 'save_produkty_file' executed successfully in 0.0029 seconds.
+2025-08-05 01:35:52,542 - INFO - Function 'save_saldo_file' executed successfully in 0.0012 seconds.
+2025-08-05 01:35:52,544 - INFO - Function 'save_historia_file' executed successfully in 0.0011 seconds.
+2025-08-05 01:35:52,549 - INFO - 127.0.0.1 - - [05/Aug/2025 01:35:52] "POST / HTTP/1.1" 200 -
+2025-08-05 01:41:59,577 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:41:59,626 - INFO -  * Restarting with stat
+2025-08-05 01:41:59,869 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:41:59,869 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:41:59,869 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:41:59,887 - WARNING -  * Debugger is active!
+2025-08-05 01:41:59,889 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:42:55,298 - INFO - Function 'save_produkty_file' executed successfully in 0.0025 seconds.
+2025-08-05 01:42:55,299 - INFO - Function 'save_saldo_file' executed successfully in 0.0008 seconds.
+2025-08-05 01:42:55,299 - INFO - Function 'save_historia_file' executed successfully in 0.0007 seconds.
+2025-08-05 01:42:55,305 - INFO - 127.0.0.1 - - [05/Aug/2025 01:42:55] "POST / HTTP/1.1" 200 -
+2025-08-05 01:43:01,746 - INFO - 127.0.0.1 - - [05/Aug/2025 01:43:01] "POST / HTTP/1.1" 200 -
+2025-08-05 01:43:10,000 - INFO - 127.0.0.1 - - [05/Aug/2025 01:43:10] "POST / HTTP/1.1" 200 -
+2025-08-05 01:43:19,701 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:43:19,702 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:43:19,702 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:43:19,730 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 01:43:19,730 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 01:43:19,731 - INFO -  * Restarting with stat
+2025-08-05 01:43:19,952 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:43:19,952 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:43:19,952 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:43:19,968 - WARNING -  * Debugger is active!
+2025-08-05 01:43:19,970 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:43:24,942 - INFO - 127.0.0.1 - - [05/Aug/2025 01:43:24] "POST / HTTP/1.1" 200 -
+2025-08-05 01:43:27,781 - INFO - 127.0.0.1 - - [05/Aug/2025 01:43:27] "GET / HTTP/1.1" 200 -
+2025-08-05 01:43:40,695 - INFO - 127.0.0.1 - - [05/Aug/2025 01:43:40] "POST / HTTP/1.1" 200 -
+2025-08-05 01:46:03,560 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:46:03,592 - INFO -  * Restarting with stat
+2025-08-05 01:46:57,654 - INFO -  * Restarting with stat
+2025-08-05 01:46:57,924 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:46:57,925 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:46:57,925 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:46:57,938 - WARNING -  * Debugger is active!
+2025-08-05 01:46:57,941 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:48:19,656 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:48:19,698 - INFO -  * Restarting with stat
+2025-08-05 01:48:19,964 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:48:19,964 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:48:19,964 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:48:19,981 - WARNING -  * Debugger is active!
+2025-08-05 01:48:19,983 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:50:33,398 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:50:33,437 - INFO -  * Restarting with stat
+2025-08-05 01:50:33,688 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:50:33,688 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:50:33,688 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:50:33,703 - WARNING -  * Debugger is active!
+2025-08-05 01:50:33,706 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:52:26,792 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 01:52:26,830 - INFO -  * Restarting with stat
+2025-08-05 01:52:27,094 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-08-05 01:52:27,094 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:52:27,094 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:52:27,112 - WARNING -  * Debugger is active!
+2025-08-05 01:52:27,114 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:52:49,375 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:52:49,445 - INFO -  * Restarting with stat
+2025-08-05 01:52:49,766 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:52:49,766 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:52:49,766 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:52:49,781 - WARNING -  * Debugger is active!
+2025-08-05 01:52:49,784 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 01:52:51,804 - INFO - 127.0.0.1 - - [05/Aug/2025 01:52:51] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-08-05 01:52:51,868 - INFO - 127.0.0.1 - - [05/Aug/2025 01:52:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-05 01:52:51,871 - INFO - 127.0.0.1 - - [05/Aug/2025 01:52:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-05 01:52:51,903 - INFO - 127.0.0.1 - - [05/Aug/2025 01:52:51] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=8B9FYwNx7su4r9cIrWjS HTTP/1.1" 200 -
+2025-08-05 01:52:51,925 - INFO - 127.0.0.1 - - [05/Aug/2025 01:52:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-05 01:56:38,315 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 01:56:38,350 - INFO -  * Restarting with stat
+2025-08-05 01:56:38,584 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 01:56:38,584 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:56:38,584 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 01:56:38,600 - WARNING -  * Debugger is active!
+2025-08-05 01:56:38,602 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:00:40,124 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:00:40,160 - INFO -  * Restarting with stat
+2025-08-05 02:00:40,407 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:00:40,407 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:00:40,407 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:00:40,422 - WARNING -  * Debugger is active!
+2025-08-05 02:00:40,424 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:00:43,036 - INFO - Function 'save_produkty_file' executed successfully in 0.0008 seconds.
+2025-08-05 02:00:43,037 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:00:43,038 - INFO - Function 'save_historia_file' executed successfully in 0.0012 seconds.
+2025-08-05 02:00:43,043 - INFO - 127.0.0.1 - - [05/Aug/2025 02:00:43] "POST / HTTP/1.1" 200 -
+2025-08-05 02:00:51,798 - INFO - Function 'save_produkty_file' executed successfully in 0.0016 seconds.
+2025-08-05 02:00:51,799 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:00:51,800 - INFO - Function 'save_historia_file' executed successfully in 0.0011 seconds.
+2025-08-05 02:00:51,802 - INFO - 127.0.0.1 - - [05/Aug/2025 02:00:51] "POST / HTTP/1.1" 200 -
+2025-08-05 02:01:58,205 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:01:58,291 - INFO -  * Restarting with stat
+2025-08-05 02:01:58,569 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:01:58,570 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:01:58,570 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:01:58,585 - WARNING -  * Debugger is active!
+2025-08-05 02:01:58,587 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:02:11,414 - INFO - Function 'save_produkty_file' executed successfully in 0.0028 seconds.
+2025-08-05 02:02:11,416 - INFO - Function 'save_saldo_file' executed successfully in 0.0017 seconds.
+2025-08-05 02:02:11,418 - INFO - Function 'save_historia_file' executed successfully in 0.0015 seconds.
+2025-08-05 02:02:11,427 - INFO - 127.0.0.1 - - [05/Aug/2025 02:02:11] "POST / HTTP/1.1" 200 -
+2025-08-05 02:15:59,638 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:15:59,693 - INFO -  * Restarting with stat
+2025-08-05 02:15:59,967 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:15:59,968 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:15:59,968 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:15:59,987 - WARNING -  * Debugger is active!
+2025-08-05 02:15:59,990 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:16:03,113 - INFO - Function 'save_produkty_file' executed successfully in 0.0012 seconds.
+2025-08-05 02:16:03,114 - INFO - Function 'save_saldo_file' executed successfully in 0.0003 seconds.
+2025-08-05 02:16:03,114 - INFO - Function 'save_historia_file' executed successfully in 0.0003 seconds.
+2025-08-05 02:16:03,118 - INFO - 127.0.0.1 - - [05/Aug/2025 02:16:03] "POST / HTTP/1.1" 200 -
+2025-08-05 02:16:20,858 - INFO - Function 'save_produkty_file' executed successfully in 0.0017 seconds.
+2025-08-05 02:16:20,860 - INFO - Function 'save_saldo_file' executed successfully in 0.0013 seconds.
+2025-08-05 02:16:20,862 - INFO - Function 'save_historia_file' executed successfully in 0.0015 seconds.
+2025-08-05 02:16:20,863 - INFO - 127.0.0.1 - - [05/Aug/2025 02:16:20] "POST / HTTP/1.1" 200 -
+2025-08-05 02:16:32,123 - INFO - Function 'save_produkty_file' executed successfully in 0.0012 seconds.
+2025-08-05 02:16:32,124 - INFO - Function 'save_saldo_file' executed successfully in 0.0004 seconds.
+2025-08-05 02:16:32,125 - INFO - Function 'save_historia_file' executed successfully in 0.0010 seconds.
+2025-08-05 02:16:32,126 - INFO - 127.0.0.1 - - [05/Aug/2025 02:16:32] "POST / HTTP/1.1" 200 -
+2025-08-05 02:16:40,860 - INFO - Function 'save_produkty_file' executed successfully in 0.0015 seconds.
+2025-08-05 02:16:40,861 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:16:40,863 - INFO - Function 'save_historia_file' executed successfully in 0.0016 seconds.
+2025-08-05 02:16:40,865 - INFO - 127.0.0.1 - - [05/Aug/2025 02:16:40] "POST / HTTP/1.1" 200 -
+2025-08-05 02:17:10,408 - INFO - Function 'save_produkty_file' executed successfully in 0.0010 seconds.
+2025-08-05 02:17:10,409 - INFO - Function 'save_saldo_file' executed successfully in 0.0007 seconds.
+2025-08-05 02:17:10,409 - INFO - Function 'save_historia_file' executed successfully in 0.0006 seconds.
+2025-08-05 02:17:10,411 - INFO - 127.0.0.1 - - [05/Aug/2025 02:17:10] "POST / HTTP/1.1" 200 -
+2025-08-05 02:17:46,189 - INFO - Function 'load_produkty_file' executed successfully in 0.0004 seconds.
+2025-08-05 02:17:46,190 - INFO - Function 'load_historia_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:17:46,190 - INFO - Function 'load_saldo_file' executed successfully in 0.0003 seconds.
+2025-08-05 02:17:46,227 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 02:17:46,227 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 02:17:46,228 - INFO -  * Restarting with stat
+2025-08-05 02:17:46,459 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:17:46,460 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:17:46,460 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:17:46,476 - WARNING -  * Debugger is active!
+2025-08-05 02:17:46,478 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:17:50,618 - INFO - Function 'save_produkty_file' executed successfully in 0.0014 seconds.
+2025-08-05 02:17:50,619 - INFO - Function 'save_saldo_file' executed successfully in 0.0007 seconds.
+2025-08-05 02:17:50,620 - INFO - Function 'save_historia_file' executed successfully in 0.0009 seconds.
+2025-08-05 02:17:50,627 - INFO - 127.0.0.1 - - [05/Aug/2025 02:17:50] "POST / HTTP/1.1" 200 -
+2025-08-05 02:18:46,086 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:18:46,130 - INFO -  * Restarting with stat
+2025-08-05 02:18:46,396 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:18:46,396 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:18:46,396 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:18:46,417 - WARNING -  * Debugger is active!
+2025-08-05 02:18:46,420 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:19:57,987 - INFO - Function 'save_produkty_file' executed successfully in 0.0018 seconds.
+2025-08-05 02:19:57,987 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:19:57,988 - INFO - Function 'save_historia_file' executed successfully in 0.0004 seconds.
+2025-08-05 02:19:57,994 - INFO - 127.0.0.1 - - [05/Aug/2025 02:19:57] "POST / HTTP/1.1" 200 -
+2025-08-05 02:20:42,783 - INFO - Function 'save_produkty_file' executed successfully in 0.0010 seconds.
+2025-08-05 02:20:42,784 - INFO - Function 'save_saldo_file' executed successfully in 0.0003 seconds.
+2025-08-05 02:20:42,784 - INFO - Function 'save_historia_file' executed successfully in 0.0004 seconds.
+2025-08-05 02:20:42,785 - INFO - 127.0.0.1 - - [05/Aug/2025 02:20:42] "POST / HTTP/1.1" 200 -
+2025-08-05 02:23:42,332 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:23:42,377 - INFO -  * Restarting with stat
+2025-08-05 02:23:42,678 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-08-05 02:23:42,679 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:23:42,679 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:23:42,700 - WARNING -  * Debugger is active!
+2025-08-05 02:23:42,703 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:24:00,899 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-05 02:24:00,964 - INFO -  * Restarting with stat
+2025-08-05 02:24:01,238 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:24:01,238 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:24:01,238 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:24:01,253 - WARNING -  * Debugger is active!
+2025-08-05 02:24:01,255 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:36:41,503 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 02:36:41,542 - INFO -  * Restarting with stat
+2025-08-05 02:36:41,782 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 02:36:41,782 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:36:41,783 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 02:36:41,798 - WARNING -  * Debugger is active!
+2025-08-05 02:36:41,800 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 02:38:33,436 - INFO - 127.0.0.1 - - [05/Aug/2025 02:38:33] "[33mGET /historia.html HTTP/1.1[0m" 404 -
+2025-08-05 02:42:26,190 - INFO - 127.0.0.1 - - [05/Aug/2025 02:42:26] "[33mGET /historia.html HTTP/1.1[0m" 404 -
+2025-08-05 02:45:24,189 - INFO - Function 'save_produkty_file' executed successfully in 0.0019 seconds.
+2025-08-05 02:45:24,190 - INFO - Function 'save_saldo_file' executed successfully in 0.0005 seconds.
+2025-08-05 02:45:24,191 - INFO - Function 'save_historia_file' executed successfully in 0.0007 seconds.
+2025-08-05 02:45:24,197 - INFO - 127.0.0.1 - - [05/Aug/2025 02:45:24] "POST / HTTP/1.1" 200 -
+2025-08-05 02:45:27,352 - INFO - 127.0.0.1 - - [05/Aug/2025 02:45:27] "GET /historia HTTP/1.1" 200 -
+2025-08-05 03:16:36,650 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:16:36,650 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:36,650 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:36,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-05 03:16:36,767 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 03:16:36,768 - INFO -  * Restarting with stat
+2025-08-05 03:16:37,001 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,001 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,001 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:16:37,018 - WARNING -  * Debugger is active!
+2025-08-05 03:16:37,020 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:16:48,530 - INFO - 127.0.0.1 - - [05/Aug/2025 03:16:48] "GET / HTTP/1.1" 200 -
+2025-08-05 03:16:52,576 - INFO - 127.0.0.1 - - [05/Aug/2025 03:16:52] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:17:03,023 - INFO - 127.0.0.1 - - [05/Aug/2025 03:17:03] "GET / HTTP/1.1" 200 -
+2025-08-05 03:19:36,483 - INFO - 127.0.0.1 - - [05/Aug/2025 03:19:36] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:09,526 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:24:09,573 - INFO -  * Restarting with stat
+2025-08-05 03:24:09,830 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:24:09,831 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:24:09,831 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:24:09,848 - WARNING -  * Debugger is active!
+2025-08-05 03:24:09,851 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:24:13,748 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:13] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:15,904 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:15] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:17,317 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:17] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:24:18,329 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:18] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:18,760 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:18] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:19,934 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:19] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:22,528 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:22] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:24,087 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:24] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:25,530 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:25] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:24:30,907 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:30] "GET / HTTP/1.1" 200 -
+2025-08-05 03:24:39,104 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:39] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:40,167 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:40] "GET / HTTP/1.1" 200 -
+2025-08-05 03:24:41,686 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:41] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:24:43,993 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:43] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:45,533 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:45] "GET /historia/20/22 HTTP/1.1" 200 -
+2025-08-05 03:24:48,035 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:48] "GET /historia/10/20 HTTP/1.1" 200 -
+2025-08-05 03:24:49,240 - INFO - 127.0.0.1 - - [05/Aug/2025 03:24:49] "GET /historia/0/10 HTTP/1.1" 200 -
+2025-08-05 03:25:21,613 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:25:21,706 - INFO -  * Restarting with stat
+2025-08-05 03:25:22,003 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:25:22,003 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-05 03:25:22,003 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:22,023 - WARNING -  * Debugger is active!
+2025-08-05 03:25:22,025 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:25:36,206 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_3_FLASK_wprowadzenie\\praca_domowa\\routes.py', reloading
+2025-08-05 03:25:36,261 - INFO -  * Restarting with stat
+2025-08-05 03:25:36,544 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,545 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,545 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-05 03:25:36,559 - WARNING -  * Debugger is active!
+2025-08-05 03:25:36,561 - INFO -  * Debugger PIN: 431-185-460
+2025-08-05 03:25:43,214 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:43] "GET / HTTP/1.1" 200 -
+2025-08-05 03:25:45,913 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:45] "GET /historia/ HTTP/1.1" 200 -
+2025-08-05 03:25:46,820 - INFO - 127.0.0.1 - - [05/Aug/2025 03:25:46] "GET / HTTP/1.1" 200 -
+2025-08-07 23:16:43,876 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:16:43,876 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:16:43,876 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:16:44,188 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-07 23:16:44,188 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 23:16:44,189 - INFO -  * Restarting with stat
+2025-08-07 23:16:44,436 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:16:44,436 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:16:44,436 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:16:44,689 - WARNING -  * Debugger is active!
+2025-08-07 23:16:44,691 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:17:56,051 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:17:56,168 - INFO -  * Restarting with stat
+2025-08-07 23:17:56,453 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:17:56,453 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:17:56,453 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:17:56,778 - WARNING -  * Debugger is active!
+2025-08-07 23:17:56,781 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:18:06,839 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:18:06,938 - INFO -  * Restarting with stat
+2025-08-07 23:18:07,222 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:18:07,222 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:18:07,223 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:18:07,529 - WARNING -  * Debugger is active!
+2025-08-07 23:18:07,531 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:18:56,753 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:18:56,856 - INFO -  * Restarting with stat
+2025-08-07 23:18:57,205 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:18:57,205 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:18:57,206 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:18:57,567 - WARNING -  * Debugger is active!
+2025-08-07 23:18:57,569 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:19:29,748 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:19:29,841 - INFO -  * Restarting with stat
+2025-08-07 23:19:30,126 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:19:30,126 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:19:30,127 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:19:30,417 - WARNING -  * Debugger is active!
+2025-08-07 23:19:30,419 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:20:06,559 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:20:06,645 - INFO -  * Restarting with stat
+2025-08-07 23:20:07,027 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:20:07,027 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:20:07,027 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:20:07,334 - WARNING -  * Debugger is active!
+2025-08-07 23:20:07,338 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:20:28,454 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:20:28,560 - INFO -  * Restarting with stat
+2025-08-07 23:20:39,960 - INFO -  * Restarting with stat
+2025-08-07 23:20:40,226 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:20:40,226 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:20:40,227 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:20:40,492 - WARNING -  * Debugger is active!
+2025-08-07 23:20:40,494 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:21:00,568 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:21:01,123 - INFO -  * Restarting with stat
+2025-08-07 23:21:01,894 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:21:01,895 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:21:01,895 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:21:02,202 - WARNING -  * Debugger is active!
+2025-08-07 23:21:02,204 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:22:07,486 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:22:07,564 - INFO -  * Restarting with stat
+2025-08-07 23:22:07,861 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:22:07,861 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:07,861 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:08,230 - WARNING -  * Debugger is active!
+2025-08-07 23:22:08,231 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:22:29,347 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:22:29,432 - INFO -  * Restarting with stat
+2025-08-07 23:22:29,717 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:22:29,717 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:29,717 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:30,001 - WARNING -  * Debugger is active!
+2025-08-07 23:22:30,003 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:22:50,086 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:22:50,244 - INFO -  * Restarting with stat
+2025-08-07 23:22:50,522 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:50,523 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:50,523 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:22:50,837 - WARNING -  * Debugger is active!
+2025-08-07 23:22:50,841 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:23:46,099 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:23:46,199 - INFO -  * Restarting with stat
+2025-08-07 23:23:46,459 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:23:46,459 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:23:46,459 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:23:46,812 - WARNING -  * Debugger is active!
+2025-08-07 23:23:46,814 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:24:06,937 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:24:07,017 - INFO -  * Restarting with stat
+2025-08-07 23:24:30,523 - INFO -  * Restarting with stat
+2025-08-07 23:24:30,780 - INFO - Function 'load_produkty_file' executed successfully in 0.0005 seconds.
+2025-08-07 23:24:30,781 - INFO - Function 'load_historia_file' executed successfully in 0.0004 seconds.
+2025-08-07 23:24:30,781 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:24:31,207 - WARNING -  * Debugger is active!
+2025-08-07 23:24:31,209 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:31:59,257 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:31:59,329 - INFO -  * Restarting with stat
+2025-08-07 23:31:59,709 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:31:59,709 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:31:59,709 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:31:59,731 - WARNING -  * Debugger is active!
+2025-08-07 23:31:59,734 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:32:52,991 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:32:53,026 - INFO -  * Restarting with stat
+2025-08-07 23:32:53,299 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:32:53,299 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:32:53,299 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:32:53,335 - WARNING -  * Debugger is active!
+2025-08-07 23:32:53,338 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:34:39,831 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:34:39,908 - INFO -  * Restarting with stat
+2025-08-07 23:34:40,226 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:34:40,227 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:34:40,227 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:34:40,249 - WARNING -  * Debugger is active!
+2025-08-07 23:34:40,252 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:36:12,680 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:36:12,762 - INFO -  * Restarting with stat
+2025-08-07 23:36:13,258 - INFO - Function 'load_produkty_file' executed successfully in 0.0004 seconds.
+2025-08-07 23:36:13,258 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:36:13,258 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:36:13,843 - WARNING -  * Debugger is active!
+2025-08-07 23:36:13,849 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:43:24,562 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\extensions.py', reloading
+2025-08-07 23:43:24,675 - INFO -  * Restarting with stat
+2025-08-07 23:43:24,986 - INFO - Function 'load_produkty_file' executed successfully in 0.0003 seconds.
+2025-08-07 23:43:24,987 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:43:24,987 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:43:25,366 - WARNING -  * Debugger is active!
+2025-08-07 23:43:25,369 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:43:30,408 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:43:30,499 - INFO -  * Restarting with stat
+2025-08-07 23:43:30,782 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:43:30,782 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:43:30,783 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:31,427 - WARNING -  * Debugger is active!
+2025-08-07 23:43:31,429 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:43:38,467 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:43:38,550 - INFO -  * Restarting with stat
+2025-08-07 23:43:41,276 - INFO -  * Restarting with stat
+2025-08-07 23:43:41,552 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:41,552 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:41,552 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:41,882 - WARNING -  * Debugger is active!
+2025-08-07 23:43:41,884 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:43:50,936 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\app.py', reloading
+2025-08-07 23:43:51,063 - INFO -  * Restarting with stat
+2025-08-07 23:43:51,402 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:51,402 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:51,402 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:43:51,732 - WARNING -  * Debugger is active!
+2025-08-07 23:43:51,734 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:44:04,136 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:44:04,136 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:44:04,136 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:44:04,488 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-07 23:44:04,488 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 23:44:04,490 - INFO -  * Restarting with stat
+2025-08-07 23:44:04,764 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:44:04,765 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:44:04,765 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:44:05,079 - WARNING -  * Debugger is active!
+2025-08-07 23:44:05,081 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:46:11,836 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\routes.py', reloading
+2025-08-07 23:46:12,018 - INFO -  * Restarting with stat
+2025-08-07 23:46:12,297 - INFO - Function 'load_produkty_file' executed successfully in 0.0005 seconds.
+2025-08-07 23:46:12,298 - INFO - Function 'load_historia_file' executed successfully in 0.0005 seconds.
+2025-08-07 23:46:12,299 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:46:12,637 - WARNING -  * Debugger is active!
+2025-08-07 23:46:12,639 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:47:59,170 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\routes.py', reloading
+2025-08-07 23:47:59,285 - INFO -  * Restarting with stat
+2025-08-07 23:47:59,622 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:47:59,622 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:47:59,622 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:47:59,977 - WARNING -  * Debugger is active!
+2025-08-07 23:47:59,979 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:48:23,091 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\routes.py', reloading
+2025-08-07 23:48:23,181 - INFO -  * Restarting with stat
+2025-08-07 23:48:23,560 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:48:23,561 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-08-07 23:48:23,561 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:48:23,937 - WARNING -  * Debugger is active!
+2025-08-07 23:48:23,939 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:48:33,003 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\routes.py', reloading
+2025-08-07 23:48:33,078 - INFO -  * Restarting with stat
+2025-08-07 23:48:33,348 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:48:33,348 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:48:33,349 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:48:33,702 - WARNING -  * Debugger is active!
+2025-08-07 23:48:33,704 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:48:59,878 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\routes.py', reloading
+2025-08-07 23:48:59,965 - INFO -  * Restarting with stat
+2025-08-07 23:49:00,226 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:00,226 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:00,227 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:00,565 - WARNING -  * Debugger is active!
+2025-08-07 23:49:00,567 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:49:29,734 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:49:29,909 - INFO -  * Restarting with stat
+2025-08-07 23:49:30,156 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:30,156 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:30,156 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:30,447 - WARNING -  * Debugger is active!
+2025-08-07 23:49:30,449 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:49:57,567 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:49:57,784 - INFO -  * Restarting with stat
+2025-08-07 23:49:58,108 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:49:58,108 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:58,108 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:49:58,443 - WARNING -  * Debugger is active!
+2025-08-07 23:49:58,445 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:50:12,520 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:50:12,599 - INFO -  * Restarting with stat
+2025-08-07 23:50:13,010 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:13,011 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:13,011 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:13,312 - WARNING -  * Debugger is active!
+2025-08-07 23:50:13,314 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:50:46,495 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:50:46,578 - INFO -  * Restarting with stat
+2025-08-07 23:50:46,889 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:46,889 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:46,889 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:50:47,222 - WARNING -  * Debugger is active!
+2025-08-07 23:50:47,224 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:51:02,357 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:51:02,444 - INFO -  * Restarting with stat
+2025-08-07 23:51:02,699 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:02,699 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:02,699 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:03,015 - WARNING -  * Debugger is active!
+2025-08-07 23:51:03,017 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:51:23,105 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:51:23,231 - INFO -  * Restarting with stat
+2025-08-07 23:51:23,521 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:51:23,521 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:23,522 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:24,503 - WARNING -  * Debugger is active!
+2025-08-07 23:51:24,513 - INFO -  * Debugger PIN: 654-561-759
+2025-08-07 23:51:37,617 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:51:37,737 - INFO -  * Restarting with stat
+2025-08-07 23:51:38,010 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:51:38,010 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:38,011 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:38,629 - WARNING -  * Debugger is active!
+2025-08-07 23:51:38,631 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:51:54,721 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:51:54,801 - INFO -  * Restarting with stat
+2025-08-07 23:51:55,032 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:55,033 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:55,033 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:51:55,320 - WARNING -  * Debugger is active!
+2025-08-07 23:51:55,322 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:52:41,555 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\models.py', reloading
+2025-08-07 23:52:41,756 - INFO -  * Restarting with stat
+2025-08-07 23:52:42,018 - INFO - Function 'load_produkty_file' executed successfully in 0.0004 seconds.
+2025-08-07 23:52:42,019 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-08-07 23:52:42,019 - INFO - Function 'load_saldo_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:52:42,377 - WARNING -  * Debugger is active!
+2025-08-07 23:52:42,380 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:55:00,097 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:55:00,275 - INFO -  * Restarting with stat
+2025-08-07 23:55:18,758 - INFO -  * Restarting with stat
+2025-08-07 23:55:27,184 - INFO -  * Restarting with stat
+2025-08-07 23:55:27,492 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:55:27,493 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:55:27,493 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:55:27,834 - WARNING -  * Debugger is active!
+2025-08-07 23:55:27,836 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:55:37,920 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:55:37,986 - INFO -  * Restarting with stat
+2025-08-07 23:55:38,251 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:55:38,251 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:55:38,251 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:55:38,570 - WARNING -  * Debugger is active!
+2025-08-07 23:55:38,572 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:56:40,874 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:56:40,949 - INFO -  * Restarting with stat
+2025-08-07 23:56:41,412 - INFO - Function 'load_produkty_file' executed successfully in 0.0006 seconds.
+2025-08-07 23:56:41,413 - INFO - Function 'load_historia_file' executed successfully in 0.0003 seconds.
+2025-08-07 23:56:41,413 - INFO - Function 'load_saldo_file' executed successfully in 0.0004 seconds.
+2025-08-07 23:56:41,884 - WARNING -  * Debugger is active!
+2025-08-07 23:56:41,886 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:57:15,073 - INFO -  * Detected change in 'C:\\Users\\sarab\\PycharmProjects\\Kurs_35\\Aplikacja_Webowa_FLASK\\zajecia_6_SQLAlchemy_&_obs³uga_bazy_danych-warsztaty\\praca_domowa\\Prosty_sys_ksiêgowy.py', reloading
+2025-08-07 23:57:15,192 - INFO -  * Restarting with stat
+2025-08-07 23:57:15,491 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:57:15,492 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:15,492 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:15,879 - WARNING -  * Debugger is active!
+2025-08-07 23:57:15,881 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:57:33,978 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 23:57:34,179 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 23:57:34,303 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-07 23:57:34,316 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-07 23:57:34,363 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:34] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=bDPNOUP1wrgYFggn01hw HTTP/1.1" 200 -
+2025-08-07 23:57:34,385 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:34] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-07 23:57:47,220 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:57:47,220 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:47,220 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:47,502 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-07 23:57:47,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 23:57:47,503 - INFO -  * Restarting with stat
+2025-08-07 23:57:47,735 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:47,735 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:47,736 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:57:48,005 - WARNING -  * Debugger is active!
+2025-08-07 23:57:48,006 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:57:53,716 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 23:57:53,866 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-07 23:57:53,867 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-07 23:57:53,883 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:53] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=2Iq4pgxwY4LMRnyoH5gr HTTP/1.1" 200 -
+2025-08-07 23:57:53,902 - INFO - 127.0.0.1 - - [07/Aug/2025 23:57:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-07 23:59:01,288 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 23:59:01,310 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-07 23:59:01,317 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-07 23:59:01,330 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=2Iq4pgxwY4LMRnyoH5gr HTTP/1.1[0m" 304 -
+2025-08-07 23:59:01,349 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-08-07 23:59:09,764 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:59:09,765 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:59:09,765 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:59:10,073 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-07 23:59:10,073 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 23:59:10,074 - INFO -  * Restarting with stat
+2025-08-07 23:59:10,324 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:59:10,324 - INFO - Function 'load_historia_file' executed successfully in 0.0002 seconds.
+2025-08-07 23:59:10,324 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-07 23:59:10,618 - WARNING -  * Debugger is active!
+2025-08-07 23:59:10,619 - INFO -  * Debugger PIN: 822-157-957
+2025-08-07 23:59:15,794 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-07 23:59:15,949 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-07 23:59:15,950 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-07 23:59:15,963 - INFO - 127.0.0.1 - - [07/Aug/2025 23:59:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=f3KKNKYytcomKbA9TIxL HTTP/1.1" 200 -
+2025-08-08 00:00:23,685 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-08 00:00:23,685 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:00:23,685 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:00:23,997 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 00:00:23,997 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 00:00:23,998 - INFO -  * Restarting with stat
+2025-08-08 00:00:24,226 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:00:24,226 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:00:24,226 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:00:24,507 - WARNING -  * Debugger is active!
+2025-08-08 00:00:24,509 - INFO -  * Debugger PIN: 822-157-957
+2025-08-08 00:00:31,276 - INFO - 127.0.0.1 - - [08/Aug/2025 00:00:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-08 00:00:31,392 - INFO - 127.0.0.1 - - [08/Aug/2025 00:00:31] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-08-08 00:00:31,394 - INFO - 127.0.0.1 - - [08/Aug/2025 00:00:31] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-08-08 00:00:31,408 - INFO - 127.0.0.1 - - [08/Aug/2025 00:00:31] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=rzabeZKBW6UPAAX8eZo9 HTTP/1.1" 200 -
+2025-08-08 00:01:45,559 - INFO - Function 'load_produkty_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:01:45,559 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:01:45,559 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:01:45,858 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-08 00:01:45,858 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 00:01:45,859 - INFO -  * Restarting with stat
+2025-08-08 00:01:46,116 - INFO - Function 'load_produkty_file' executed successfully in 0.0002 seconds.
+2025-08-08 00:01:46,116 - INFO - Function 'load_historia_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:01:46,116 - INFO - Function 'load_saldo_file' executed successfully in 0.0001 seconds.
+2025-08-08 00:01:46,411 - WARNING -  * Debugger is active!
+2025-08-08 00:01:46,413 - INFO -  * Debugger PIN: 822-157-957
+2025-08-08 00:01:59,864 - INFO - 127.0.0.1 - - [08/Aug/2025 00:01:59] "GET / HTTP/1.1" 200 -

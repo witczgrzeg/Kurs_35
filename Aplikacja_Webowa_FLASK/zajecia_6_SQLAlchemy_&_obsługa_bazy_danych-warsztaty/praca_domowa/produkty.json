@@ -1,0 +1,272 @@
+[
+    {
+        "nazwa": "mleko",
+        "cena": 5,
+        "ilosc": 17
+    },
+    {
+        "nazwa": "jajka",
+        "cena": 10,
+        "ilosc": 30
+    },
+    {
+        "nazwa": "chleb",
+        "cena": 4,
+        "ilosc": 15
+    },
+    {
+        "nazwa": "mas\u00c5\u201ao",
+        "cena": 8,
+        "ilosc": 10
+    },
+    {
+        "nazwa": "ser \u00c5\u00bc\u00c3\u00b3\u00c5\u201aty",
+        "cena": 12,
+        "ilosc": 12
+    },
+    {
+        "nazwa": "woda mineralna",
+        "cena": 3,
+        "ilosc": 25
+    },
+    {
+        "nazwa": "cola",
+        "cena": 6,
+        "ilosc": 18
+    },
+    {
+        "nazwa": "sok pomara\u00c5\u201eczowy",
+        "cena": 7,
+        "ilosc": 20
+    },
+    {
+        "nazwa": "ry\u00c5\u00bc",
+        "cena": 9,
+        "ilosc": 16
+    },
+    {
+        "nazwa": "makaron",
+        "cena": 6,
+        "ilosc": 22
+    },
+    {
+        "nazwa": "kawa",
+        "cena": 20,
+        "ilosc": 14
+    },
+    {
+        "nazwa": "herbata",
+        "cena": 15,
+        "ilosc": 17
+    },
+    {
+        "nazwa": "cukier",
+        "cena": 5,
+        "ilosc": 25
+    },
+    {
+        "nazwa": "m\u00c4\u2026ka",
+        "cena": 4,
+        "ilosc": 19
+    },
+    {
+        "nazwa": "olej",
+        "cena": 10,
+        "ilosc": 13
+    },
+    {
+        "nazwa": "ketchup",
+        "cena": 7,
+        "ilosc": 11
+    },
+    {
+        "nazwa": "musztarda",
+        "cena": 6,
+        "ilosc": 10
+    },
+    {
+        "nazwa": "majonez",
+        "cena": 9,
+        "ilosc": 8
+    },
+    {
+        "nazwa": "p\u00c5\u201aatki \u00c5\u203aniadaniowe",
+        "cena": 11,
+        "ilosc": 12
+    },
+    {
+        "nazwa": "czekolada",
+        "cena": 5,
+        "ilosc": 30
+    },
+    {
+        "nazwa": "baton",
+        "cena": 3,
+        "ilosc": 35
+    },
+    {
+        "nazwa": "piwo",
+        "cena": 6,
+        "ilosc": 20
+    },
+    {
+        "nazwa": "wino",
+        "cena": 25,
+        "ilosc": 8
+    },
+    {
+        "nazwa": "szynka",
+        "cena": 18,
+        "ilosc": 10
+    },
+    {
+        "nazwa": "par\u00c3\u00b3wki",
+        "cena": 10,
+        "ilosc": 14
+    },
+    {
+        "nazwa": "jab\u00c5\u201aka",
+        "cena": 4,
+        "ilosc": 40
+    },
+    {
+        "nazwa": "banany",
+        "cena": 5,
+        "ilosc": 30
+    },
+    {
+        "nazwa": "pomara\u00c5\u201ecze",
+        "cena": 6,
+        "ilosc": 22
+    },
+    {
+        "nazwa": "cytryny",
+        "cena": 5,
+        "ilosc": 18
+    },
+    {
+        "nazwa": "ziemniaki",
+        "cena": 3,
+        "ilosc": 55
+    },
+    {
+        "nazwa": "marchew",
+        "cena": 3,
+        "ilosc": 40
+    },
+    {
+        "nazwa": "cebula",
+        "cena": 2,
+        "ilosc": 35
+    },
+    {
+        "nazwa": "czosnek",
+        "cena": 1,
+        "ilosc": 15
+    },
+    {
+        "nazwa": "og\u00c3\u00b3rki",
+        "cena": 5,
+        "ilosc": 25
+    },
+    {
+        "nazwa": "pomidory",
+        "cena": 6,
+        "ilosc": 28
+    },
+    {
+        "nazwa": "lod\u00c3\u00b3wka",
+        "cena": 1500,
+        "ilosc": 2
+    },
+    {
+        "nazwa": "telewizor",
+        "cena": 2000,
+        "ilosc": 1
+    },
+    {
+        "nazwa": "smartfon",
+        "cena": 1800,
+        "ilosc": 3
+    },
+    {
+        "nazwa": "laptop",
+        "cena": 3500,
+        "ilosc": 1
+    },
+    {
+        "nazwa": "klawiatura",
+        "cena": 150,
+        "ilosc": 5
+    },
+    {
+        "nazwa": "myszka",
+        "cena": 80,
+        "ilosc": 6
+    },
+    {
+        "nazwa": "drukarka",
+        "cena": 400,
+        "ilosc": 2
+    },
+    {
+        "nazwa": "tusz do drukarki",
+        "cena": 100,
+        "ilosc": 8
+    },
+    {
+        "nazwa": "zeszyt",
+        "cena": 6,
+        "ilosc": 20
+    },
+    {
+        "nazwa": "d\u00c5\u201augopis",
+        "cena": 2,
+        "ilosc": 40
+    },
+    {
+        "nazwa": "o\u00c5\u201a\u00c3\u00b3wek",
+        "cena": 1,
+        "ilosc": 35
+    },
+    {
+        "nazwa": "linijka",
+        "cena": 3,
+        "ilosc": 15
+    },
+    {
+        "nazwa": "plecak",
+        "cena": 120,
+        "ilosc": 4
+    },
+    {
+        "nazwa": "rower",
+        "cena": 1000,
+        "ilosc": 2
+    },
+    {
+        "nazwa": "Kimchi",
+        "cena": 10.0,
+        "ilosc": 4
+    },
+    {
+        "nazwa": "muchy",
+        "cena": 20.0,
+        "ilosc": 15
+    },
+    {
+        "nazwa": "Korzuch",
+        "cena": 1000.0,
+        "ilosc": 4
+    },
+    {
+        "nazwa": "klocuszki",
+        "cena": 10.0,
+        "ilosc": 5
+    },
+    {
+        "nazwa": "mapa",
+        "cena": 10.0,
+        "ilosc": 0
+    }
+]

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magazynowy system księgowy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+          crossorigin="anonymous">
+</head>
+
+<body class="bg-light text-dark m-2 p-0">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">System KM</a>
+        <div id="navbarSupportedContent">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('strona_glowna.index') }}">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('strona_glowna.historia') }}">Historia</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center my-5">
+    <h1 class="display-6">Saldo:</h1>
+    <h2>{{ saldo }}</h2>
+</div>
+
+<div class="container">
+    <h1>Stan magazynowy:</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Cena (PLN)</th>
+            <th scope="col">Ilość</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in magazyn %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ product.nazwa }}</td>
+                <td>{{ product.cena }}</td>
+                <td>{{ product.ilosc }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-around flex-end container my-4">
+    <div>
+        <form method="POST">
+    <fieldset>
+        <legend>Sprzedaż produktu</legend>
+
+        <!-- Wybór produktu z listy -->
+        <div class="mb-3">
+            <label for="productSelect" class="form-label">Wybierz produkt (jeśli istnieje)</label>
+            <select id="productSelect" name="product_id" class="form-control">
+                <option value="">-- wybierz produkt --</option>
+                {% for product in magazyn %}
+                    <option value="{{ product.id }}">{{ product.nazwa }} ({{ product.ilosc }} szt.) - {{ product.cena }} PLN</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <!-- Lub własny produkt -->
+        <div class="mb-3">
+            <label for="newProductName" class="form-label">LUB wpisz nazwę nowego produktu</label>
+            <input type="text" id="newProductName" name="new_nazwa" class="form-control" placeholder="Nazwa nowego produktu">
+        </div>
+
+        <div class="mb-3">
+            <label for="newProductCena" class="form-label">Cena nowego produktu</label>
+            <input type="number" id="newProductCena" name="new_cena" class="form-control" placeholder="Cena nowego produktu" step="0.01" min="0">
+        </div>
+
+        <div class="mb-3">
+            <label for="iloscTextInput" class="form-label">Ilość</label>
+            <input type="number" id="iloscTextInput" name="ilosc" class="form-control" placeholder="Podaj ilość" min="1" required>
+        </div>
+
+        <input type="hidden" name="form_type" value="sell_product">
+
+        <button type="submit" class="btn btn-primary">Zatwierdź sprzedaż</button>
+    </fieldset>
+</form>
+
+
+    </div>
+
+    <div>
+        <form method="POST">
+    <fieldset>
+        <legend>Zakup produktu z dostępnej listy</legend>
+        <div class="mb-3">
+            <label for="productSelectBuy" class="form-label">Wybierz produkt</label>
+            <select id="productSelectBuy" name="product_id" class="form-control" required>
+                {% for product in magazyn %}
+                    <option value="{{ product.id }}">{{ product.nazwa }} - {{ product.cena }} PLN</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="iloscZakupTextInput" class="form-label">Ilość</label>
+            <input type="number" id="iloscZakupTextInput" name="ilosc" class="form-control" placeholder="Podaj ilość" min="1" required>
+        </div>
+        <input type="hidden" name="form_type" value="buy_product">
+        <button type="submit" class="btn btn-primary">Zatwierdź zakup</button>
+    </fieldset>
+</form>
+
+    </div>
+</div>
+
+<div class="container my-4">
+    <h2>Zmień saldo</h2>
+    <form method="POST">
+        <fieldset>
+            <div class="mb-3">
+                <label for="saldoTextInput" class="form-label">Kwota zmiany salda (może być ujemna)</label>
+                <input type="number" id="saldoTextInput" name="saldo" class="form-control" placeholder="Wpisz kwotę, np. 100 lub -50" step="0.01" required>
+            </div>
+            <input type="hidden" name="form_type" value="update_saldo">
+            <button type="submit" class="btn btn-primary">Zmień saldo</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
