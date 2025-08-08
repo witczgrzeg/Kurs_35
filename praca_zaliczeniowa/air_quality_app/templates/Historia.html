@@ -49,21 +49,22 @@
         </tr>
       </thead>
       <tbody>
-        {% for city, date, info in entries %}
-        <tr>
-          <td>{{ city }}</td>
-          <td>{{ date }}</td>
-          <td>{{ info.location_id }}</td>
-          <td>{{ info.location_name }}</td>
-          <td>{{ info.location_distance }}</td>
-          <td>{{ info.sensor_id }}</td>
-          <td>{{ info.parameter }}</td>
-          <td>{{ info.value }}</td>
-          <td>{{ info.units }}</td>
-          <td>{{ info.rating if info.rating else "-" }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
+  {% for city, date, info in entries %}
+  <tr>
+    <td>{{ city }}</td>
+    <td>{{ date }}</td>
+    <td>{{ info.location_id if info.location_id else "-" }}</td>
+    <td>{{ info.location_name }}</td>
+    <td>{{ info.location_distance if info.location_distance else "-" }}</td>
+    <td>{{ info.sensor_id }}</td>
+    <td>{{ info.parameter }}</td>
+    <td>{{ info.value }}</td>
+    <td>{{ info.units }}</td>
+    <td>{{ info.rating if info.rating else "-" }}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+
     </table>
   </div>
   {% else %}

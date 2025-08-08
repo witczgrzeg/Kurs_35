@@ -1,11 +1,9 @@
 from flask import Blueprint, render_template, request
 import asyncio
 from main import get_air_quality_for_city
-from file_handler import FileHandler
 
 main_page = Blueprint('main_page', __name__)
 loop = asyncio.get_event_loop()
-DATA_FILE = "data.json"
 
 @main_page.route('/', methods=['GET', 'POST'])
 def index():
@@ -23,5 +21,22 @@ def index():
 
 @main_page.route('/historia')
 def historia():
-    entries = list(FileHandler(DATA_FILE).items())
-    return render_template("historia.html", entries=entries)
+    from models import LocationCity
+    records = LocationCity.query.order_by(LocationCity.date.desc()).all()
+    print(f"Liczba rekordów w bazie: {len(records)}")
+    entries_for_template = []
+    for entry in records:
+        info = {
+            "location_id": entry.location_id,
+            "location_distance": entry.location_distance,
+            "location_name": entry.location_name,
+            "sensor_id": entry.sensor_id,
+            "parameter": entry.parameter,
+            "value": entry.value,
+            "units": entry.units,
+            "rating": entry.rating,
+        }
+        entries_for_template.append((entry.city, entry.date, info))
+
+    return render_template("historia.html", entries=entries_for_template)
+

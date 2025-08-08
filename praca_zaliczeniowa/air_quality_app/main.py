@@ -1,11 +1,9 @@
 from datetime import datetime
 from geopy.geocoders import Nominatim
 from openaq import AsyncOpenAQ
-from file_handler import FileHandler
-from AirQ import classify_air_quality  # ✅ Nowy import
+from classification import classify_air_quality
 
 API_KEY = "9842cf2ba34018b9ff7e2f1593819e26e814a4f71f0001e65bf688f92e25c865"
-DATA_FILE = "data.json"
 client: AsyncOpenAQ = None
 
 def get_coordinates(city):
@@ -15,13 +13,14 @@ def get_coordinates(city):
     return loc.latitude, loc.longitude
 
 async def get_air_quality_for_city(city):
+    from models import db, LocationCity
+
     global client
     if not client:
         client = AsyncOpenAQ(api_key=API_KEY)
         await client.__aenter__()
 
     lat, lon = get_coordinates(city)
-    handler = FileHandler(DATA_FILE)
 
     locations = await client.locations.list(coordinates=[lat, lon], radius=10000, limit=10)
     if not locations.results:
@@ -39,7 +38,6 @@ async def get_air_quality_for_city(city):
     if not results:
         return {"error": "Brak pomiarów."}
 
-    # Parsujemy daty i bierzemy najnowszy pomiar
     valid = [
         (m, datetime.fromisoformat(m.period.datetime_from.local))
         for m in results if hasattr(m.period, "datetime_from")
@@ -54,23 +52,38 @@ async def get_air_quality_for_city(city):
     param = getattr(latest.parameter, "name", str(latest.parameter)).lower()
     units = getattr(latest.parameter, "units", "")
 
-    # ✅ Nowa logika oceny jakości
     rating = classify_air_quality(param, value)
 
-    entry = {
-        "city": city,
-        "location_name": loc.name,
-        "sensor_id": sensor.id,
-        "parameter": param.upper(),
-        "value": value,
-        "units": units,
-        "date": date_str,
-        "rating": rating
-    }
+    record = LocationCity.query.filter_by(city=city, date=date_str).first()
+    if not record:
+        record = LocationCity()
 
-    handler[(city, date_str)] = entry
-    handler.save()
-    return entry
+    record.city = city
+    record.location_id = str(loc.id) if hasattr(loc, 'id') else None
+    record.location_distance = float(loc.distance) if hasattr(loc, 'distance') else None
+    record.location_name = loc.name
+    record.sensor_id = sensor.id
+    record.parameter = param.upper()
+    record.value = str(value)
+    record.units = units
+    record.date = date_str
+    record.rating = rating
+
+    db.session.add(record)
+    db.session.commit()
+
+    return {
+        "city": record.city,
+        "location_id": record.location_id,
+        "location_distance": record.location_distance,
+        "location_name": record.location_name,
+        "sensor_id": record.sensor_id,
+        "parameter": record.parameter,
+        "value": record.value,
+        "units": record.units,
+        "date": record.date,
+        "rating": record.rating
+    }
 
 async def close_client():
     global client

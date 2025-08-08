@@ -70,9 +70,9 @@
       <tbody>
         <tr>
           <td>{{ data.city }}</td>
-          <td>{{ data.location_id }}</td>
+          <td>{{ data.location_id if data.location_id else "-" }}</td>
           <td>{{ data.location_name }}</td>
-          <td>{{ data.location_distance }}</td>
+          <td>{{ data.location_distance if data.location_distance else "-" }}</td>
           <td>{{ data.sensor_id }}</td>
           <td>{{ data.date }}</td>
           <td>{{ data.parameter }}</td>

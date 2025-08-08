@@ -21,7 +21,7 @@ def classify_air_quality(parameter, value):
             return "BAD ❌"
 
     elif param == "co":
-        co_mg_m3 = value / 1000  # µg/m³ → mg/m³
+        co_mg_m3 = value / 1000
         if co_mg_m3 <= 10:
             return "GOOD ✅"
         elif co_mg_m3 <= 30:
@@ -61,7 +61,7 @@ def classify_air_quality(parameter, value):
         else:
             return "BAD ❌"
 
-    elif param == "no":  # nowy parametr NO
+    elif param == "no":
         if value <= 10:
             return "GOOD ✅"
         elif value <= 20:
