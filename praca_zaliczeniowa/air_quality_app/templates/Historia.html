@@ -34,36 +34,33 @@
   {% if entries %}
   <div class="table-responsive">
     <table class="table table-bordered table-hover align-middle text-center">
-      <thead class="table-light">
-        <tr>
-          <th>Miasto</th>
-          <th>Data pomiaru</th>
-          <th>ID Lokalizacji</th>
-          <th>Nazwa Lokalizacji</th>
-          <th>Odległość [m]</th>
-          <th>Sensor ID</th>
-          <th>Parametr</th>
-          <th>Wartość</th>
-          <th>Jednostka</th>
-          <th>Ocena jakości</th>
-        </tr>
-      </thead>
-      <tbody>
-  {% for city, date, info in entries %}
+ <thead class="table-light">
   <tr>
-    <td>{{ city }}</td>
-    <td>{{ date }}</td>
-    <td>{{ info.location_id if info.location_id else "-" }}</td>
-    <td>{{ info.location_name }}</td>
-    <td>{{ info.location_distance if info.location_distance else "-" }}</td>
-    <td>{{ info.sensor_id }}</td>
-    <td>{{ info.parameter }}</td>
-    <td>{{ info.value }}</td>
-    <td>{{ info.units }}</td>
-    <td>{{ info.rating if info.rating else "-" }}</td>
+    <th>Miasto</th>
+    <th>Data pomiaru</th>
+    <th>ID Lokalizacji</th>
+    <th>Nazwa Lokalizacji</th>
+    <th>Sensor ID</th>
+    <th>Parametr</th>
+    <th>Wartość</th>
+    <th>Ocena jakości</th>
   </tr>
-  {% endfor %}
+</thead>
+<tbody>
+{% for city, date, info in entries %}
+<tr>
+  <td>{{ city }}</td>
+  <td>{{ date }}</td>
+  <td>{{ info.location_id if info.location_id else "-" }}</td>
+  <td>{{ info.location_name }}</td>
+  <td>{{ info.sensor_id }}</td>
+  <td>{{ info.parameter }}</td>
+  <td>{{ info.value }}</td>
+  <td>{{ info.rating if info.rating else "-" }}</td>
+</tr>
+{% endfor %}
 </tbody>
+
 
     </table>
   </div>

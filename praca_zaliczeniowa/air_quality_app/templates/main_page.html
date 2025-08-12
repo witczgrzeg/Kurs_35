@@ -52,36 +52,33 @@
 
   {% if data %}
     <h2 class="text-center mb-4">Wynik wyszukiwania dla miasta: {{ data.city }}</h2>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Miasto</th>
-          <th>ID Lokalizacji</th>
-          <th>Nazwa Lokalizacji</th>
-          <th>Odległość [m]</th>
-          <th>Sensor ID</th>
-          <th>Data pomiaru</th>
-          <th>Parametr</th>
-          <th>Wartość</th>
-          <th>Jednostka</th>
-          <th>Ocena jakości</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ data.city }}</td>
-          <td>{{ data.location_id if data.location_id else "-" }}</td>
-          <td>{{ data.location_name }}</td>
-          <td>{{ data.location_distance if data.location_distance else "-" }}</td>
-          <td>{{ data.sensor_id }}</td>
-          <td>{{ data.date }}</td>
-          <td>{{ data.parameter }}</td>
-          <td>{{ data.value }}</td>
-          <td>{{ data.units }}</td>
-          <td>{{ data.rating if data.rating else "-" }}</td>
-        </tr>
-      </tbody>
-    </table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Miasto</th>
+      <th>ID Lokalizacji</th>
+      <th>Nazwa Lokalizacji</th>
+      <th>Sensor ID</th>
+      <th>Data pomiaru</th>
+      <th>Parametr</th>
+      <th>Wartość</th>
+      <th>Ocena jakości</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ data.city }}</td>
+      <td>{{ data.location_id if data.location_id else "-" }}</td>
+      <td>{{ data.location_name }}</td>
+      <td>{{ data.sensor_id }}</td>
+      <td>{{ data.date }}</td>
+      <td>{{ data.parameter }}</td>
+      <td>{{ data.value }}</td>
+      <td>{{ data.rating if data.rating else "-" }}</td>
+    </tr>
+  </tbody>
+</table>
+
   {% elif city %}
     <p class="text-center">Brak danych do wyświetlenia.</p>
   {% endif %}
